@@ -133,7 +133,7 @@
                 "clutter/arbusto4",
                 "clutter/arbusto5"
             ],
-            "chance": 0.6,
+            "chance": 0.3,
             "rotation": {
                 "enabled": true,
                 "yAxis": {

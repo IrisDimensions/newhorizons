@@ -85,7 +85,7 @@
         "rarity": 60
     }],
     "objects": [{
-        "chance": 0.5,
+        "chance": 0.1,
         "rotation": {
             "yAxis": {
                 "min": 0,
