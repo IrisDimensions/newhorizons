@@ -12,4 +12,4 @@ Todo list:
 - Oceans
 - Correct distribution of biomes and regions
 
-Mangrove, sequoia and jungle trees by [Eremilion](https://www.planetminecraft.com/member/eremilion/)
+Mangrove, sakura, sequoia and jungle trees by [Eremilion](https://www.planetminecraft.com/member/eremilion/)
