@@ -1,0 +1,104 @@
+{
+    "name": "Desert plains",
+    "derivative": "DESERT",
+    "vanillaDerivative": "DESERT",
+    "rarity": 1,
+    "customDerivitives": [{
+        "id": "desert",
+        "foliageColor": "#27810b",
+        "grassColor": "#367925",
+        "category": "desert"
+    }],
+    "generators": [{
+        "generator": "smooth-land",
+        "max": 8,
+        "min": 5
+    }],
+    "layers": [
+        {
+            "minHeight": 3,
+            "maxHeight": 10,
+            "slopeCondition": {
+                "minimumSlope": 4.5,
+                "maximumSlope": 20
+            },
+            "palette": [{"block": "minecraft:terracotta"}]
+        },
+        {
+            "minHeight": 5,
+            "maxHeight": 5,
+            "style": {"style": "FRACTAL_WATER"},
+            "zoom": 0.7,
+            "palette": [
+                {
+                    "weight": 2,
+                    "block": "minecraft:sand"
+                },
+                {
+                    "weight": 1,
+                    "block": "minecraft:smooth_sandstone"
+                }
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.002,
+            "palette": [{"block": "minecraft:dead_bush"}]
+        },
+        {
+            "heightVariance": {"style": "STATIC"},
+            "stackMax": 4,
+            "stackMin": 1,
+            "chance": 0.003,
+            "palette": [{"block": "minecraft:cactus"}]
+        }
+    ],
+    "objects": [
+        {
+            "mode": "MIN_HEIGHT",
+            "place": ["structures/pyramid"],
+            "chance": 3.9E-5,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {
+                "x": 0,
+                "y": -4,
+                "z": 0
+            },
+            "edit": [{
+                "find": [{"block": "minecraft:red_wool"}],
+                "replace": {"palette": [{"block": "minecraft:void_air"}]}
+            }]
+        },
+        {
+            "mode": "MIN_HEIGHT",
+            "place": [
+                "clutter/brksphinx1",
+                "clutter/sphinx1"
+            ],
+            "chance": 6.5E-4,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            }
+        }
+    ]
+}

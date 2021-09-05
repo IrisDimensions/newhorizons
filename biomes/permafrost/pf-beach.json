@@ -1,0 +1,40 @@
+{
+    "vanillaDerivative": "FOREST",
+    "customDerivitives": [{
+        "id": "permafrost",
+        "grassColor": "#b0b95f",
+        "temperature": -1,
+        "downfallType": "rain",
+        "category": "plains"
+    }],
+    "slab": {
+        "style": {"style": "STATIC"},
+        "palette": [
+            {"block": "minecraft:stone_slab"},
+            {"block": "minecraft:air"}
+        ]
+    },
+    "name": "Permafrost beach",
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {"block": "minecraft:stone"},
+                {"block": "minecraft:andesite"}
+            ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 6,
+            "palette": [{"block": "minecraft:stone"}]
+        }
+    ],
+    "generators": [{
+        "min": 0,
+        "max": 2,
+        "generator": "smooth-land"
+    }],
+    "derivative": "FOREST",
+    "rarity": 1
+}

@@ -1,0 +1,115 @@
+{
+    "name": "Selva forest",
+    "derivative": "JUNGLE",
+    "vanillaDerivative": "JUNGLE",
+    "rarity": 1,
+    "customDerivitives": [{
+        "id": "tropical",
+        "foliageColor": "#40C42B",
+        "grassColor": "#41A726",
+        "category": "jungle",
+        "waterColor": "#3AB2A2",
+        "waterFogColor": "#3AB2A2"
+    }],
+    "generators": [{
+        "generator": "smooth-land",
+        "max": 5,
+        "min": 3
+    }],
+    "layers": [
+        {
+            "slopeCondition": {"maximumSlope": 4},
+            "palette": [{"block": "minecraft:grass_block"}]
+        },
+        {
+            "slopeCondition": {"maximumSlope": 4},
+            "minHeight": 2,
+            "maxHeight": 2,
+            "palette": [{"block": "minecraft:dirt"}]
+        },
+        {
+            "minHeight": 6,
+            "maxHeight": 10,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {
+                    "block": "minecraft:stone",
+                    "weight": 4
+                },
+                {"block": "minecraft:andesite"},
+                {"block": "minecraft:mossy_cobblestone"},
+                {"block": "minecraft:cobblestone"}
+            ]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 6,
+            "palette": [{"block": "minecraft:stone"}]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.01,
+            "palette": [{"block": "minecraft:melon"}]
+        },
+        {
+            "chance": 0.25,
+            "palette": [
+                {
+                    "block": "minecraft:grass",
+                    "weight": 5
+                },
+                {
+                    "block": "minecraft:fern",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "chance": 0.001,
+            "palette": [
+                {"block": "minecraft:oxeye_daisy"},
+                {"block": "minecraft:pink_tulip"},
+                {"block": "minecraft:lily_of_the_valley"}
+            ]
+        }
+    ],
+    "objects": [{
+        "place": [
+            "trees/mixed/dotree1",
+            "trees/mixed/dotree2",
+            "trees/mixed/dotree3",
+            "trees/mixed/dotree4",
+            "trees/mixed/dotree5",
+            "trees/mixed/dotree6",
+            "trees/mixed/dotree7",
+            "trees/mixed/dotree8",
+            "trees/mixed/dotree9",
+            "trees/mixed/dotree10"
+        ],
+        "chance": 0.75,
+        "edit": [
+            {
+                "find": [{"block": "minecraft:gray_terracotta"}],
+                "replace": {"palette": [{"block": "minecraft:stripped_dark_oak_wood"}]}
+            },
+            {
+                "find": [{"block": "minecraft:dark_oak_leaves"}],
+                "replace": {"palette": [{
+                    "block": "minecraft:jungle_leaves",
+                    "data": {"persistent": true}
+                }]}
+            }
+        ],
+        "rotation": {
+            "enabled": true,
+            "yAxis": {
+                "enabled": true,
+                "interval": 90,
+                "min": -360,
+                "max": 360
+            }
+        },
+        "translate": {"y": -1}
+    }]
+}

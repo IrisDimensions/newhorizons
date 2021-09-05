@@ -1,0 +1,33 @@
+{
+    "name": "Deep Ocean magma",
+    "derivative": "PLAINS",
+    "vanillaDerivative": "PLAINS",
+    "generators": [{
+        "generator": "plain",
+        "max": -40,
+        "min": -50
+    }],
+    "layers": [
+        {
+            "minHeight": 5,
+            "maxHeight": 7,
+            "palette": [{"block": "minecraft:water"}]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [{
+                "block": "minecraft:lava",
+                "data": {"level": 1}
+            }]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 2,
+            "palette": [{
+                "block": "minecraft:lava",
+                "data": {"level": 0}
+            }]
+        }
+    ]
+}

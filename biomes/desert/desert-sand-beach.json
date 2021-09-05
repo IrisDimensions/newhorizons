@@ -1,0 +1,45 @@
+{
+    "vanillaDerivative": "JUNGLE",
+    "name": "Desert beach",
+    "customDerivitives": [{
+        "id": "desert",
+        "foliageColor": "#27810b",
+        "grassColor": "#367925",
+        "category": "desert"
+    }],
+    "layers": [
+        {
+            "style": {"style": "FRACTAL_WATER"},
+            "zoom": 0.4,
+            "minHeight": 1,
+            "maxHeight": 3,
+            "palette": [{
+                "block": "minecraft:sand",
+                "weight": 3
+            }]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 8,
+            "palette": [{"block": "minecraft:sand"}]
+        }
+    ],
+    "generators": [{
+        "min": 0,
+        "max": 3,
+        "generator": "smooth-land"
+    }],
+    "derivative": "JUNGLE",
+    "wall": {
+        "style": {"style": "STATIC"},
+        "palette": [
+            {"block": "minecraft:smooth_sandstone"},
+            {"block": "minecraft:sand"},
+            {"block": "minecraft:smooth_sandstone"}
+        ]
+    },
+    "slab": {
+        "style": {"style": "STATIC"},
+        "palette": [{"block": "minecraft:sandstone_slab"}]
+    }
+}

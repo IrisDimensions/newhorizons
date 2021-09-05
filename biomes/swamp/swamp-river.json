@@ -1,0 +1,131 @@
+{
+    "vanillaDerivative": "SWAMP",
+    "customDerivitives": [{
+        "id": "swamp",
+        "foliageColor": "#4a532f",
+        "waterColor": "#49521d",
+        "waterFogColor": "#49521d",
+        "fogColor": "#325729",
+        "grassColor": "#4b5332",
+        "category": "forest"
+    }],
+    "decorators": [
+        {
+            "partOf": "SEA_SURFACE",
+            "chance": 0.025,
+            "variance": {"style": "STATIC"},
+            "zoom": 2.25,
+            "palette": [{"block": "minecraft:lily_pad"}],
+            "style": {"style": "STATIC"}
+        },
+        {
+            "chance": 0.25,
+            "variance": {"style": "STATIC"},
+            "zoom": 5,
+            "palette": [{"block": "minecraft:seagrass"}],
+            "style": {"style": "STATIC"}
+        },
+        {
+            "chance": 0.35,
+            "variance": {"style": "STATIC"},
+            "stackMax": 6,
+            "zoom": 1,
+            "palette": [{"block": "minecraft:kelp_plant"}],
+            "style": {"style": "STATIC"},
+            "heightVariance": {"style": "IRIS"},
+            "stackMin": 2
+        },
+        {
+            "chance": 0.012,
+            "variance": {"style": "STATIC"},
+            "zoom": 1,
+            "palette": [{
+                "data": {
+                    "waterlogged": true,
+                    "pickles": 1
+                },
+                "block": "minecraft:sea_pickle"
+            }],
+            "style": {"style": "STATIC"}
+        }
+    ],
+    "name": "Swamp river",
+    "layers": [
+        {
+            "minHeight": 2,
+            "maxHeight": 3,
+            "style": {
+                "style": "SIMPLEX",
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 15
+                }
+            },
+            "zoom": 0.8,
+            "palette": [
+                {"block": "minecraft:dirt"},
+                {"block": "minecraft:coarse_dirt"}
+            ]
+        },
+        {"palette": [{"block": "minecraft:dirt"}]},
+        {
+            "minHeight": 1,
+            "maxHeight": 3,
+            "palette": [
+                {
+                    "weight": 2,
+                    "block": "minecraft:dirt"
+                },
+                {"block": "minecraft:coarse_dirt"}
+            ]
+        }
+    ],
+    "generators": [{
+        "generator": "puddles",
+        "max": -2,
+        "min": -3
+    }],
+    "objects": [{
+        "place": [
+            "rock/mrock-1",
+            "rock/mrock-2",
+            "rock/mrock-3",
+            "rock/mrock-4",
+            "rock/mrock-5"
+        ],
+        "mode": "PAINT",
+        "onwater": true,
+        "chance": 0.15,
+        "rotation": {
+            "enabled": true,
+            "yAxis": {
+                "enabled": true,
+                "interval": 90,
+                "min": -360,
+                "max": 360
+            }
+        },
+        "translate": {
+            "x": 0,
+            "y": -4,
+            "z": 0
+        },
+        "edit": [
+            {
+                "find": [
+                    {"block": "minecraft:dandelion"},
+                    {"block": "minecraft:grass"},
+                    {"block": "minecraft:azure_bluet"},
+                    {"block": "minecraft:oxeye_daisy"},
+                    {"block": "minecraft:tall_grass"}
+                ],
+                "replace": {"palette": [{"block": "minecraft:mossy_cobblestone"}]}
+            },
+            {
+                "find": [{"block": "minecraft:grass_block"}],
+                "replace": {"palette": [{"block": "minecraft:coarse_dirt"}]}
+            }
+        ]
+    }],
+    "derivative": "SWAMP"
+}

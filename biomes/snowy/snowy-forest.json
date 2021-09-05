@@ -1,0 +1,90 @@
+{
+    "name": "Snowy forest",
+    "derivative": "SNOWY_TAIGA",
+    "vanillaDerivative": "SNOWY_TAIGA",
+    "generators": [{
+        "generator": "plain",
+        "max": 13,
+        "min": 3
+    }],
+    "layers": [
+        {
+            "minHeight": 3,
+            "maxHeight": 3,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 3.3
+            },
+            "palette": [{"block": "minecraft:snow_block"}]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "slopeCondition": {"minimumSlope": 4},
+            "palette": [
+                {"block": "minecraft:gravel"},
+                {"block": "minecraft:cyan_terracotta"}
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "slopeCondition": {"minimumSlope": 4},
+            "palette": [
+                {"block": "minecraft:stone"},
+                {"block": "minecraft:stone"},
+                {"block": "minecraft:cobblestone"}
+            ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 4
+            },
+            "palette": [{"block": "minecraft:snow_block"}]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 3,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 3
+            },
+            "palette": [{"block": "minecraft:dirt"}]
+        }
+    ],
+    "wall": {"palette": [
+        {"block": "minecraft:stone"},
+        {"block": "minecraft:andesite"},
+        {"block": "minecraft:gravel"},
+        {"block": "minecraft:cyan_terracotta"}
+    ]},
+    "objects": [{
+        "snow": 0.1,
+        "place": [
+            "trees/spruce/levergreen1",
+            "trees/spruce/levergreen1",
+            "trees/spruce/levergreen1",
+            "trees/spruce/levergreen1",
+            "trees/spruce/levergreen1",
+            "trees/spruce/levergreen1",
+            "trees/spruce/mevergreen1",
+            "trees/spruce/mevergreen1",
+            "trees/spruce/severgreen1",
+            "trees/spruce/severgreen1"
+        ],
+        "chance": 1,
+        "density": 2,
+        "rotation": {
+            "enabled": true,
+            "yAxis": {
+                "enabled": true,
+                "interval": 90,
+                "min": -360,
+                "max": 360
+            }
+        }
+    }]
+}

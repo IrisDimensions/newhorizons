@@ -1,0 +1,40 @@
+{
+    "vanillaDerivative": "DESERT_LAKES",
+    "name": "Canyon river",
+    "decorators": [{
+        "chance": 0.2,
+        "palette": [{"block": "minecraft:seagrass"}]
+    }],
+    "layers": [
+        {
+            "style": {"style": "FRACTAL_WATER"},
+            "zoom": 0.7,
+            "palette": [
+                {"block": "minecraft:red_sand"},
+                {"block": "minecraft:orange_terracotta"}
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 3,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {"block": "minecraft:red_sand"},
+                {"block": "minecraft:terracotta"},
+                {"block": "minecraft:gravel"},
+                {"block": "minecraft:red_sand"},
+                {"block": "minecraft:dirt"},
+                {
+                    "weight": 2,
+                    "block": "minecraft:red_sand"
+                }
+            ]
+        }
+    ],
+    "generators": [{
+        "generator": "canyon",
+        "max": -5,
+        "min": -15
+    }],
+    "derivative": "DESERT_LAKES"
+}

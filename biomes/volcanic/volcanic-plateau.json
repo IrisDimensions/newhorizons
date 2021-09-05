@@ -1,0 +1,65 @@
+{
+    "name": "Canyon plateau",
+    "derivative": "DESERT",
+    "vanillaDerivative": "DESERT",
+    "generators": [
+        {
+            "generator": "mountain",
+            "max": 20,
+            "min": 40
+        },
+        {
+            "generator": "canyon",
+            "max": 55,
+            "min": 55
+        }
+    ],
+    "layers": [
+        {
+            "minHeight": 2,
+            "maxHeight": 3,
+            "slopeCondition": {"maximumSlope": 2.5},
+            "palette": [{"block": "minecraft:cave_air"}]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "slopeCondition": {"maximumSlope": 2.5},
+            "palette": [{
+                "block": "minecraft:lava",
+                "data": {"level": 1}
+            }]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 10,
+            "slopeCondition": {"maximumSlope": 2.5},
+            "palette": [{
+                "block": "minecraft:lava",
+                "data": {"level": 0}
+            }]
+        },
+        {
+            "maxHeight": 10,
+            "minHeight": 10,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 1.4
+            },
+            "palette": [{"block": "minecraft:terracotta"}]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.008,
+            "palette": [{"block": "minecraft:dead_bush"}]
+        },
+        {
+            "heightVariance": {"style": "STATIC"},
+            "stackMax": 4,
+            "stackMin": 1,
+            "chance": 0.003,
+            "palette": [{"block": "minecraft:cactus"}]
+        }
+    ]
+}

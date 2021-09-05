@@ -1,0 +1,48 @@
+{
+    "name": "Desert dunes",
+    "derivative": "DESERT",
+    "vanillaDerivative": "DESERT",
+    "rarity": 1,
+    "customDerivitives": [{
+        "id": "desert",
+        "foliageColor": "#27810b",
+        "grassColor": "#367925",
+        "category": "desert"
+    }],
+    "generators": [{
+        "generator": "dunes",
+        "max": 6,
+        "min": 39
+    }],
+    "layers": [
+        {
+            "minHeight": 10,
+            "maxHeight": 12,
+            "style": {"style": "FRACTAL_WATER"},
+            "zoom": 0.7,
+            "palette": [
+                {
+                    "weight": 2,
+                    "block": "minecraft:sand"
+                },
+                {
+                    "weight": 1,
+                    "block": "minecraft:smooth_sandstone"
+                }
+            ]
+        },
+        {
+            "minHeight": 4,
+            "maxHeight": 6,
+            "slopeCondition": {
+                "minimumSlope": 4.5,
+                "maximumSlope": 20
+            },
+            "palette": [{"block": "minecraft:terracotta"}]
+        }
+    ],
+    "decorators": [{
+        "chance": 0.002,
+        "palette": [{"block": "minecraft:dead_bush"}]
+    }]
+}

@@ -1,0 +1,48 @@
+{
+    "vanillaDerivative": "PLAINS",
+    "customDerivitives": [{
+        "id": "mountain",
+        "grassColor": "#80ab69",
+        "category": "plains"
+    }],
+    "slab": {
+        "style": {"style": "STATIC"},
+        "palette": [
+            {"block": "minecraft:stone_slab"},
+            {"block": "minecraft:air"}
+        ]
+    },
+    "name": "Mountain beach",
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {"block": "minecraft:stone"},
+                {"block": "minecraft:andesite"}
+            ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 6,
+            "palette": [{"block": "minecraft:stone"}]
+        }
+    ],
+    "generators": [{
+        "min": 0,
+        "max": 2,
+        "generator": "smooth-land"
+    }],
+    "decorators": [{
+        "chance": 0.03,
+        "palette": [{
+            "block": "minecraft:stone_button",
+            "data": {
+                "face": "floor",
+                "facing": "west"
+            }
+        }],
+        "style": {"style": "STATIC"}
+    }],
+    "derivative": "PLAINS"
+}

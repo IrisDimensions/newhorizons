@@ -1,0 +1,234 @@
+{
+    "name": "Dead plains",
+    "derivative": "BASALT_DELTAS",
+    "vanillaDerivative": "BASALT_DELTAS",
+    "rarity": 2,
+    "color": "#d1d1d1",
+    "customDerivitives": [{
+        "id": "dead",
+        "foliageColor": "#d1d1d1",
+        "waterColor": "#00bd87",
+        "grassColor": "#d1d1d1",
+        "category": "plains",
+        "downfallType": "rain",
+        "skyColor": "#bdbdbd",
+        "fogColor": "#ffffff",
+        "waterFogColor": "#00bd87"
+    }],
+    "childShrinkFactor": 10,
+    "generators": [{
+        "generator": "smooth-land",
+        "max": 10,
+        "min": 3
+    }],
+    "decorators": [
+        {
+            "style": {"style": "STATIC"},
+            "chance": 0.1,
+            "palette": [
+                {
+                    "block": "minecraft:dead_brain_coral",
+                    "data": {"waterlogged": false}
+                },
+                {
+                    "block": "minecraft:dead_horn_coral",
+                    "data": {"waterlogged": false}
+                },
+                {
+                    "block": "minecraft:dead_fire_coral",
+                    "data": {"waterlogged": false}
+                },
+                {
+                    "block": "minecraft:dead_tube_coral_fan",
+                    "data": {"waterlogged": false}
+                }
+            ]
+        },
+        {
+            "style": {"style": "STATIC"},
+            "chance": 0.1,
+            "palette": [{"block": "minecraft:grass"}]
+        },
+        {
+            "style": {"style": "STATIC"},
+            "chance": 0.007,
+            "palette": [
+                {"block": "minecraft:stone_slab"},
+                {"block": "minecraft:cobblestone_slab"},
+                {"block": "minecraft:cobblestone_slab"}
+            ]
+        }
+    ],
+    "layers": [
+        {"palette": [
+            {
+                "block": "minecraft:grass_block",
+                "weight": 10
+            },
+            {
+                "block": "minecraft:mycelium",
+                "weight": 2
+            },
+            {
+                "block": "minecraft:gravel",
+                "weight": 2
+            }
+        ]},
+        {
+            "minHeight": 2,
+            "maxHeight": 2,
+            "palette": [{"block": "minecraft:dirt"}]
+        },
+        {
+            "style": {"style": "STATIC"},
+            "minHeight": 3,
+            "maxHeight": 3,
+            "palette": [
+                {"block": "minecraft:dirt"},
+                {"block": "minecraft:stone"}
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "place": [
+                "trees/oak/dead1",
+                "trees/oak/dead2",
+                "trees/oak/dead3",
+                "trees/oak/dead4",
+                "trees/oak/dead5",
+                "trees/oak/dead6"
+            ],
+            "chance": 0.13,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        },
+        {
+            "mode": "FAST_MIN_HEIGHT",
+            "place": [
+                "structures/tentacleoak1",
+                "structures/tentacleoak2",
+                "structures/tentacleoak3",
+                "structures/tentacleoak4",
+                "structures/tentacleoak7",
+                "structures/tentacleoak8"
+            ],
+            "chance": 0.4,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "edit": [{
+                "find": [
+                    {"block": "minecraft:tall_grass"},
+                    {
+                        "block": "minecraft:peony",
+                        "data": {"half": "upper"}
+                    },
+                    {"block": "minecraft:grass"}
+                ],
+                "replace": {"palette": [{"block": "minecraft:cave_air"}]}
+            }]
+        },
+        {
+            "place": [
+                "structures/ruin2",
+                "structures/ruin3",
+                "structures/ruin4"
+            ],
+            "chance": 0.01,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        },
+        {
+            "place": ["clutter/bone5"],
+            "chance": 0.0017,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {
+                "y": -28,
+                "yRandom": 3
+            }
+        },
+        {
+            "place": ["clutter/bone2"],
+            "chance": 0.0017,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {
+                "y": -13,
+                "yRandom": 2
+            }
+        },
+        {
+            "place": [
+                "clutter/icespiremed1",
+                "clutter/icespiremed2",
+                "clutter/icespiremed3",
+                "clutter/icespiresmol1",
+                "clutter/icespiresmol2",
+                "clutter/icespiresmol3"
+            ],
+            "chance": 0.1,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": -2},
+            "edit": [{
+                "find": [
+                    {"block": "minecraft:ice"},
+                    {"block": "minecraft:packed_ice"}
+                ],
+                "replace": {"palette": [
+                    {"block": "minecraft:stone"},
+                    {"block": "minecraft:andesite"}
+                ]}
+            }]
+        }
+    ],
+    "wall": {"palette": [
+        {"block": "minecraft:stone"},
+        {"block": "minecraft:andesite"},
+        {"block": "minecraft:cobblestone"},
+        {"block": "minecraft:mossy_cobblestone"}
+    ]}
+}

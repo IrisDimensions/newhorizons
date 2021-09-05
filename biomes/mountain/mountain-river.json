@@ -1,0 +1,92 @@
+{
+    "vanillaDerivative": "RIVER",
+    "customDerivitives": [{
+        "id": "mountain",
+        "grassColor": "#80ab69",
+        "category": "plains"
+    }],
+    "decorators": [
+        {
+            "chance": 0.07,
+            "variance": {"style": "STATIC"},
+            "zoom": 5,
+            "palette": [{"block": "minecraft:seagrass"}],
+            "style": {"style": "STATIC"}
+        },
+        {
+            "chance": 0.013,
+            "verticalZoom": 88,
+            "variance": {"style": "STATIC"},
+            "stackMax": 6,
+            "zoom": 1,
+            "palette": [{"block": "minecraft:kelp_plant"}],
+            "style": {"style": "STATIC"},
+            "heightVariance": {"style": "IRIS"},
+            "stackMin": 2
+        }
+    ],
+    "name": "Mountain river",
+    "layers": [
+        {
+            "minHeight": 2,
+            "maxHeight": 3,
+            "style": {
+                "style": "IRIS_DOUBLE",
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 30
+                }
+            },
+            "zoom": 0.7,
+            "palette": [
+                {
+                    "block": "minecraft:cobblestone",
+                    "weight": 3
+                },
+                {
+                    "block": "minecraft:clay",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:gravel",
+                    "weight": 8
+                }
+            ]
+        },
+        {"palette": [
+            {"block": "minecraft:cobblestone"},
+            {"block": "minecraft:stone"}
+        ]}
+    ],
+    "generators": [{
+        "generator": "smooth-land",
+        "max": -18,
+        "min": -25
+    }],
+    "objects": [{
+        "place": [
+            "structures/kship1",
+            "structures/kship2",
+            "structures/kship3",
+            "structures/kship4"
+        ],
+        "chance": 0.0035,
+        "onwater": true,
+        "translate": {"y": -1},
+        "rotation": {
+            "enabled": true,
+            "yAxis": {
+                "enabled": true,
+                "interval": 90,
+                "min": -360,
+                "max": 360
+            }
+        },
+        "edit": [{
+            "find": [{"block": "minecraft:bone_block"}],
+            "replace": {"palette": [{"block": "minecraft:gray_wool"}]}
+        }],
+        "waterloggable": true
+    }],
+    "derivative": "RIVER"
+}

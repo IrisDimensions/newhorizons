@@ -1,0 +1,55 @@
+{
+    "landBiomes": [
+        "swamp/swamp-forest",
+        "swamp/swamp-forest-dense"
+    ],
+    "biomeImplosionRatio": 0.25,
+    "seaBiomes": ["swamp/swamp-river"],
+    "deposits": [{
+        "minHeight": 15,
+        "maxPerChunk": 2,
+        "maxHeight": 122,
+        "minPerChunk": 0,
+        "minSize": 4,
+        "maxSize": 12,
+        "palette": [
+            {"block": "minecraft:iron_ore"},
+            {"block": "minecraft:coal_ore"}
+        ],
+        "varience": 4
+    }],
+    "riverRarity": 1,
+    "landBiomeZoom": 1.25,
+    "riverStyle": {
+        "style": "VASCULAR",
+        "zoom": 4.77,
+        "fracture": {
+            "multiplier": 240,
+            "style": "IRIS",
+            "zoom": 5
+        }
+    },
+    "blockDrops": [{
+        "drops": [{
+            "type": "slime_ball",
+            "rarity": 20
+        }],
+        "blocks": [
+            {"block": "minecraft:grass_block"},
+            {"block": "minecraft:oak_leaves"},
+            {"block": "minecraft:grass"},
+            {"block": "minecraft:tall_grass"}
+        ]
+    }],
+    "entitySpawners": [
+        "swamp/land-passive",
+        "genhostile"
+    ],
+    "shoreHeightMin": 2.2,
+    "shoreBiomes": ["swamp/swamp-beach"],
+    "name": "Swamp forest",
+    "shoreHeightMax": 0,
+    "shoreHeightZoom": 1.14,
+    "riverThickness": 0.025,
+    "rarity": 3
+}

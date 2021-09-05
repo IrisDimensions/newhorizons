@@ -1,0 +1,59 @@
+{
+    "name": "Deep Ocean",
+    "derivative": "PLAINS",
+    "vanillaDerivative": "PLAINS",
+    "generators": [{
+        "generator": "plain",
+        "max": -40,
+        "min": -50
+    }],
+    "childStyle": {
+        "style": "GLOB",
+        "zoom": 0.5,
+        "exponent": 3
+    },
+    "children": ["ocean/deep-ocean-magma"],
+    "layers": [{
+        "minHeight": 2,
+        "maxHeight": 3,
+        "palette": [
+            {
+                "block": "minecraft:cobblestone",
+                "weight": 3
+            },
+            {
+                "block": "minecraft:clay",
+                "weight": 1
+            },
+            {
+                "block": "minecraft:gravel",
+                "weight": 8
+            }
+        ]
+    }],
+    "objects": [{
+        "place": [
+            "structures/kship1",
+            "structures/kship2",
+            "structures/kship3",
+            "structures/kship4"
+        ],
+        "chance": 0.0035,
+        "onwater": true,
+        "translate": {"y": -1},
+        "rotation": {
+            "enabled": true,
+            "yAxis": {
+                "enabled": true,
+                "interval": 90,
+                "min": -360,
+                "max": 360
+            }
+        },
+        "edit": [{
+            "find": [{"block": "minecraft:bone_block"}],
+            "replace": {"palette": [{"block": "minecraft:gray_wool"}]}
+        }],
+        "waterloggable": true
+    }]
+}

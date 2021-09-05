@@ -1,0 +1,73 @@
+{
+    "name": "Canyon plains",
+    "derivative": "DESERT",
+    "vanillaDerivative": "DESERT",
+    "generators": [{
+        "generator": "smooth-land",
+        "max": 4,
+        "min": 1
+    }],
+    "childStyle": {
+        "style": "SIMPLEX",
+        "exponent": 3,
+        "zoom": 2
+    },
+    "children": ["volcanic/volcanic-plateau"],
+    "lockLayers": true,
+    "layers": [
+        {
+            "maxHeight": 2,
+            "minHeight": 2,
+            "style": {
+                "style": "FRACTAL_WATER",
+                "exponent": 3.7,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 25
+                }
+            },
+            "slopeCondition": {"maximumSlope": 2.5},
+            "zoom": 0.5,
+            "palette": [
+                {
+                    "block": "minecraft:red_sand",
+                    "weight": 8
+                },
+                {
+                    "block": "minecraft:gravel",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:clay",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 2
+                }
+            ]
+        },
+        {
+            "maxHeight": 5,
+            "minHeight": 5,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:terracotta"}]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.008,
+            "palette": [{"block": "minecraft:dead_bush"}]
+        },
+        {
+            "heightVariance": {"style": "STATIC"},
+            "stackMax": 4,
+            "stackMin": 1,
+            "chance": 0.003,
+            "palette": [{"block": "minecraft:cactus"}]
+        }
+    ]
+}

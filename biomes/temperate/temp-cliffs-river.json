@@ -1,0 +1,114 @@
+{
+    "name": "Cliffs river",
+    "derivative": "DESERT",
+    "vanillaDerivative": "DESERT",
+    "customDerivitives": [{
+        "id": "coastalcliffs",
+        "foliageColor": "#376c46",
+        "grassColor": "#648c4c",
+        "category": "plains"
+    }],
+    "rarity": 1,
+    "generators": [{
+        "generator": "plain",
+        "max": 5,
+        "min": -10
+    }],
+    "layers": [
+        {
+            "maxHeight": 1,
+            "minHeight": 1,
+            "slopeCondition": {"maximumSlope": 2},
+            "style": {"style": "STATIC"},
+            "palette": [
+                {
+                    "block": "minecraft:grass_block",
+                    "weight": 10
+                },
+                {
+                    "block": "minecraft:gravel",
+                    "weight": 3
+                }
+            ]
+        },
+        {
+            "maxHeight": 5,
+            "minHeight": 5,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 1.4
+            },
+            "palette": [{"block": "minecraft:stone"}]
+        }
+    ],
+    "objects": [
+        {
+            "mode": "PAINT",
+            "place": [
+                "clutter/arbusto1",
+                "clutter/arbusto2",
+                "clutter/arbusto4",
+                "clutter/arbusto5"
+            ],
+            "chance": 0.6,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": 1}
+        },
+        {
+            "mode": "PAINT",
+            "place": [
+                "clutter/stone1",
+                "clutter/stone2",
+                "clutter/stone3"
+            ],
+            "chance": 0.6,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        },
+        {
+            "chance": 0.14,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": [
+                "trees/fir/fir1",
+                "trees/fir/fir2"
+            ],
+            "edit": [{
+                "find": [{"block": "minecraft:acacia_wood"}],
+                "replace": {"palette": [{"block": "minecraft:dark_oak_wood"}]}
+            }]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.1,
+            "palette": [{"block": "minecraft:grass"}]
+        },
+        {
+            "chance": 0.1,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        }
+    ]
+}

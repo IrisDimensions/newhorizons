@@ -1,0 +1,29 @@
+{
+    "vanillaDerivative": "BEACH",
+    "color": "#f5fa66",
+    "name": "Beach",
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [{"block": "minecraft:sand"}]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 6,
+            "palette": [{"block": "minecraft:sandstone"}]
+        }
+    ],
+    "generators": [{
+        "min": 0,
+        "max": 4,
+        "generator": "smooth-land"
+    }],
+    "entityInitialSpawns": [{
+        "entity": "turtle",
+        "maxSpawns": 3,
+        "minSpawns": 1,
+        "rarity": 80
+    }],
+    "derivative": "BEACH"
+}

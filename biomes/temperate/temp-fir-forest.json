@@ -1,0 +1,170 @@
+{
+    "name": "Fir forest",
+    "derivative": "FOREST",
+    "vanillaDerivative": "FOREST",
+    "color": "#68bd3d",
+    "customDerivitives": [{
+        "id": "fir",
+        "grassColor": "#68bd3d",
+        "foliageColor": "#32602f",
+        "category": "forest"
+    }],
+    "layers": [
+        {"palette": [{"block": "minecraft:grass_block"}]},
+        {
+            "minHeight": 3,
+            "maxHeight": 3,
+            "palette": [{"block": "minecraft:dirt"}]
+        },
+        {
+            "minHeight": 6,
+            "maxHeight": 18,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {"block": "minecraft:stone"},
+                {"block": "minecraft:andesite"},
+                {"block": "minecraft:stone"}
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "style": {"style": "STATIC"},
+            "chance": 0.2,
+            "palette": [
+                {
+                    "block": "minecraft:grass",
+                    "weight": 6
+                },
+                {
+                    "block": "minecraft:fern",
+                    "weight": 2
+                }
+            ]
+        },
+        {
+            "chance": 0.2,
+            "variance": {
+                "style": "CELLULAR",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "SIMPLEX",
+                    "zoom": 0.2,
+                    "multiplier": 10,
+                    "fracture": {
+                        "style": "STATIC",
+                        "multiplier": 15
+                    }
+                }
+            },
+            "style": {
+                "style": "TRIOCTAVE_SIMPLEX",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 8
+                }
+            },
+            "palette": [
+                {"block": "minecraft:poppy"},
+                {"block": "minecraft:allium"}
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "chance": 1,
+            "density": 1,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": [
+                "trees/fir/fir1",
+                "trees/fir/fir2",
+                "trees/spruce/small1"
+            ]
+        },
+        {
+            "chance": 0.5,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": [
+                "clutter/mossrock1",
+                "clutter/mossrock2",
+                "clutter/mossrock3"
+            ]
+        },
+        {
+            "mode": "PAINT",
+            "place": [
+                "clutter/arbusto1",
+                "clutter/arbusto2",
+                "clutter/arbusto4",
+                "clutter/arbusto5"
+            ],
+            "chance": 0.6,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": 1}
+        }
+    ],
+    "generators": [{
+        "generator": "plain",
+        "max": 13,
+        "min": 4
+    }],
+    "entityInitialSpawns": [
+        {
+            "entity": "sheep",
+            "minSpawns": 1,
+            "maxSpawns": 2,
+            "rarity": 10
+        },
+        {
+            "entity": "wolf",
+            "minSpawns": 2,
+            "maxSpawns": 5,
+            "rarity": 70
+        },
+        {
+            "entity": "fox",
+            "maxSpawns": 1,
+            "minSpawns": 3,
+            "rarity": 90
+        }
+    ],
+    "slab": {
+        "palette": [
+            {
+                "weight": 1,
+                "block": "minecraft:cobblestone_slab"
+            },
+            {
+                "weight": 10,
+                "block": "minecraft:air"
+            }
+        ],
+        "style": {"style": "STATIC"}
+    },
+    "rarity": 1
+}

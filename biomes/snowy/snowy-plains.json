@@ -1,0 +1,97 @@
+{
+    "name": "Snowy plains",
+    "derivative": "SNOWY_TAIGA",
+    "vanillaDerivative": "SNOWY_TAIGA",
+    "generators": [{
+        "generator": "smooth-land",
+        "max": 6,
+        "min": 2
+    }],
+    "layers": [
+        {
+            "minHeight": 3,
+            "maxHeight": 3,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 2.6
+            },
+            "palette": [{"block": "minecraft:snow_block"}]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 3,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 2.6
+            },
+            "palette": [{"block": "minecraft:dirt"}]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "style": {
+                "style": "FRACTAL_WATER",
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 15
+                }
+            },
+            "zoom": 0.4,
+            "slopeCondition": {
+                "minimumSlope": 3.95,
+                "maximumSlope": 6
+            },
+            "palette": [
+                {
+                    "block": "minecraft:diorite",
+                    "weight": 4
+                },
+                {
+                    "block": "minecraft:stone",
+                    "weight": 10
+                }
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "style": {"style": "STATIC"},
+            "slopeCondition": {"minimumSlope": 1.5},
+            "palette": [
+                {
+                    "block": "minecraft:basalt",
+                    "weight": 3
+                },
+                {
+                    "block": "minecraft:stone",
+                    "weight": 5
+                },
+                {
+                    "block": "minecraft:gray_concrete_powder",
+                    "weight": 3
+                }
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 18,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {
+                    "block": "minecraft:stone",
+                    "weight": 2
+                },
+                {
+                    "block": "minecraft:andesite",
+                    "weight": 1
+                }
+            ]
+        }
+    ],
+    "wall": {"palette": [
+        {"block": "minecraft:stone"},
+        {"block": "minecraft:andesite"},
+        {"block": "minecraft:gravel"},
+        {"block": "minecraft:basalt"}
+    ]}
+}

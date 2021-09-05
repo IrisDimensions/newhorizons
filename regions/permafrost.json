@@ -1,0 +1,15 @@
+{
+    "landBiomes": ["permafrost/pf-plains"],
+    "biomeImplosionRatio": 0.26,
+    "seaBiomes": ["permafrost/pf-river-ice"],
+    "landBiomeZoom": 0.5,
+    "shoreHeightMin": 0,
+    "shoreHeightMax": 0,
+    "shoreBiomes": ["permafrost/pf-beach"],
+    "name": "Permafrost forest",
+    "rarity": 3,
+    "entitySpawners": [
+        "cold/land-passive",
+        "genhostile"
+    ]
+}

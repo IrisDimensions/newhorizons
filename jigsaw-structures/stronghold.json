@@ -1,0 +1,9 @@
+{
+    "maxDepth": 10,
+    "pieces": ["stronghold"],
+    "terminate": true,
+    "feature": {
+        "blockRadius": 25,
+        "entitySpawners": ["silverfish"]
+    }
+}

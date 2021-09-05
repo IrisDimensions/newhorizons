@@ -1,0 +1,143 @@
+{
+    "name": "Tropical swamp",
+    "derivative": "JUNGLE",
+    "vanillaDerivative": "JUNGLE",
+    "customDerivitives": [{
+        "id": "tropical",
+        "foliageColor": "#40C42B",
+        "grassColor": "#41A726",
+        "category": "jungle",
+        "waterColor": "#3AB2A2",
+        "waterFogColor": "#3AB2A2"
+    }],
+    "childStyle": {
+        "style": "SIMPLEX",
+        "zoom": 0.5,
+        "exponent": 2
+    },
+    "generators": [{
+        "generator": "plain",
+        "max": 8,
+        "min": -5
+    }],
+    "layers": [
+        {
+            "slopeCondition": {"maximumSlope": 4},
+            "palette": [{"block": "minecraft:grass_block"}]
+        },
+        {
+            "slopeCondition": {"maximumSlope": 4},
+            "minHeight": 2,
+            "maxHeight": 2,
+            "palette": [{"block": "minecraft:dirt"}]
+        },
+        {
+            "minHeight": 6,
+            "maxHeight": 10,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {
+                    "block": "minecraft:stone",
+                    "weight": 4
+                },
+                {"block": "minecraft:andesite"},
+                {"block": "minecraft:mossy_cobblestone"},
+                {"block": "minecraft:cobblestone"}
+            ]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 6,
+            "palette": [{"block": "minecraft:stone"}]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.7,
+            "palette": [
+                {
+                    "weight": 2,
+                    "block": "minecraft:grass"
+                },
+                {
+                    "weight": 1,
+                    "block": "minecraft:tall_grass"
+                }
+            ]
+        },
+        {
+            "chance": 0.06,
+            "variance": {"style": "STATIC"},
+            "palette": [
+                {"block": "minecraft:dandelion"},
+                {"block": "minecraft:poppy"},
+                {"block": "minecraft:blue_orchid"},
+                {"block": "minecraft:allium"},
+                {"block": "minecraft:azure_bluet"},
+                {"block": "minecraft:red_tulip"},
+                {"block": "minecraft:orange_tulip"},
+                {"block": "minecraft:white_tulip"},
+                {"block": "minecraft:pink_tulip"},
+                {"block": "minecraft:oxeye_daisy"},
+                {"block": "minecraft:cornflower"},
+                {"block": "minecraft:lily_of_the_valley"}
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "mode": "PAINT",
+            "place": [
+                "clutter/arbusto1",
+                "clutter/arbusto3",
+                "clutter/arbusto2",
+                "clutter/arbusto4",
+                "clutter/arbusto5"
+            ],
+            "chance": 1,
+            "density": 5,
+            "translate": {"y": 1}
+        },
+        {
+            "place": [
+                "trees/jungle/t1",
+                "trees/jungle/t2",
+                "trees/jungle/t3",
+                "trees/jungle/t4",
+                "trees/jungle/t5",
+                "trees/jungle/t6",
+                "trees/jungle/t7",
+                "trees/jungle/t8",
+                "trees/jungle/t9",
+                "trees/jungle/t10",
+                "trees/jungle/t11",
+                "trees/jungle/t12",
+                "trees/jungle/t13",
+                "trees/jungle/t14",
+                "trees/jungle/t15",
+                "trees/jungle/t16",
+                "trees/jungle/t17",
+                "trees/jungle/t18",
+                "trees/jungle/t19",
+                "trees/jungle/t20",
+                "trees/jungle/t21",
+                "trees/jungle/t22",
+                "trees/jungle/t23",
+                "trees/jungle/t24",
+                "trees/jungle/t25",
+                "trees/jungle/t26"
+            ],
+            "chance": 0.4,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": -5}
+        }
+    ]
+}

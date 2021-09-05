@@ -1,0 +1,235 @@
+{
+    "vanillaDerivative": "SWAMP",
+    "children": ["swamp/swamp-forest"],
+    "childStyle": {
+        "style": "IRIS_DOUBLE",
+        "zoom": 0.1
+    },
+    "customDerivitives": [{
+        "id": "swamp",
+        "foliageColor": "#4a532f",
+        "waterColor": "#49521d",
+        "waterFogColor": "#49521d",
+        "fogColor": "#325729",
+        "grassColor": "#4b5332",
+        "category": "forest"
+    }],
+    "decorators": [
+        {
+            "chance": 0.2,
+            "variance": {"style": "STATIC"},
+            "zoom": 5,
+            "palette": [{"block": "minecraft:seagrass"}],
+            "style": {"style": "STATIC"}
+        },
+        {
+            "chance": 0.2,
+            "verticalZoom": 88,
+            "variance": {"style": "STATIC"},
+            "stackMax": 6,
+            "zoom": 1,
+            "palette": [{"block": "minecraft:kelp_plant"}],
+            "style": {"style": "STATIC"},
+            "heightVariance": {"style": "IRIS"},
+            "stackMin": 2
+        },
+        {
+            "chance": 0.012,
+            "variance": {"style": "STATIC"},
+            "zoom": 1,
+            "palette": [{
+                "data": {
+                    "waterlogged": true,
+                    "pickles": 1
+                },
+                "block": "minecraft:sea_pickle"
+            }],
+            "style": {"style": "STATIC"}
+        }
+    ],
+    "name": "Swamp puddle",
+    "layers": [
+        {
+            "minHeight": 2,
+            "maxHeight": 3,
+            "style": {"style": "SIMPLEX"},
+            "zoom": 0.8,
+            "palette": [
+                {"block": "minecraft:dirt"},
+                {"block": "minecraft:coarse_dirt"}
+            ]
+        },
+        {"palette": [{"block": "minecraft:dirt"}]},
+        {
+            "minHeight": 1,
+            "maxHeight": 3,
+            "palette": [
+                {
+                    "weight": 2,
+                    "block": "minecraft:dirt"
+                },
+                {"block": "minecraft:coarse_dirt"}
+            ]
+        }
+    ],
+    "generators": [{
+        "generator": "puddles",
+        "max": -4,
+        "min": -7
+    }],
+    "objects": [
+        {
+            "place": [
+                "trees/willow/w1",
+                "trees/willow/w2",
+                "trees/willow/w3",
+                "trees/willow/w4",
+                "trees/willow/w5",
+                "trees/willow/w6",
+                "trees/willow/w7",
+                "trees/willow/w8",
+                "trees/willow/w9"
+            ],
+            "chance": 0.23,
+            "onwater": true,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "edit": [
+                {
+                    "find": [{"block": "minecraft:green_wool"}],
+                    "replace": {"palette": [
+                        {
+                            "block": "minecraft:cave_vines_plant",
+                            "weight": 10
+                        },
+                        {
+                            "block": "minecraft:cave_vines_plant",
+                            "weight": 1,
+                            "data": {"berries": true}
+                        }
+                    ]}
+                },
+                {
+                    "find": [{"block": "minecraft:red_wool"}],
+                    "replace": {"palette": [
+                        {
+                            "block": "minecraft:cave_vines",
+                            "weight": 10
+                        },
+                        {
+                            "block": "minecraft:cave_vines",
+                            "weight": 1,
+                            "data": {"berries": true}
+                        }
+                    ]}
+                }
+            ]
+        },
+        {
+            "place": [
+                "trees/willow/w1",
+                "trees/willow/w2",
+                "trees/willow/w3",
+                "trees/willow/w4",
+                "trees/willow/w5",
+                "trees/willow/w6",
+                "trees/willow/w7",
+                "trees/willow/w8",
+                "trees/willow/w9"
+            ],
+            "chance": 0.35,
+            "onwater": true,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "edit": [
+                {
+                    "find": [{"block": "minecraft:green_wool"}],
+                    "replace": {"palette": [{"block": "minecraft:air"}]}
+                },
+                {
+                    "find": [{"block": "minecraft:red_wool"}],
+                    "replace": {"palette": [{"block": "minecraft:air"}]}
+                }
+            ]
+        },
+        {
+            "place": [
+                "trees/willow/bt1",
+                "trees/willow/bt2",
+                "trees/willow/bt3",
+                "trees/willow/bt4",
+                "trees/willow/bt5",
+                "trees/willow/bt6",
+                "trees/willow/bt7",
+                "trees/willow/bt8",
+                "trees/willow/bt9"
+            ],
+            "chance": 1,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {
+                "x": 0,
+                "y": -2,
+                "z": 0
+            }
+        },
+        {
+            "place": [
+                "rock/mrock-1",
+                "rock/mrock-2",
+                "rock/mrock-3",
+                "rock/mrock-4",
+                "rock/mrock-5"
+            ],
+            "mode": "PAINT",
+            "onwater": true,
+            "chance": 0.4,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            }
+        }
+    ],
+    "derivative": "SWAMP"
+}

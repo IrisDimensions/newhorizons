@@ -1,0 +1,108 @@
+{
+    "vanillaDerivative": "JUNGLE",
+    "name": "Desert beach",
+    "customDerivitives": [{
+        "id": "desert",
+        "foliageColor": "#27810b",
+        "grassColor": "#367925",
+        "category": "desert"
+    }],
+    "layers": [
+        {
+            "style": {"style": "FRACTAL_WATER"},
+            "zoom": 0.4,
+            "minHeight": 1,
+            "maxHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:sand",
+                    "weight": 3
+                },
+                {
+                    "block": "minecraft:grass_block",
+                    "weight": 4
+                },
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 3
+                }
+            ]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 8,
+            "palette": [{"block": "minecraft:sand"}]
+        }
+    ],
+    "generators": [{
+        "min": 0,
+        "max": 3,
+        "generator": "smooth-land"
+    }],
+    "derivative": "JUNGLE",
+    "wall": {
+        "style": {"style": "STATIC"},
+        "palette": [
+            {"block": "minecraft:smooth_sandstone"},
+            {"block": "minecraft:sand"},
+            {"block": "minecraft:smooth_sandstone"}
+        ]
+    },
+    "decorators": [
+        {
+            "chance": 0.5,
+            "palette": [{"block": "minecraft:grass"}]
+        },
+        {
+            "partOf": "SHORE_LINE",
+            "chance": 0.18,
+            "stackMax": 4,
+            "stackMin": 1,
+            "heightVariance": {"style": "STATIC"},
+            "palette": [{"block": "minecraft:sugar_cane"}]
+        }
+    ],
+    "objects": [
+        {
+            "place": [
+                "trees/jungle/palm1",
+                "trees/jungle/palm2"
+            ],
+            "chance": 1,
+            "density": 2,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            }
+        },
+        {
+            "place": [
+                "trees/jungle/palm3",
+                "trees/jungle/palm4",
+                "trees/jungle/palm5",
+                "trees/jungle/palm6"
+            ],
+            "chance": 1,
+            "density": 2,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        }
+    ]
+}

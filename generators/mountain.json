@@ -1,0 +1,22 @@
+{
+    "interpolator": {
+        "function": "BILINEAR_STARCAST_9",
+        "horizontalScale": 68
+    },
+    "seed": 56756775,
+    "composite": [{
+        "seed": 6576745,
+        "style": {
+            "style": "SEXOCTAVE_FRACTAL_RM_SIMPLEX",
+            "zoom": 4,
+            "fracture": {
+                "style": "SIMPLEX",
+                "multiplier": 90,
+                "exponent": 1.1,
+                "zoom": 7
+            }
+        },
+        "negative": true,
+        "opacity": 0.5
+    }]
+}

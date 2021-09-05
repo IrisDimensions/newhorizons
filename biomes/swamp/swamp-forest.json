@@ -1,0 +1,238 @@
+{
+    "name": "Swamp forest",
+    "derivative": "SWAMP",
+    "vanillaDerivative": "SWAMP",
+    "rarity": 2,
+    "generators": [{
+        "generator": "puddles",
+        "max": 4,
+        "min": -5
+    }],
+    "customDerivitives": [{
+        "id": "swamp",
+        "foliageColor": "#4a532f",
+        "waterColor": "#49521d",
+        "waterFogColor": "#49521d",
+        "fogColor": "#325729",
+        "grassColor": "#4b5332",
+        "category": "forest"
+    }],
+    "decorators": [
+        {
+            "chance": 0.25,
+            "palette": [{"block": "minecraft:grass"}]
+        },
+        {
+            "chance": 0.065,
+            "palette": [{"block": "minecraft:fern"}]
+        },
+        {
+            "chance": 0.005,
+            "palette": [{"block": "minecraft:blue_orchid"}]
+        },
+        {
+            "chance": 0.065,
+            "palette": [{"block": "minecraft:large_fern"}]
+        }
+    ],
+    "objects": [
+        {
+            "place": [
+                "trees/willow/w1",
+                "trees/willow/w2",
+                "trees/willow/w3",
+                "trees/willow/w4",
+                "trees/willow/w5",
+                "trees/willow/w6",
+                "trees/willow/w7",
+                "trees/willow/w8",
+                "trees/willow/w9"
+            ],
+            "chance": 0.23,
+            "onwater": true,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "edit": [
+                {
+                    "find": [{"block": "minecraft:green_wool"}],
+                    "replace": {"palette": [
+                        {
+                            "block": "minecraft:cave_vines_plant",
+                            "weight": 10
+                        },
+                        {
+                            "block": "minecraft:cave_vines_plant",
+                            "weight": 1,
+                            "data": {"berries": true}
+                        }
+                    ]}
+                },
+                {
+                    "find": [{"block": "minecraft:red_wool"}],
+                    "replace": {"palette": [
+                        {
+                            "block": "minecraft:cave_vines",
+                            "weight": 10
+                        },
+                        {
+                            "block": "minecraft:cave_vines",
+                            "weight": 1,
+                            "data": {"berries": true}
+                        }
+                    ]}
+                }
+            ]
+        },
+        {
+            "place": [
+                "trees/willow/w1",
+                "trees/willow/w2",
+                "trees/willow/w3",
+                "trees/willow/w4",
+                "trees/willow/w5",
+                "trees/willow/w6",
+                "trees/willow/w7",
+                "trees/willow/w8",
+                "trees/willow/w9"
+            ],
+            "chance": 0.35,
+            "onwater": true,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "edit": [
+                {
+                    "find": [{"block": "minecraft:green_wool"}],
+                    "replace": {"palette": [{"block": "minecraft:air"}]}
+                },
+                {
+                    "find": [{"block": "minecraft:red_wool"}],
+                    "replace": {"palette": [{"block": "minecraft:air"}]}
+                }
+            ]
+        },
+        {
+            "place": [
+                "trees/willow/bt1",
+                "trees/willow/bt2",
+                "trees/willow/bt3",
+                "trees/willow/bt4",
+                "trees/willow/bt5",
+                "trees/willow/bt6",
+                "trees/willow/bt7",
+                "trees/willow/bt8",
+                "trees/willow/bt9"
+            ],
+            "chance": 1,
+            "density": 2,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {
+                "x": 0,
+                "y": -2,
+                "z": 0
+            }
+        },
+        {
+            "place": [
+                "rock/mrock-1",
+                "rock/mrock-2",
+                "rock/mrock-3",
+                "rock/mrock-4",
+                "rock/mrock-5"
+            ],
+            "mode": "PAINT",
+            "onwater": true,
+            "chance": 0.4,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            }
+        }
+    ],
+    "layers": [
+        {
+            "style": {
+                "style": "SIMPLEX",
+                "exponent": 0.75,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 15
+                }
+            },
+            "zoom": 0.8,
+            "palette": [
+                {
+                    "block": "minecraft:grass_block",
+                    "weight": 8
+                },
+                {
+                    "block": "minecraft:brown_concrete_powder",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 2,
+            "palette": [{"block": "minecraft:dirt"}]
+        },
+        {
+            "style": {"style": "STATIC"},
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {"block": "minecraft:dirt"},
+                {"block": "minecraft:stone"}
+            ]
+        }
+    ]
+}

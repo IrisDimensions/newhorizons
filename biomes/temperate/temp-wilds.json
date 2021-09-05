@@ -1,0 +1,149 @@
+{
+    "name": "Temperate Wilds",
+    "derivative": "PLAINS",
+    "rarity": 1,
+    "color": "#B6CF68",
+    "vanillaDerivative": "PLAINS",
+    "customDerivitives": [{
+        "id": "wilds",
+        "foliageColor": "#237031",
+        "waterColor": "#236270",
+        "grassColor": "#28A538",
+        "category": "forest"
+    }],
+    "decorators": [
+        {
+            "chance": 0.22,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        },
+        {
+            "chance": 0.42,
+            "palette": [
+                {"block": "minecraft:grass"},
+                {"block": "minecraft:fern"}
+            ]
+        },
+        {
+            "chance": 0.003,
+            "palette": [
+                {"block": "minecraft:oxeye_daisy"},
+                {"block": "minecraft:pink_tulip"},
+                {"block": "minecraft:lily_of_the_valley"}
+            ]
+        },
+        {
+            "chance": 0.02,
+            "palette": [
+                {"block": "minecraft:dandelion"},
+                {"block": "minecraft:poppy"},
+                {"block": "minecraft:rose_bush"}
+            ]
+        },
+        {
+            "chance": 0.01,
+            "variance": {"style": "IRIS"},
+            "zoom": 0.5,
+            "palette": [{
+                "data": {"age": 7},
+                "block": "minecraft:potatoes"
+            }],
+            "style": {"style": "IRIS"}
+        },
+        {
+            "chance": 0.01,
+            "variance": {"style": "IRIS"},
+            "zoom": 0.5,
+            "palette": [{
+                "data": {"age": 7},
+                "block": "minecraft:carrots"
+            }],
+            "style": {"style": "IRIS"}
+        },
+        {
+            "chance": 0.01,
+            "variance": {"style": "IRIS"},
+            "zoom": 0.5,
+            "palette": [{
+                "data": {"age": 7},
+                "block": "minecraft:beetroots"
+            }],
+            "style": {"style": "IRIS"}
+        }
+    ],
+    "effects": [{
+        "interval": 250,
+        "chance": 5,
+        "particleEffect": "TOTEM",
+        "particleOffset": 2,
+        "particleAltY": 0.2,
+        "particleCount": 5
+    }],
+    "entityInitialSpawns": [{
+        "entity": "horse",
+        "minSpawns": 2,
+        "maxSpawns": 4,
+        "rarity": 60
+    }],
+    "objects": [{
+        "chance": 0.5,
+        "rotation": {
+            "yAxis": {
+                "min": 0,
+                "max": 0,
+                "interval": 0,
+                "enabled": true
+            },
+            "enabled": true
+        },
+        "mode": "PAINT",
+        "place": [
+            "clutter/arbusto1",
+            "clutter/arbusto3",
+            "clutter/arbusto2",
+            "clutter/arbusto4",
+            "clutter/arbusto5"
+        ],
+        "translate": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+        }
+    }],
+    "layers": [
+        {"palette": [{"block": "minecraft:grass_block"}]},
+        {"palette": [{"block": "minecraft:dirt"}]},
+        {
+            "minHeight": 1,
+            "maxHeight": 3,
+            "palette": [
+                {"block": "minecraft:dirt"},
+                {"block": "minecraft:coarse_dirt"}
+            ]
+        },
+        {
+            "minHeight": 6,
+            "maxHeight": 18,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {"block": "minecraft:stone"},
+                {"block": "minecraft:andesite"},
+                {"block": "minecraft:stone"}
+            ]
+        }
+    ],
+    "generators": [{
+        "min": 4,
+        "max": 7,
+        "generator": "plain"
+    }],
+    "biomeStyle": {"style": "IRIS"},
+    "wall": {
+        "style": {"style": "STATIC"},
+        "palette": [
+            {"block": "minecraft:stone"},
+            {"block": "minecraft:andesite"},
+            {"block": "minecraft:stone"}
+        ]
+    },
+    "biomeZoom": 40
+}

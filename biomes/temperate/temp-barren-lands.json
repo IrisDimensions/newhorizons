@@ -1,0 +1,118 @@
+{
+    "name": "Barren lands",
+    "derivative": "PLAINS",
+    "rarity": 3,
+    "color": "#6a7150",
+    "vanillaDerivative": "PLAINS",
+    "customDerivitives": [{
+        "skyColor": "#b0c695",
+        "id": "barrenlands",
+        "foliageColor": "#798259",
+        "waterColor": "#8b946b",
+        "grassColor": "#6a7150",
+        "fogColor": "#b0c695",
+        "waterFogColor": "#8b946b",
+        "category": "plains",
+        "downfallType": "none"
+    }],
+    "effects": [{
+        "potionTicksMin": 50,
+        "potionEffect": "CONFUSION",
+        "chance": 100,
+        "potionStrength": 0,
+        "potionTicksMax": 150,
+        "interval": 750
+    }],
+    "generators": [
+        {
+            "min": 4,
+            "max": 7,
+            "generator": "plain"
+        },
+        {
+            "min": 1,
+            "max": 8,
+            "generator": "plain-cliffs"
+        }
+    ],
+    "layers": [
+        {
+            "style": {"style": "FRACTAL_SMOKE"},
+            "zoom": 0.5,
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {
+                    "block": "minecraft:grass_block",
+                    "weight": 13
+                },
+                {
+                    "block": "minecraft:stone",
+                    "weight": 3
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 2
+                },
+                {
+                    "block": "minecraft:gravel",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 3,
+            "palette": [{"block": "minecraft:dirt"}]
+        },
+        {
+            "minHeight": 6,
+            "maxHeight": 18,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {"block": "minecraft:stone"},
+                {"block": "minecraft:andesite"},
+                {"block": "minecraft:stone"}
+            ]
+        }
+    ],
+    "objects": [{
+        "chance": 0.1,
+        "place": [
+            "trees/oak/cut1",
+            "trees/oak/cut2",
+            "trees/oak/cut3"
+        ],
+        "translate": {"y": 1},
+        "rotation": {
+            "yAxis": {
+                "min": 0,
+                "max": 0,
+                "interval": 90,
+                "enabled": true
+            },
+            "enabled": true
+        }
+    }],
+    "decorators": [
+        {
+            "chance": 0.08,
+            "palette": [{"block": "minecraft:grass"}],
+            "style": {"style": "STATIC"}
+        },
+        {
+            "chance": 0.0025,
+            "palette": [
+                {"block": "minecraft:stone_slab"},
+                {"block": "minecraft:cobblestone_slab"}
+            ],
+            "style": {"style": "STATIC"}
+        }
+    ],
+    "biomeStyle": {"style": "IRIS"},
+    "wall": {"palette": [
+        {"block": "minecraft:stone"},
+        {"block": "minecraft:andesite"}
+    ]},
+    "biomeZoom": 60
+}

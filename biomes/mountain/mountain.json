@@ -1,0 +1,182 @@
+{
+    "name": "Mountain",
+    "derivative": "TAIGA_MOUNTAINS",
+    "vanillaDerivative": "TAIGA_MOUNTAINS",
+    "customDerivitives": [{
+        "id": "mountain",
+        "grassColor": "#80ab69",
+        "category": "plains"
+    }],
+    "biomeZoom": 0.73,
+    "rarity": 5,
+    "generators": [{
+        "generator": "mountain",
+        "max": 200,
+        "min": 90
+    }],
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "slopeCondition": {
+                "minimumSlope": 0.1,
+                "maximumSlope": 1.65
+            },
+            "palette": [{"block": "minecraft:snow_block"}]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "style": {
+                "style": "FRACTAL_WATER",
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 15
+                }
+            },
+            "zoom": 0.4,
+            "slopeCondition": {
+                "minimumSlope": 3.95,
+                "maximumSlope": 6
+            },
+            "palette": [
+                {
+                    "block": "minecraft:diorite",
+                    "weight": 4
+                },
+                {
+                    "block": "minecraft:stone",
+                    "weight": 10
+                }
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "style": {"style": "STATIC"},
+            "slopeCondition": {"minimumSlope": 2.5},
+            "palette": [
+                {
+                    "block": "minecraft:smooth_basalt",
+                    "weight": 3
+                },
+                {
+                    "block": "minecraft:stone",
+                    "weight": 5
+                },
+                {
+                    "block": "minecraft:gray_concrete_powder",
+                    "weight": 3
+                },
+                {
+                    "block": "minecraft:gravel",
+                    "weight": 3
+                }
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 18,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {
+                    "block": "minecraft:stone",
+                    "weight": 2
+                },
+                {
+                    "block": "minecraft:andesite",
+                    "weight": 1
+                }
+            ]
+        }
+    ],
+    "slab": {
+        "style": {"style": "STATIC"},
+        "slopeCondition": {"minimumSlope": 2.3},
+        "palette": [
+            {
+                "data": {
+                    "waterlogged": false,
+                    "type": "bottom"
+                },
+                "block": "minecraft:stone_slab"
+            },
+            {
+                "data": {
+                    "waterlogged": false,
+                    "type": "bottom"
+                },
+                "block": "minecraft:cobblestone_slab"
+            },
+            {
+                "weight": 6,
+                "block": "minecraft:air"
+            }
+        ]
+    },
+    "decorators": [
+        {
+            "chance": 0.2,
+            "variance": {
+                "style": "CELLULAR",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "SIMPLEX",
+                    "zoom": 0.2,
+                    "multiplier": 10,
+                    "fracture": {
+                        "style": "STATIC",
+                        "multiplier": 15
+                    }
+                }
+            },
+            "style": {
+                "style": "TRIOCTAVE_SIMPLEX",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 8
+                }
+            },
+            "palette": [
+                {"block": "minecraft:dandelion"},
+                {"block": "minecraft:poppy"},
+                {"block": "minecraft:blue_orchid"},
+                {"block": "minecraft:allium"},
+                {"block": "minecraft:azure_bluet"},
+                {"block": "minecraft:red_tulip"},
+                {"block": "minecraft:orange_tulip"},
+                {"block": "minecraft:white_tulip"},
+                {"block": "minecraft:pink_tulip"},
+                {"block": "minecraft:oxeye_daisy"},
+                {"block": "minecraft:cornflower"},
+                {"block": "minecraft:lily_of_the_valley"}
+            ]
+        },
+        {
+            "chance": 0.01,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        },
+        {
+            "chance": 0.5,
+            "palette": [{"block": "minecraft:grass"}]
+        },
+        {
+            "chance": 0.15,
+            "palette": [{"block": "minecraft:fern"}]
+        },
+        {
+            "chance": 0.15,
+            "palette": [{"block": "minecraft:fern"}]
+        }
+    ],
+    "wall": {
+        "style": {"style": "STATIC"},
+        "palette": [
+            {"block": "minecraft:stone"},
+            {"block": "minecraft:andesite"},
+            {"block": "minecraft:gravel"},
+            {"block": "minecraft:basalt"}
+        ]
+    }
+}

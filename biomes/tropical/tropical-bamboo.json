@@ -1,0 +1,178 @@
+{
+    "name": "Bamboo forest",
+    "derivative": "JUNGLE",
+    "rarity": 3,
+    "color": "#e1bc4c",
+    "vanillaDerivative": "JUNGLE",
+    "customDerivitives": [{
+        "id": "tropical",
+        "foliageColor": "#40C42B",
+        "grassColor": "#41A726",
+        "category": "jungle",
+        "waterColor": "#3AB2A2",
+        "waterFogColor": "#3AB2A2"
+    }],
+    "generators": [{
+        "min": 4,
+        "max": 7,
+        "generator": "smooth-land"
+    }],
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "slopeCondition": {"maximumSlope": 1},
+            "palette": [{"block": "minecraft:grass_block"}]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 3,
+            "slopeCondition": {"maximumSlope": 1},
+            "palette": [{"block": "minecraft:dirt"}]
+        },
+        {
+            "minHeight": 6,
+            "maxHeight": 18,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {"block": "minecraft:stone"},
+                {"block": "minecraft:andesite"},
+                {"block": "minecraft:stone"}
+            ]
+        }
+    ],
+    "childStyle": {
+        "style": "FRACTAL_RM_SIMPLEX",
+        "zoom": 1.5,
+        "exponent": 9.3
+    },
+    "children": ["tropical/tropical-bamboo-road"],
+    "decorators": [
+        {
+            "chance": 0.3,
+            "palette": [{"block": "minecraft:grass"}]
+        },
+        {
+            "stackMin": 2,
+            "stackMax": 11,
+            "chance": 0.7,
+            "variance": {
+                "style": "STATIC",
+                "zoom": 0.1
+            },
+            "scaleStack": true,
+            "style": {"style": "STATIC"},
+            "topPalette": [{
+                "data": {
+                    "stage": 0,
+                    "age": 0,
+                    "leaves": "small"
+                },
+                "block": "minecraft:bamboo"
+            }],
+            "palette": [
+                {
+                    "data": {
+                        "stage": 0,
+                        "age": 0,
+                        "leaves": "none"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 1,
+                        "age": 0,
+                        "leaves": "none"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 0,
+                        "age": 1,
+                        "leaves": "none"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 1,
+                        "age": 1,
+                        "leaves": "none"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 0,
+                        "age": 0,
+                        "leaves": "small"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 1,
+                        "age": 0,
+                        "leaves": "small"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 0,
+                        "age": 1,
+                        "leaves": "small"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 1,
+                        "age": 1,
+                        "leaves": "small"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 0,
+                        "age": 0,
+                        "leaves": "large"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 1,
+                        "age": 0,
+                        "leaves": "large"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 0,
+                        "age": 1,
+                        "leaves": "large"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 1,
+                        "age": 1,
+                        "leaves": "large"
+                    },
+                    "block": "minecraft:bamboo"
+                }
+            ]
+        }
+    ],
+    "biomeStyle": {"style": "IRIS"},
+    "wall": {"palette": [
+        {"block": "minecraft:stone"},
+        {"block": "minecraft:andesite"}
+    ]}
+}

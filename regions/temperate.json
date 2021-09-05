@@ -1,0 +1,57 @@
+{
+    "riverBiomes": ["temperate/temp-river"],
+    "landBiomes": [
+        "temperate/temp-autumn-forest",
+        "temperate/temp-barren-lands",
+        "temperate/temp-birch-forest",
+        "temperate/temp-cliffs",
+        "temperate/temp-dead-plains",
+        "temperate/temp-farm-wheat",
+        "temperate/temp-fir-forest",
+        "temperate/temp-old-fir-forest",
+        "temperate/temp-mix-forest",
+        "temperate/temp-oak-forest",
+        "temperate/temp-plains",
+        "temperate/temp-sacred-forest",
+        "temperate/temp-sakura-forest",
+        "temperate/temp-sequoia-forest",
+        "temperate/temp-wilds"
+    ],
+    "biomeImplosionRatio": 0.25,
+    "seaBiomes": ["temperate/temp-river"],
+    "deposits": [{
+        "minHeight": 15,
+        "maxPerChunk": 2,
+        "maxHeight": 122,
+        "minPerChunk": 0,
+        "minSize": 4,
+        "maxSize": 12,
+        "palette": [
+            {"block": "minecraft:iron_ore"},
+            {"block": "minecraft:coal_ore"}
+        ],
+        "varience": 4
+    }],
+    "riverRarity": 1,
+    "landBiomeZoom": 4,
+    "riverStyle": {
+        "style": "VASCULAR",
+        "zoom": 4.77,
+        "fracture": {
+            "multiplier": 240,
+            "style": "IRIS",
+            "zoom": 5
+        }
+    },
+    "entitySpawners": [
+        "temperate/land-passive",
+        "genhostile"
+    ],
+    "shoreHeightMin": 2.2,
+    "shoreBiomes": ["temperate/temp-beach"],
+    "name": "Temperate",
+    "shoreHeightMax": 1.2,
+    "shoreHeightZoom": 1.14,
+    "riverThickness": 0.025,
+    "rarity": 1
+}
