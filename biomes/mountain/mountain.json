@@ -114,6 +114,16 @@
             }
         ]
     },
+    "carving": {"caves": [{
+        "breakSurface": true,
+        "cave": "mountain/main",
+        "rarity": 14,
+        "caveStartHeight": {
+            "max": 220,
+            "min": 70,
+            "style": {"style": "STATIC"}
+        }
+    }]},
     "decorators": [
         {
             "chance": 0.2,

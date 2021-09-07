@@ -1,18 +1,36 @@
 {
     "vanillaDerivative": "DESERT_LAKES",
-    "name": "Canyon beach",
-    "layers": [
-        {
-            "minHeight": 3,
-            "maxHeight": 6,
-            "palette": [{"block": "minecraft:red_sand"}]
+    "name": "Volcanic beach",
+    "customDerivitives": [{
+        "id": "volcanic",
+        "temperature": 3,
+        "skyColor": "#f3b38c",
+        "grassColor": "#6e6e6e",
+        "fogColor": "#f3b38c",
+        "category": "plains",
+        "foliageColor": "#cc8028",
+        "downfallType": "none"
+    }],
+    "layers": [{
+        "maxHeight": 5,
+        "minHeight": 3,
+        "style": {
+            "style": "FRACTAL_WATER",
+            "zoom": 0.55
         },
-        {
-            "minHeight": 1,
-            "maxHeight": 3,
-            "palette": [{"block": "minecraft:red_sandstone"}]
-        }
-    ],
+        "zoom": 0.6,
+        "palette": [
+            {"block": "minecraft:stone"},
+            {"block": "minecraft:smooth_basalt"},
+            {
+                "block": "minecraft:basalt",
+                "data": {"axis": "y"}
+            },
+            {"block": "minecraft:gravel"},
+            {"block": "minecraft:cobblestone"},
+            {"block": "minecraft:magma_block"}
+        ]
+    }],
     "generators": [{
         "min": 0,
         "max": 1,
@@ -24,22 +42,6 @@
         "palette": [
             {"block": "minecraft:red_sandstone"},
             {"block": "minecraft:red_sand"}
-        ]
-    },
-    "slab": {
-        "style": {"style": "STATIC"},
-        "palette": [
-            {
-                "data": {
-                    "waterlogged": false,
-                    "type": "bottom"
-                },
-                "block": "minecraft:red_sandstone_slab"
-            },
-            {
-                "weight": 2,
-                "block": "minecraft:air"
-            }
         ]
     }
 }

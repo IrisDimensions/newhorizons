@@ -1,36 +1,47 @@
 {
     "vanillaDerivative": "DESERT_LAKES",
-    "name": "Canyon river",
+    "name": "Volcanic river",
+    "customDerivitives": [{
+        "id": "volcanic",
+        "temperature": 3,
+        "skyColor": "#f3b38c",
+        "grassColor": "#6e6e6e",
+        "fogColor": "#f3b38c",
+        "category": "plains",
+        "foliageColor": "#cc8028",
+        "downfallType": "none"
+    }],
     "decorators": [{
         "chance": 0.2,
         "palette": [{"block": "minecraft:seagrass"}]
     }],
-    "layers": [
-        {
-            "style": {"style": "FRACTAL_WATER"},
-            "zoom": 0.7,
-            "palette": [
-                {"block": "minecraft:red_sand"},
-                {"block": "minecraft:orange_terracotta"}
-            ]
+    "layers": [{
+        "maxHeight": 5,
+        "minHeight": 7,
+        "style": {
+            "style": "FRACTAL_WATER",
+            "zoom": 0.55
         },
-        {
-            "minHeight": 2,
-            "maxHeight": 3,
-            "style": {"style": "STATIC"},
-            "palette": [
-                {"block": "minecraft:red_sand"},
-                {"block": "minecraft:terracotta"},
-                {"block": "minecraft:gravel"},
-                {"block": "minecraft:red_sand"},
-                {"block": "minecraft:dirt"},
-                {
-                    "weight": 2,
-                    "block": "minecraft:red_sand"
-                }
-            ]
-        }
-    ],
+        "zoom": 0.6,
+        "palette": [
+            {"block": "minecraft:stone"},
+            {"block": "minecraft:smooth_basalt"},
+            {
+                "block": "minecraft:basalt",
+                "data": {"axis": "y"}
+            },
+            {"block": "minecraft:gravel"},
+            {"block": "minecraft:cobblestone"},
+            {"block": "minecraft:sand"}
+        ]
+    }],
+    "objects": [{
+        "density": 8,
+        "underwater": true,
+        "translate": {"y": -1},
+        "chance": 1,
+        "place": ["other/volcanic"]
+    }],
     "generators": [{
         "generator": "canyon",
         "max": -5,

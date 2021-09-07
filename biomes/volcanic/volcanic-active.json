@@ -1,19 +1,22 @@
 {
-    "name": "Canyon plateau",
+    "name": "Volcano",
     "derivative": "DESERT",
     "vanillaDerivative": "DESERT",
-    "generators": [
-        {
-            "generator": "mountain",
-            "max": 20,
-            "min": 40
-        },
-        {
-            "generator": "canyon",
-            "max": 55,
-            "min": 55
-        }
-    ],
+    "customDerivitives": [{
+        "id": "volcanic",
+        "temperature": 3,
+        "skyColor": "#f3b38c",
+        "grassColor": "#6e6e6e",
+        "fogColor": "#f3b38c",
+        "category": "plains",
+        "foliageColor": "#cc8028",
+        "downfallType": "none"
+    }],
+    "generators": [{
+        "generator": "smooth-land",
+        "max": 100,
+        "min": 96
+    }],
     "layers": [
         {
             "minHeight": 2,
@@ -42,24 +45,27 @@
         {
             "maxHeight": 10,
             "minHeight": 10,
+            "style": {
+                "style": "FRACTAL_WATER",
+                "zoom": 0.7
+            },
+            "zoom": 0.6,
             "slopeCondition": {
                 "maximumSlope": 255,
                 "minimumSlope": 1.4
             },
-            "palette": [{"block": "minecraft:terracotta"}]
-        }
-    ],
-    "decorators": [
-        {
-            "chance": 0.008,
-            "palette": [{"block": "minecraft:dead_bush"}]
-        },
-        {
-            "heightVariance": {"style": "STATIC"},
-            "stackMax": 4,
-            "stackMin": 1,
-            "chance": 0.003,
-            "palette": [{"block": "minecraft:cactus"}]
+            "palette": [
+                {
+                    "block": "minecraft:basalt",
+                    "data": {"axis": "y"},
+                    "weight": 10
+                },
+                {
+                    "block": "minecraft:lava",
+                    "weight": 4,
+                    "data": {"level": 1}
+                }
+            ]
         }
     ]
 }

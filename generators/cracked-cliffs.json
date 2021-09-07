@@ -3,7 +3,7 @@
         "function": "BILINEAR_STARCAST_9",
         "horizontalScale": 4
     },
-    "seed": 7246661,
+    "seed": 6575675,
     "composite": [{
         "style": {
             "style": "GLOB",
@@ -12,17 +12,23 @@
             "fracture": {
                 "style": "SIMPLEX",
                 "zoom": 0.1,
-                "multiplier": 5
+                "multiplier": 5,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 30
+                }
             }
         },
         "negative": true,
-        "seed": 10056
+        "seed": 6575675
     }],
     "cliffHeightMax": 80,
-    "cliffHeightMin": 35,
+    "cliffHeightMin": 10,
     "cliffHeightGenerator": {
         "seed": 2348,
-        "style": {"style": "CELLULAR_HEIGHT"},
-        "zoom": 0.4
+        "opacity": 0.8,
+        "exponent": 1.125,
+        "style": {"style": "FRACTAL_SMOKE"},
+        "zoom": 1.4
     }
 }

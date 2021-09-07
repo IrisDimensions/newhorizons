@@ -1,0 +1,63 @@
+{
+    "name": "Volcanic lava",
+    "derivative": "BASALT_DELTAS",
+    "vanillaDerivative": "BASALT_DELTAS",
+    "customDerivitives": [{
+        "id": "volcanic",
+        "temperature": 3,
+        "skyColor": "#f3b38c",
+        "grassColor": "#6e6e6e",
+        "fogColor": "#f3b38c",
+        "category": "plains",
+        "foliageColor": "#cc8028",
+        "downfallType": "none"
+    }],
+    "generators": [{
+        "generator": "smooth-land",
+        "max": 5,
+        "min": 3
+    }],
+    "effects": [{
+        "particleAltX": 0.001,
+        "particleAltY": 0.13885,
+        "particleAltZ": 0.001,
+        "chance": 1,
+        "particleEffect": "CAMPFIRE_SIGNAL_SMOKE",
+        "particleOffset": 0,
+        "interval": 200,
+        "particleCount": 0
+    }],
+    "layers": [
+        {
+            "slopeCondition": {"maximumSlope": 3.8},
+            "minHeight": 2,
+            "maxHeight": 3,
+            "palette": [{"block": "minecraft:cave_air"}]
+        },
+        {
+            "slopeCondition": {"maximumSlope": 3.8},
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [{
+                "block": "minecraft:lava",
+                "data": {"level": 1}
+            }]
+        },
+        {
+            "slopeCondition": {"maximumSlope": 3.8},
+            "minHeight": 1,
+            "maxHeight": 3,
+            "palette": [{
+                "block": "minecraft:lava",
+                "data": {"level": 0}
+            }]
+        }
+    ],
+    "wall": {"palette": [
+        {
+            "block": "minecraft:lava",
+            "data": {"level": 1}
+        },
+        {"block": "minecraft:tuff"}
+    ]}
+}

@@ -29,7 +29,7 @@
     "riverRarity": 1,
     "landBiomeZoom": 1.25,
     "shoreHeightMin": 2,
-    "shoreBiomes": ["volcanic/volcanic-beach"],
+    "shoreBiomes": ["volcanic/volcanic-plains"],
     "name": "volcanic",
     "shoreHeightMax": 3,
     "shoreHeightZoom": 1.14,

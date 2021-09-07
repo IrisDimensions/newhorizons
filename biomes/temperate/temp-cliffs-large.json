@@ -1,5 +1,5 @@
 {
-    "name": "Cliffs",
+    "name": "Cliffs large",
     "derivative": "PLAINS",
     "vanillaDerivative": "PLAINS",
     "color": "#9f8650",
@@ -9,29 +9,11 @@
         "grassColor": "#9f8650",
         "category": "plains"
     }],
-    "generators": [
-        {
-            "generator": "canyon",
-            "max": 5,
-            "min": 37
-        },
-        {
-            "generator": "mountain",
-            "max": 0,
-            "min": 10
-        },
-        {
-            "generator": "cracked-cliffs",
-            "max": 20,
-            "min": 0
-        }
-    ],
-    "childStyle": {
-        "style": "NOWHERE_GLOB",
-        "zoom": 3,
-        "exponent": 1.6
-    },
-    "children": ["temperate/temp-cliffs-river"],
+    "generators": [{
+        "generator": "mountain",
+        "max": 90,
+        "min": 180
+    }],
     "layers": [
         {
             "maxHeight": 1,

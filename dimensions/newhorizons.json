@@ -9,9 +9,11 @@
     "landZoom": 3.15,
     "placeObjects": true,
     "regions": [
+        "volcanic",
         "mountain",
         "canyon",
         "desert",
+        "volcanic",
         "mangrove",
         "permafrost",
         "swamp",

@@ -1,5 +1,5 @@
 {
-    "name": "Cliffs",
+    "name": "Cliffs plains",
     "derivative": "PLAINS",
     "vanillaDerivative": "PLAINS",
     "color": "#9f8650",
@@ -12,26 +12,24 @@
     "generators": [
         {
             "generator": "canyon",
-            "max": 5,
-            "min": 37
+            "max": 2,
+            "min": 20
         },
         {
             "generator": "mountain",
-            "max": 0,
-            "min": 10
-        },
-        {
-            "generator": "cracked-cliffs",
-            "max": 20,
-            "min": 0
+            "max": -3,
+            "min": 40
         }
     ],
     "childStyle": {
-        "style": "NOWHERE_GLOB",
-        "zoom": 3,
-        "exponent": 1.6
+        "style": "SIMPLEX",
+        "zoom": 4,
+        "exponent": 0.5
     },
-    "children": ["temperate/temp-cliffs-river"],
+    "children": [
+        "temperate/temp-cliffs",
+        "temperate/temp-cliffs-large"
+    ],
     "layers": [
         {
             "maxHeight": 1,

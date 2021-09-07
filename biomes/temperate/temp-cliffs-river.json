@@ -1,18 +1,19 @@
 {
     "name": "Cliffs river",
-    "derivative": "DESERT",
-    "vanillaDerivative": "DESERT",
+    "derivative": "PLAINS",
+    "vanillaDerivative": "PLAINS",
+    "color": "#9f8650",
     "customDerivitives": [{
         "id": "coastalcliffs",
-        "foliageColor": "#376c46",
-        "grassColor": "#648c4c",
+        "foliageColor": "#468b4d",
+        "grassColor": "#9f8650",
         "category": "plains"
     }],
     "rarity": 1,
     "generators": [{
         "generator": "plain",
-        "max": 5,
-        "min": -10
+        "max": -10,
+        "min": -15
     }],
     "layers": [
         {
@@ -27,7 +28,7 @@
                 },
                 {
                     "block": "minecraft:gravel",
-                    "weight": 3
+                    "weight": 2
                 }
             ]
         },
@@ -50,7 +51,7 @@
                 "clutter/arbusto4",
                 "clutter/arbusto5"
             ],
-            "chance": 0.6,
+            "chance": 0.3,
             "rotation": {
                 "enabled": true,
                 "yAxis": {
@@ -78,7 +79,8 @@
                     "min": -360,
                     "max": 360
                 }
-            }
+            },
+            "translate": {"y": -2}
         },
         {
             "chance": 0.14,
@@ -103,12 +105,28 @@
     ],
     "decorators": [
         {
-            "chance": 0.1,
+            "chance": 0.14,
             "palette": [{"block": "minecraft:grass"}]
         },
         {
-            "chance": 0.1,
+            "chance": 0.3,
             "palette": [{"block": "minecraft:tall_grass"}]
+        },
+        {
+            "chance": 0.15,
+            "palette": [{"block": "minecraft:fern"}]
+        },
+        {
+            "chance": 0.15,
+            "palette": [{"block": "minecraft:large_fern"}]
+        },
+        {
+            "chance": 0.08,
+            "palette": [{"block": "minecraft:allium"}]
+        },
+        {
+            "chance": 0.08,
+            "palette": [{"block": "minecraft:blue_orchid"}]
         }
     ]
 }
