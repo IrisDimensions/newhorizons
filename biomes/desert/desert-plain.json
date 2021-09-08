@@ -57,6 +57,40 @@
     "objects": [
         {
             "mode": "MIN_HEIGHT",
+            "place": ["structures/ruins-desert-1"],
+            "chance": 0.015,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {
+                "y": -1
+            }
+        },
+        {
+            "mode": "MIN_HEIGHT",
+            "place": ["structures/ruins-desert-2"],
+            "chance": 0.015,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {
+                "y": 0
+            }
+        },
+        {
+            "mode": "MIN_HEIGHT",
             "place": ["structures/pyramid"],
             "chance": 3.9E-5,
             "rotation": {
