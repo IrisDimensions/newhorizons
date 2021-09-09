@@ -40,7 +40,8 @@
         "style": {"style": "STATIC"},
         "palette": [
             {"block": "minecraft:dirt"},
-            {"block": "minecraft:stone"}
+            {"block": "minecraft:rooted_dirt"},
+            {"block": "minecraft:coarse_dirt"}
         ]
     }],
     "decorators": [
@@ -48,13 +49,10 @@
             "chance": 0.04,
             "palette": [
                 {"block": "minecraft:azalea"},
-                {"block": "minecraft:flowering_azalea"}
+                {"block": "minecraft:flowering_azalea"},
+                {"block": "minecraft:small_dripleaf"},
+                {"block": "minecraft:big_dripleaf"}
             ]
-        },
-        {
-            "chance": 0.2,
-            "forcePlace": true,
-            "palette": [{"block": "minecraft:grass"}]
         },
         {
             "partOf": "CEILING",

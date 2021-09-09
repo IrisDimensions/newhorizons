@@ -2,7 +2,7 @@
     "continentalStyle": {
         "style": "NOWHERE_SUPERFRACTAL",
         "zoom": 5,
-        "exponent": 7.5
+        "exponent": 7.625
     },
     "preventLeafDecay": true,
     "decorate": true,
@@ -14,8 +14,8 @@
         "mountain",
         "permafrost",
         "swamp",
-        "mangrove",
         "temperate",
+        "mangrove",
         "tropical",
         "volcanic"
     ],
@@ -71,9 +71,6 @@
     "terrainZoom": 1,
     "coordFractureZoom": 0.15,
     "fluidHeight": 63,
-    "ravines": false,
-    "ravineRarity": 28,
-    "ravineRibRarity": 10,
     "fluidPalette": {"palette": [{"block": "minecraft:water"}]},
     "rockPalette": {
         "palette": [
@@ -111,7 +108,7 @@
     },
     "caves": true,
     "landChance": 0.69,
-    "version": 2,
+    "version": 5,
     "deposits": [
         {
             "minHeight": 19,

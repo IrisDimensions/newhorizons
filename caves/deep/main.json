@@ -62,7 +62,7 @@
             "max": 9,
             "generator": {
                 "zoom": 0.6,
-                "style": "NOWHERE"
+                "style": "IRIS"
             }
         },
         "zStyle": {
@@ -70,7 +70,7 @@
             "max": 9,
             "generator": {
                 "zoom": 0.6,
-                "style": "NOWHERE"
+                "style": "IRIS"
             }
         }
     }
