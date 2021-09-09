@@ -8,7 +8,17 @@
     "decorate": true,
     "landZoom": 3.15,
     "placeObjects": true,
-    "regions": ["temperate"],
+    "regions": [
+        "canyon",
+        "desert",
+        "mountain",
+        "permafrost",
+        "swamp",
+        "mangrove",
+        "temperate",
+        "tropical",
+        "volcanic"
+    ],
     "seaBiomeStyle": {"style": "CELLULAR_IRIS_THICK"},
     "seaZoom": 1.25,
     "biomeZoom": 32,
