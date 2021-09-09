@@ -1,0 +1,77 @@
+{
+    "fill": {"block": "minecraft:cave_air"},
+    "verticalRange": {
+        "max": 50,
+        "min": 10
+    },
+    "customBiome": "caves/deep/ravines",
+    "fork": {
+        "ravines": [{
+            "breakSurface": false,
+            "rarity": 13,
+            "ravine": "deep/main"
+        }],
+        "caves": [
+            {
+                "breakSurface": false,
+                "cave": "deep/calcite",
+                "rarity": 15
+            },
+            {
+                "breakSurface": false,
+                "cave": "deep/drip",
+                "rarity": 13
+            },
+            {
+                "breakSurface": false,
+                "cave": "deep/amethyst",
+                "rarity": 16
+            },
+            {
+                "breakSurface": false,
+                "cave": "deep/vines",
+                "rarity": 10
+            },
+            {
+                "breakSurface": false,
+                "cave": "deep/medium",
+                "rarity": 14
+            }
+        ]
+    },
+    "worm": {
+        "girth": {
+            "max": 7,
+            "min": 3,
+            "style": {
+                "style": "SIMPLEX",
+                "zoom": 0.5
+            }
+        },
+        "maxDistance": 230,
+        "yStyle": {
+            "min": -2,
+            "max": 1,
+            "generator": {
+                "zoom": 3,
+                "style": "PERLIN"
+            }
+        },
+        "xStyle": {
+            "min": -9,
+            "max": 9,
+            "generator": {
+                "zoom": 0.6,
+                "style": "NOWHERE"
+            }
+        },
+        "zStyle": {
+            "min": -9,
+            "max": 9,
+            "generator": {
+                "zoom": 0.6,
+                "style": "NOWHERE"
+            }
+        }
+    }
+}

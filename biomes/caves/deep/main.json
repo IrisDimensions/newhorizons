@@ -1,0 +1,71 @@
+{
+    "name": "Main cave",
+    "wall": {
+        "style": {"style": "STATIC"},
+        "palette": [
+            {
+                "block": "minecraft:stone",
+                "weight": 3
+            },
+            {"block": "minecraft:cobblestone"},
+            {"block": "minecraft:stone"}
+        ]
+    },
+    "layers": [{
+        "style": {"style": "STATIC"},
+        "maxHeight": 2,
+        "minHeight": 2,
+        "palette": [
+            {
+                "block": "minecraft:stone",
+                "weight": 3
+            },
+            {"block": "minecraft:cobblestone"},
+            {
+                "block": "minecraft:andesite",
+                "weight": 3
+            }
+        ]
+    }],
+    "objects": [{
+        "mode": "PAINT",
+        "place": [
+            "rock/mrock-1",
+            "rock/mrock-2",
+            "rock/mrock-3",
+            "rock/mrock-4",
+            "rock/mrock-5"
+        ],
+        "chance": 0.5,
+        "rotation": {
+            "enabled": true,
+            "yAxis": {
+                "enabled": true,
+                "interval": 90,
+                "min": -360,
+                "max": 360
+            }
+        },
+        "translate": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        }
+    }],
+    "caveCeilingLayers": [{
+        "style": {"style": "STATIC"},
+        "maxHeight": 2,
+        "minHeight": 2,
+        "palette": [
+            {
+                "block": "minecraft:stone",
+                "weight": 3
+            },
+            {"block": "minecraft:cobblestone"},
+            {
+                "block": "minecraft:andesite",
+                "weight": 3
+            }
+        ]
+    }]
+}

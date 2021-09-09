@@ -8,18 +8,7 @@
     "decorate": true,
     "landZoom": 3.15,
     "placeObjects": true,
-    "regions": [
-        "volcanic",
-        "mountain",
-        "canyon",
-        "desert",
-        "volcanic",
-        "mangrove",
-        "permafrost",
-        "swamp",
-        "temperate",
-        "tropical"
-    ],
+    "regions": ["temperate"],
     "seaBiomeStyle": {"style": "CELLULAR_IRIS_THICK"},
     "seaZoom": 1.25,
     "biomeZoom": 32,
@@ -58,6 +47,16 @@
             "multiplier": 4
         }
     },
+    "carving": {"caves": [{
+        "breakSurface": false,
+        "cave": "deep/main",
+        "rarity": 27,
+        "caveStartHeight": {
+            "max": 45,
+            "min": 3,
+            "style": {"style": "STATIC"}
+        }
+    }]},
     "aggressiveBiomeReshuffle": true,
     "terrainZoom": 1,
     "coordFractureZoom": 0.15,

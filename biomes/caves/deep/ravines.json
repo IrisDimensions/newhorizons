@@ -1,0 +1,136 @@
+{
+    "name": "Ravines",
+    "wall": {
+        "style": {"style": "STATIC"},
+        "palette": [
+            {
+                "block": "minecraft:stone",
+                "weight": 3
+            },
+            {"block": "minecraft:cobblestone"},
+            {"block": "minecraft:stone"}
+        ]
+    },
+    "layers": [{
+        "style": {"style": "STATIC"},
+        "maxHeight": 2,
+        "minHeight": 2,
+        "palette": [
+            {
+                "block": "minecraft:stone",
+                "weight": 3
+            },
+            {"block": "minecraft:cobblestone"},
+            {
+                "block": "minecraft:andesite",
+                "weight": 3
+            }
+        ]
+    }],
+    "caveCeilingLayers": [{
+        "maxHeight": 1,
+        "minHeight": 1,
+        "style": {"style": "STATIC"},
+        "palette": [
+            {
+                "block": "minecraft:shroomlight",
+                "weight": 1
+            },
+            {
+                "block": "minecraft:stone",
+                "weight": 12
+            }
+        ]
+    }],
+    "childStyle": {
+        "style": "STATIC",
+        "zoom": 2
+    },
+    "decorators": [
+        {
+            "partOf": "CEILING",
+            "chance": 0.03,
+            "palette": [{"block": "minecraft:hanging_roots"}]
+        },
+        {
+            "partOf": "CEILING",
+            "chance": 0.05,
+            "scaleStack": true,
+            "stackMin": 20,
+            "stackMax": 70,
+            "absoluteMaxStack": 30,
+            "heightVariance": {"style": "STATIC"},
+            "topPalette": [
+                {
+                    "block": "minecraft:stone_stairs",
+                    "data": {
+                        "half": "top",
+                        "waterlogged": false,
+                        "facing": "west",
+                        "shape": "inner_left"
+                    }
+                },
+                {
+                    "block": "minecraft:stone_stairs",
+                    "data": {
+                        "half": "top",
+                        "waterlogged": false,
+                        "facing": "west",
+                        "shape": "straight"
+                    }
+                },
+                {
+                    "block": "minecraft:stone_stairs",
+                    "data": {
+                        "half": "top",
+                        "waterlogged": false,
+                        "facing": "north",
+                        "shape": "straight"
+                    }
+                },
+                {
+                    "block": "minecraft:stone_stairs",
+                    "data": {
+                        "half": "top",
+                        "waterlogged": false,
+                        "facing": "east",
+                        "shape": "straight"
+                    }
+                },
+                {
+                    "block": "minecraft:stone_stairs",
+                    "data": {
+                        "half": "top",
+                        "waterlogged": false,
+                        "facing": "north",
+                        "shape": "inner_left"
+                    }
+                }
+            ],
+            "palette": [{
+                "block": "minecraft:stone",
+                "weight": 10
+            }]
+        },
+        {
+            "partOf": "CEILING",
+            "chance": 0.001,
+            "scaleStack": true,
+            "stackMin": 20,
+            "stackMax": 70,
+            "absoluteMaxStack": 30,
+            "heightVariance": {"style": "STATIC"},
+            "palette": [{"block": "minecraft:water"}]
+        },
+        {
+            "partOf": "CEILING",
+            "chance": 0.001,
+            "scaleStack": true,
+            "stackMin": 20,
+            "stackMax": 70,
+            "absoluteMaxStack": 30,
+            "heightVariance": {"style": "STATIC"},
+            "palette": [{"block": "minecraft:lava"}]
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "customBiome": "caves/deep/ravines",
+    "nodeThreshold": 40,
+    "depthStyle": {
+        "generator": {"style": "PERLIN"},
+        "max": 18,
+        "min": 1
+    },
+    "fork": {"ravines": [
+        {
+            "breakSurface": false,
+            "rarity": 5,
+            "ravine": "deep/drip"
+        },
+        {
+            "breakSurface": false,
+            "rarity": 5,
+            "ravine": "deep/vines"
+        }
+    ]},
+    "angle": 50,
+    "topAngle": 70,
+    "ribThickness": 8,
+    "baseWidthStyle": {
+        "generator": {"style": "SIMPLEX"},
+        "max": 18,
+        "min": 1
+    }
+}

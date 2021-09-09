@@ -1,0 +1,40 @@
+{
+    "fill": {"block": "minecraft:cave_air"},
+    "verticalRange": {
+        "max": 85,
+        "min": 7
+    },
+    "customBiome": "caves/deep/main",
+    "worm": {
+        "girth": {
+            "max": 2,
+            "min": 2,
+            "style": {"style": "STATIC"}
+        },
+        "maxDistance": 23,
+        "yStyle": {
+            "min": -1,
+            "max": 2,
+            "generator": {
+                "zoom": 1,
+                "style": "PERLIN"
+            }
+        },
+        "xStyle": {
+            "min": -7,
+            "max": 7,
+            "generator": {
+                "zoom": 1,
+                "style": "PERLIN"
+            }
+        },
+        "zStyle": {
+            "min": -7,
+            "max": 7,
+            "generator": {
+                "zoom": 1,
+                "style": "PERLIN"
+            }
+        }
+    }
+}

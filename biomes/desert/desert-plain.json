@@ -68,9 +68,7 @@
                     "max": 360
                 }
             },
-            "translate": {
-                "y": -1
-            }
+            "translate": {"y": -1}
         },
         {
             "mode": "MIN_HEIGHT",
@@ -85,9 +83,7 @@
                     "max": 360
                 }
             },
-            "translate": {
-                "y": 0
-            }
+            "translate": {"y": 0}
         },
         {
             "mode": "MIN_HEIGHT",

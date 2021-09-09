@@ -1,0 +1,97 @@
+{
+    "name": "Vines Cave",
+    "wall": {
+        "style": {
+            "style": "IRIS",
+            "zoom": 0.5
+        },
+        "zoom": 0.8,
+        "palette": [
+            {
+                "block": "minecraft:stone",
+                "weight": 5
+            },
+            {
+                "block": "minecraft:moss_block",
+                "weight": 2
+            }
+        ]
+    },
+    "layers": [{
+        "minHeight": 1,
+        "maxHeight": 1,
+        "style": {"style": "FRACTAL_WATER"},
+        "zoom": 0.4,
+        "slopeCondition": {"maximumSlope": 3},
+        "palette": [
+            {
+                "weight": 10,
+                "block": "minecraft:moss_block"
+            },
+            {
+                "weight": 2,
+                "block": "minecraft:water"
+            }
+        ]
+    }],
+    "caveCeilingLayers": [{
+        "maxHeight": 1,
+        "minHeight": 1,
+        "style": {"style": "STATIC"},
+        "palette": [
+            {"block": "minecraft:dirt"},
+            {"block": "minecraft:stone"}
+        ]
+    }],
+    "decorators": [
+        {
+            "chance": 0.04,
+            "palette": [
+                {"block": "minecraft:azalea"},
+                {"block": "minecraft:flowering_azalea"}
+            ]
+        },
+        {
+            "chance": 0.2,
+            "forcePlace": true,
+            "palette": [{"block": "minecraft:grass"}]
+        },
+        {
+            "partOf": "CEILING",
+            "chance": 0.3,
+            "palette": [{"block": "minecraft:hanging_roots"}]
+        },
+        {
+            "partOf": "CEILING",
+            "chance": 0.01,
+            "palette": [{"block": "minecraft:spore_blossom"}]
+        },
+        {
+            "chance": 0.1,
+            "style": {
+                "style": "SIMPLEX",
+                "zoom": 0.4
+            },
+            "palette": [{"block": "minecraft:moss_carpet"}]
+        },
+        {
+            "partOf": "CEILING",
+            "chance": 0.1,
+            "absoluteMaxStack": 6,
+            "scaleStack": true,
+            "stackMin": 25,
+            "stackMax": 70,
+            "palette": [
+                {
+                    "block": "minecraft:cave_vines",
+                    "weight": 10
+                },
+                {
+                    "block": "minecraft:cave_vines",
+                    "data": {"berries": "true"},
+                    "weight": 4
+                }
+            ]
+        }
+    ]
+}
