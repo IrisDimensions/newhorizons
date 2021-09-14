@@ -19,6 +19,8 @@
     "layers": [
         {
             "slopeCondition": {"maximumSlope": 4},
+            "minHeight": 1,
+            "maxHeight": 1,
             "palette": [{"block": "minecraft:grass_block"}]
         },
         {

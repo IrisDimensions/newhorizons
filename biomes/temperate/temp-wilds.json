@@ -64,7 +64,7 @@
             "variance": {"style": "IRIS"},
             "zoom": 0.5,
             "palette": [{
-                "data": {"age": 7},
+                "data": {"age": 2},
                 "block": "minecraft:beetroots"
             }],
             "style": {"style": "IRIS"}

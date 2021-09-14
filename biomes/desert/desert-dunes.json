@@ -7,7 +7,8 @@
         "id": "desert",
         "foliageColor": "#27810b",
         "grassColor": "#367925",
-        "category": "desert"
+        "category": "desert",
+        "downfallType": "none"
     }],
     "generators": [{
         "generator": "dunes",
