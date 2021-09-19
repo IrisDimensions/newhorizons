@@ -3,7 +3,7 @@
     "nodeThreshold": 40,
     "depthStyle": {
         "generator": {"style": "PERLIN"},
-        "max": 14,
+        "max": 10,
         "min": 0
     },
     "angle": 50,
@@ -11,7 +11,7 @@
     "ribThickness": 8,
     "baseWidthStyle": {
         "generator": {"style": "STATIC"},
-        "max": 5,
+        "max": 7,
         "min": 1
     }
 }

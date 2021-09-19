@@ -1,0 +1,118 @@
+{
+    "name": "Mountain forest",
+    "derivative": "PLAINS",
+    "vanillaDerivative": "PLAINS",
+    "customDerivitives": [{
+        "id": "frozen_mountain",
+        "grassColor": "#80ab69",
+        "foliageColor": "#fcfcfc",
+        "downfallType": "snow",
+        "temperature": -3,
+        "category": "icy"
+    }],
+    "generators": [{
+        "generator": "plain",
+        "max": 13,
+        "min": 3
+    }],
+    "rarity": 3,
+    "layers": [
+       {
+            "minHeight": 2,
+            "maxHeight": 2,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 2.6
+            },
+            "style":{"style": "SIMPLEX","exponent": 1.8,"zoom": 0.8},
+            "zoom": 0.5,
+            "palette": [{"block": "minecraft:snow_block","weight": 5},
+            {"block": "minecraft:powder_snow","weight": 1}]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "slopeCondition": {"minimumSlope": 4},
+            "palette": [
+                {"block": "minecraft:gravel"},
+                {"block": "minecraft:cyan_terracotta"}
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "slopeCondition": {"minimumSlope": 4},
+            "palette": [
+                {"block": "minecraft:stone"},
+                {"block": "minecraft:stone"},
+                {"block": "minecraft:cobblestone"}
+            ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 4
+            },
+            "palette": [{"block": "minecraft:snow_block"}]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 3,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 3
+            },
+            "palette": [{"block": "minecraft:dirt"}]
+        }
+    ],
+    "objects": [
+        {
+            "place": [
+                "trees/spruce/levergreen1",
+                "trees/spruce/levergreen2",
+                "trees/spruce/levergreen3",
+                "trees/spruce/levergreen4",
+                "trees/spruce/levergreen5",
+                "trees/spruce/levergreen6",
+                "trees/spruce/mevergreen1",
+                "trees/spruce/mevergreen1",
+                "trees/spruce/mevergreen2",
+                "trees/spruce/severgreen1",
+                "trees/spruce/severgreen2"
+            ],
+            "chance": 1,
+            "density": 2,
+            "snow": 0.5,
+            "edit": [
+                {
+                    "find": [
+                        {
+                            "block": "minecraft:spruce_leaves"
+                        }
+                    ],
+                    "replace":{
+                        "palette": [{"block": "minecraft:acacia_leaves"}]
+                    }
+                }
+            ],
+            "translate":{"y": -3},
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        }
+    ],
+    "wall": {"palette": [
+        {"block": "minecraft:stone"},
+        {"block": "minecraft:andesite"},
+        {"block": "minecraft:gravel"},
+        {"block": "minecraft:cyan_terracotta"}
+    ]}
+}

@@ -27,7 +27,7 @@
             "maxHeight": 3,
             "slopeCondition": {
                 "minimumSlope": 0,
-                "maximumSlope": 2.6
+                "maximumSlope": 2.1
             },
             "palette": [{"block": "minecraft:dirt"}]
         },
@@ -64,7 +64,7 @@
             "slopeCondition": {"minimumSlope": 1.5},
             "palette": [
                 {
-                    "block": "minecraft:basalt",
+                    "block": "minecraft:smooth_basalt",
                     "weight": 3
                 },
                 {

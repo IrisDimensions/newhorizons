@@ -18,7 +18,7 @@
             "maxHeight": 1,
             "slopeCondition": {
                 "minimumSlope": 0,
-                "maximumSlope": 3.3
+                "maximumSlope": 2.5
             },
             "palette": [{"block": "minecraft:grass_block"}]
         },
@@ -206,5 +206,6 @@
                 }
             }
         }
-    ]
+    ],
+    "rarity": 3
 }

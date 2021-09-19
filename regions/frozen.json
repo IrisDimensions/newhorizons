@@ -1,0 +1,66 @@
+{
+    "riverBiomes": ["frozen/frozen-river"],
+    "landBiomes": [
+        "frozen/frozen-mountain",
+        "frozen/frozen-plains"
+    ],
+    "biomeImplosionRatio": 0.25,
+    "seaBiomes": ["frozen/frozen-river"],
+    "deposits": [{
+        "minHeight": 15,
+        "maxPerChunk": 2,
+        "maxHeight": 122,
+        "minPerChunk": 0,
+        "minSize": 4,
+        "maxSize": 12,
+        "palette": [
+            {"block": "minecraft:iron_ore"},
+            {"block": "minecraft:coal_ore"}
+        ],
+        "varience": 4
+    }],
+    "blockDrops": [
+        {
+            "replaceVanillaDrops": true,
+            "blocks": [
+                {
+                    "block": "minecraft:oak_leaves"
+                }
+            ],
+            "drops": [
+                {
+                    "type": "spruce_sapling",
+                    "minAmount": 1,
+                    "maxAmount": 2
+                }
+            ]
+        }
+    ],
+    "riverRarity": 200,
+    "landBiomeZoom": 5,
+    "lakes": false,
+    "lakeBiomeZoom": 4,
+    "lakeStyle": {"style": "SIMPLEX"},
+    "lakeRarity": 60,
+    "riverStyle": {
+        "style": "VASCULAR",
+        "zoom": 4,
+        "fracture": {
+            "multiplier": 100,
+            "style": "IRIS",
+            "zoom": 1
+        }
+    },
+    "entitySpawners": [
+        "cold/land-passive",
+        "genhostile"
+    ],
+    "riverBiomeZoom": 10,
+    "shoreHeightMin": 0,
+    "shoreBiomes": ["frozen/frozen-beach"],
+    "name": "Frozen",
+    "shoreHeightMax": 0,
+    "shoreHeightZoom": 1.14,
+    "riverThickness": 0.5,
+    "rarity": 2
+}

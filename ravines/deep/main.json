@@ -3,7 +3,7 @@
     "nodeThreshold": 40,
     "depthStyle": {
         "generator": {"style": "PERLIN"},
-        "max": 18,
+        "max": 4,
         "min": 1
     },
     "fork": {"ravines": [
@@ -20,10 +20,10 @@
     ]},
     "angle": 50,
     "topAngle": 70,
-    "ribThickness": 8,
+    "ribThickness": 4,
     "baseWidthStyle": {
         "generator": {"style": "SIMPLEX"},
-        "max": 18,
+        "max": 25,
         "min": 1
     }
 }

@@ -13,18 +13,6 @@
     "weather": "NONE",
     "spawns": [
         {
-            "entity": "standard/passive/chicken",
-            "maxSpawns": 3,
-            "minSpawns": 1,
-            "rarity": 2
-        },
-        {
-            "entity": "standard/passive/sheep",
-            "maxSpawns": 3,
-            "minSpawns": 1,
-            "rarity": 1
-        },
-        {
             "entity": "standard/passive/polar-bear",
             "maxSpawns": 3,
             "minSpawns": 1,

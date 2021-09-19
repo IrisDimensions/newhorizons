@@ -1,0 +1,44 @@
+{
+    "vanillaDerivative": "PLAINS",
+    "customDerivitives": [{
+        "id": "frozen_mountain",
+        "grassColor": "#80ab69",
+        "downfallType": "snow",
+        "temperature": -3,
+        "foliageColor": "#fcfcfc",
+        "category": "icy"
+    }],
+    "name": "Mountain beach",
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 2.6
+            },
+            "style":{"style": "FRACTAL_SMOKE"},
+            "zoom": 0.3,
+            "palette": [{"block": "minecraft:ice"},
+            {"block": "minecraft:packed_ice"}]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {"block": "minecraft:snow_block"}
+            ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 6,
+            "palette": [{"block": "minecraft:stone"}]
+        }
+    ],
+    "generators": [{
+        "min": 0,
+        "max": 2,
+        "generator": "smooth-land"
+    }],
+    "derivative": "PLAINS"
+}

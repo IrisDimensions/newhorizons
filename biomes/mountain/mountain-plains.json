@@ -34,7 +34,7 @@
             "maxHeight": 1,
             "slopeCondition": {
                 "minimumSlope": 0,
-                "maximumSlope": 2.6
+                "maximumSlope": 2.4
             },
             "palette": [{"block": "minecraft:grass_block"}]
         },
@@ -43,7 +43,7 @@
             "maxHeight": 3,
             "slopeCondition": {
                 "minimumSlope": 0,
-                "maximumSlope": 2.6
+                "maximumSlope": 2.43
             },
             "palette": [{"block": "minecraft:dirt"}]
         },

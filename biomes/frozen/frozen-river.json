@@ -1,0 +1,294 @@
+{
+    "vanillaDerivative": "RIVER",
+    "customDerivitives": [{
+        "id": "frozen_mountain",
+        "grassColor": "#80ab69",
+        "foliageColor": "#fcfcfc",
+        "downfallType": "snow",
+        "temperature": -3,
+        "category": "icy"
+    }],
+    "decorators": [
+        {
+            "chance": 0.07,
+            "variance": {"style": "STATIC"},
+            "zoom": 5,
+            "palette": [{"block": "minecraft:seagrass"}],
+            "style": {"style": "STATIC"}
+        },
+        {
+            "chance": 0.013,
+            "verticalZoom": 88,
+            "variance": {"style": "STATIC"},
+            "stackMax": 6,
+            "zoom": 1,
+            "palette": [{"block": "minecraft:kelp_plant"}],
+            "style": {"style": "STATIC"},
+            "heightVariance": {"style": "IRIS"},
+            "stackMin": 2
+        },
+        {
+            "chance": 0.07,
+            "variance": {"style": "STATIC"},
+            "zoom": 5,
+            "palette": [{"block": "minecraft:seagrass"}],
+            "style": {"style": "STATIC"}
+        },
+        {
+            "chance": 0.013,
+            "verticalZoom": 88,
+            "variance": {"style": "STATIC"},
+            "stackMax": 6,
+            "zoom": 1,
+            "palette": [{"block": "minecraft:kelp_plant"}],
+            "style": {"style": "STATIC"},
+            "heightVariance": {"style": "IRIS"},
+            "stackMin": 2
+        }
+    ],
+    "seaLayers": [{
+        "minHeight": 4,
+        "maxHeight": 7,
+        "style": {"style": "GLOB_IRIS_THICK",
+        "fracture":{"style": "STATIC",
+        "multiplier": 3}},
+        "zoom": 0.7,
+        "palette": [
+            {
+                "weight": 2,
+                "block": "minecraft:ice"
+            },
+            {
+                "weight": 3,
+                "block": "minecraft:packed_ice"
+            },
+            {"block": "minecraft:blue_ice"},
+            {
+                "weight": 3,
+                "block": "minecraft:packed_ice"
+            },
+            {
+                "weight": 2,
+                "block": "minecraft:ice"
+            },
+            {
+                "block": "minecraft:water",
+                "weight": 4
+            }
+        ]
+    }],
+    "name": "Mountain river",
+    "layers": [
+        {
+            "minHeight": 2,
+            "maxHeight": 3,
+            "style": {
+                "style": "IRIS_DOUBLE",
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 30
+                }
+            },
+            "zoom": 0.7,
+            "palette": [
+                {
+                    "block": "minecraft:cobblestone",
+                    "weight": 3
+                },
+                {
+                    "block": "minecraft:clay",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:gravel",
+                    "weight": 8
+                }
+            ]
+        },
+        {"palette": [
+            {"block": "minecraft:cobblestone"},
+            {"block": "minecraft:stone"}
+        ]}
+    ],
+    "generators": [{
+        "generator": "smooth-land",
+        "max": -18,
+        "min": -25
+    }],
+    "objects": [
+        {
+            "chance": 0.1,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "zAxis": {
+                    "min": 180,
+                    "max": 180,
+                    "interval": 180,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "onwater": true,
+            "place": [
+                "clutter/icespiremed1",
+                "clutter/icespiremed3",
+                "clutter/icespiresmol1",
+                "clutter/icespiresmol2",
+                "clutter/icespiresmol3"
+            ],
+            "translate": {
+                "x": 0,
+                "y": -2,
+                "z": 0
+            }
+        },
+        {
+            "chance": 0.1,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "onwater": true,
+            "place": [
+                "clutter/icespiremed1",
+                "clutter/icespiremed3",
+                "clutter/icespiresmol1",
+                "clutter/icespiresmol2",
+                "clutter/icespiresmol3"
+            ],
+            "translate": {
+                "x": 0,
+                "y": -2,
+                "z": 0
+            }
+        },
+        {
+            "chance": 0.35,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "zAxis": {
+                    "min": 180,
+                    "max": 180,
+                    "interval": 180,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "onwater": true,
+            "place": [
+                "clutter/icespec1",
+                "clutter/icespec2",
+                "clutter/icespec3",
+                "clutter/icespec4",
+                "clutter/icespec5"
+            ],
+            "translate": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "chance": 0.3,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "zAxis": {
+                    "min": 180,
+                    "max": 180,
+                    "interval": 180,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "onwater": true,
+            "place": [
+                "clutter/icespec1",
+                "clutter/icespec2",
+                "clutter/icespec3",
+                "clutter/icespec4",
+                "clutter/icespec5"
+            ],
+            "translate": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "chance": 0.3,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "zAxis": {
+                    "min": 180,
+                    "max": 180,
+                    "interval": 180,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "onwater": true,
+            "place": [
+                "clutter/icespec1",
+                "clutter/icespec2",
+                "clutter/icespec3",
+                "clutter/icespec4",
+                "clutter/icespec5"
+            ],
+            "translate": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+        "place": [
+            "structures/kship1",
+            "structures/kship2",
+            "structures/kship3",
+            "structures/kship4"
+        ],
+        "chance": 0.0035,
+        "onwater": true,
+        "translate": {"y": -1},
+        "rotation": {
+            "enabled": true,
+            "yAxis": {
+                "enabled": true,
+                "interval": 90,
+                "min": -360,
+                "max": 360
+            }
+        },
+        "edit": [{
+            "find": [{"block": "minecraft:bone_block"}],
+            "replace": {"palette": [{"block": "minecraft:gray_wool"}]}
+        }],
+        "waterloggable": true
+    }],
+    "derivative": "RIVER"
+}
