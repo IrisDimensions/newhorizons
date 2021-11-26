@@ -1,0 +1,182 @@
+{
+    "name": "Shrublands",
+    "derivative": "TAIGA",
+    "vanillaDerivative": "TAIGA",
+    "rarity": 1,
+    "customDerivitives": [{
+        "id": "boreal_taiga",
+        "grassColor": "#80ab69",
+        "category": "forest"
+    }],
+    "generators": [{
+        "generator": "plain",
+        "max": 6,
+        "min": 2
+    }],
+    "layers": [
+        {
+            "slopeCondition": {"maximumSlope": 2.2},
+            "maxHeight": 1,
+            "minHeight": 1,
+            "palette": [{"block": "minecraft:grass_block"}]
+        },
+        {
+            "slopeCondition": {"maximumSlope": 2.2},
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 7
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "slopeCondition": {"maximumSlope": 2.2},
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:stone",
+                    "weight": 2
+                }
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.22,
+            "variance": {
+                "style": "CELLULAR",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "SIMPLEX",
+                    "zoom": 0.2,
+                    "multiplier": 10
+                }
+            },
+            "style": {
+                "style": "TRIOCTAVE_SIMPLEX",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 8
+                }
+            },
+            "palette": [
+                {"block": "minecraft:dandelion"},
+                {"block": "minecraft:poppy"},
+                {"block": "minecraft:blue_orchid"},
+                {"block": "minecraft:allium"},
+                {"block": "minecraft:azure_bluet"},
+                {"block": "minecraft:red_tulip"},
+                {"block": "minecraft:orange_tulip"},
+                {"block": "minecraft:white_tulip"},
+                {"block": "minecraft:pink_tulip"},
+                {"block": "minecraft:oxeye_daisy"},
+                {"block": "minecraft:cornflower"},
+                {"block": "minecraft:lily_of_the_valley"}
+            ]
+        },
+        {
+            "chance": 0.01,
+            "palette": [
+                {"block": "minecraft:tall_grass"},
+                {"block": "minecraft:fern"},
+                {"block": "minecraft:large_fern"}
+            ]
+        },
+        {
+            "chance": 0.3,
+            "palette": [{"block": "minecraft:grass"}]
+        }
+    ],
+    "objects": [
+        {
+            "place": [
+                "trees/spruce/sup-pine-6",
+                "trees/spruce/sup-pine-9",
+                "trees/spruce/sup-pine-8",
+                "trees/spruce/sup-pine-10"
+            ],
+            "chance": 0.1,
+            "translate": {"y": -1},
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        },
+        {
+            "mode": "PAINT",
+            "place": [
+                "rock/mrock-1",
+                "rock/mrock-2",
+                "rock/mrock-3",
+                "rock/mrock-4",
+                "rock/mrock-5"
+            ],
+            "chance": 0.15,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "mode": "PAINT",
+            "place": [
+                "bushes/1",
+                "bushes/2",
+                "bushes/3",
+                "bushes/4",
+                "bushes/5",
+                "bushes/6",
+                "bushes/7",
+                "bushes/8",
+                "bushes/9",
+                "bushes/10",
+                "bushes/11",
+                "bushes/12",
+                "bushes/13",
+                "bushes/14"
+            ],
+            "chance": 0.5,
+            "translate": {"y": 1},
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        }
+    ]
+}

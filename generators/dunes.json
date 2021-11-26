@@ -11,7 +11,7 @@
             "zoom": 2,
             "exponent": 1.3,
             "fracture": {
-                "style": "NOWHERE_SIMPLEX",
+                "style": "PERLIN",
                 "exponent": 0.6,
                 "multiplier": 28
             }

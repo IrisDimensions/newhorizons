@@ -1,0 +1,54 @@
+{
+    "name": "temperate",
+    "wall": {
+        "style": {"style": "STATIC"},
+        "palette": [
+            {
+                "block": "minecraft:stone",
+                "weight": 3
+            },
+            {"block": "minecraft:cobblestone"},
+            {"block": "minecraft:stone"}
+        ]
+    },
+    "layers": [{
+        "style": {"style": "IRIS"},
+        "zoom": 0.2,
+        "maxHeight": 2,
+        "minHeight": 2,
+        "palette": [
+            {
+                "block": "minecraft:stone",
+                "weight": 2
+            },
+            {
+                "block": "minecraft:gravel",
+                "weight": 1
+            },
+            {
+                "block": "minecraft:cobblestone",
+                "weight": 1
+            },
+            {
+                "block": "minecraft:rooted_dirt",
+                "weight": 1
+            }
+        ]
+    }],
+    "caveCeilingLayers": [{
+        "style": {"style": "STATIC"},
+        "maxHeight": 2,
+        "minHeight": 2,
+        "palette": [
+            {
+                "block": "minecraft:stone",
+                "weight": 3
+            },
+            {"block": "minecraft:cobblestone"},
+            {
+                "block": "minecraft:andesite",
+                "weight": 3
+            }
+        ]
+    }]
+}

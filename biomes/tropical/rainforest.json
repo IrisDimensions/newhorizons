@@ -1,0 +1,148 @@
+{
+    "name": "Rainforest",
+    "derivative": "JUNGLE",
+    "vanillaDerivative": "JUNGLE",
+    "rarity": 1,
+    "customDerivitives": [{
+        "id": "tropical",
+        "foliageColor": "#40C42B",
+        "grassColor": "#41A726",
+        "category": "jungle",
+        "waterColor": "#3AB2A2",
+        "waterFogColor": "#3AB2A2"
+    }],
+    "generators": [{
+        "generator": "plain",
+        "max": 5,
+        "min": 3
+    }],
+    "layers": [
+        {
+            "slopeCondition": {"maximumSlope": 4},
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [{"block": "minecraft:grass_block"}]
+        },
+        {
+            "slopeCondition": {"maximumSlope": 3.9},
+            "minHeight": 2,
+            "maxHeight": 2,
+            "palette": [{"block": "minecraft:coarse_dirt"}]
+        },
+        {
+            "minHeight": 6,
+            "maxHeight": 10,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {
+                    "block": "minecraft:stone",
+                    "weight": 4
+                },
+                {"block": "minecraft:andesite"},
+                {"block": "minecraft:mossy_cobblestone"},
+                {"block": "minecraft:cobblestone"}
+            ]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 6,
+            "palette": [{"block": "minecraft:stone"}]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.26,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        },
+        {
+            "chance": 0.42,
+            "palette": [
+                {"block": "minecraft:grass"},
+                {"block": "minecraft:fern"}
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "mode": "PAINT",
+            "place": [
+                "clutter/arbusto1",
+                "clutter/arbusto2",
+                "clutter/arbusto4",
+                "clutter/arbusto5"
+            ],
+            "chance": 1,
+            "density": 1,
+            "translate": {"y": 1}
+        },
+        {
+            "place": [
+                "trees/jungle/t1",
+                "trees/jungle/t2",
+                "trees/jungle/t3",
+                "trees/jungle/t4",
+                "trees/jungle/t5",
+                "trees/jungle/t6",
+                "trees/jungle/t7",
+                "trees/jungle/t8",
+                "trees/jungle/t9",
+                "trees/jungle/t10",
+                "trees/jungle/t11",
+                "trees/jungle/t12",
+                "trees/jungle/t13",
+                "trees/jungle/t14",
+                "trees/jungle/t15",
+                "trees/jungle/t16",
+                "trees/jungle/t17",
+                "trees/jungle/t18",
+                "trees/jungle/t19",
+                "trees/jungle/t20",
+                "trees/jungle/t21"
+            ],
+            "chance": 1,
+            "density": 2,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": -1}
+        },
+        {
+            "place": [
+                "trees/jungle/vgeneric1",
+                "trees/jungle/vgeneric3",
+                "trees/jungle/vgeneric4",
+                "trees/jungle/vgeneric5",
+                "trees/jungle/vgeneric6",
+                "trees/jungle/vgeneric7",
+                "trees/jungle/vgeneric8",
+                "trees/jungle/vgeneric9",
+                "trees/jungle/vgeneric10",
+                "trees/jungle/vgeneric11",
+                "trees/jungle/vgeneric12",
+                "trees/jungle/vgeneric14",
+                "trees/jungle/vgeneric15",
+                "trees/jungle/vgeneric16",
+                "trees/jungle/vgeneric17",
+                "trees/jungle/vgeneric18"
+            ],
+            "chance": 1,
+            "density": 1,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": -1}
+        }
+    ]
+}

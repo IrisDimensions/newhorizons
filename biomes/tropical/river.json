@@ -1,0 +1,159 @@
+{
+    "vanillaDerivative": "WARM_OCEAN",
+    "name": "Tropical river",
+    "customDerivitives": [{
+        "id": "tropical",
+        "foliageColor": "#40C42B",
+        "grassColor": "#41A726",
+        "category": "jungle",
+        "waterColor": "#3AB2A2",
+        "waterFogColor": "#3AB2A2"
+    }],
+    "layers": [{
+        "minHeight": 2,
+        "maxHeight": 10,
+        "style": {"style": "FRACTAL_FBM_IRIS"},
+        "zoom": 0.6,
+        "palette": [
+            {"block": "minecraft:sand"},
+            {"block": "minecraft:clay"},
+            {"block": "minecraft:sand"},
+            {"block": "minecraft:gravel"},
+            {"block": "minecraft:sand"},
+            {"block": "minecraft:dirt"},
+            {
+                "weight": 2,
+                "block": "minecraft:sand"
+            }
+        ]
+    }],
+    "decorators": [
+        {
+            "chance": 0.02,
+            "palette": [{"block": "minecraft:kelp_plant"}],
+            "stackMin": 2,
+            "stackMax": 6
+        },
+        {
+            "chance": 0.06,
+            "topPalette": [{"block": "minecraft:kelp"}],
+            "palette": [{"block": "minecraft:kelp_plant"}],
+            "stackMin": 3,
+            "style": {"style": "STATIC"},
+            "stackMax": 15
+        },
+        {
+            "chance": 0.05,
+            "palette": [{"block": "minecraft:seagrass"}]
+        }
+    ],
+    "objects": [
+        {
+            "place": [
+                "clutter/coralpink1",
+                "clutter/coralpink2",
+                "clutter/coralpink3",
+                "clutter/coralpink4",
+                "clutter/coralpurp1",
+                "clutter/coralpurp2",
+                "clutter/coralpurp3",
+                "clutter/coralred1",
+                "clutter/coralby1",
+                "clutter/coralby2",
+                "clutter/coralby3",
+                "clutter/coralby4"
+            ],
+            "chance": 1,
+            "density": 2,
+            "underwater": true,
+            "mode": "CENTER_HEIGHT",
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 360,
+                    "min": -360
+                }
+            }
+        },
+        {
+            "place": [
+                "clutter/stonedirtsetter1",
+                "clutter/stonedirtsetter2",
+                "clutter/stonedirtsetter3",
+                "clutter/stonedirtsetter4",
+                "clutter/stonedirtsetter5",
+                "clutter/stonedirtsetter6",
+                "clutter/stonedirtsetter7"
+            ],
+            "chance": 0.5,
+            "density": 2,
+            "underwater": true,
+            "mode": "CENTER_HEIGHT",
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 360,
+                    "min": -360
+                }
+            },
+            "edit": [{
+                "find": [
+                    {"block": "minecraft:stone"},
+                    {"block": "minecraft:dirt"}
+                ],
+                "replace": {
+                    "palette": [
+                        {"block": "minecraft:brain_coral_block"},
+                        {"block": "minecraft:horn_coral_block"},
+                        {"block": "minecraft:tube_coral_block"},
+                        {"block": "minecraft:fire_coral_block"},
+                        {"block": "minecraft:bubble_coral_block"}
+                    ],
+                    "style": {"style": "CELLULAR"},
+                    "zoom": 0.07
+                }
+            }]
+        },
+        {
+            "place": [
+                "clutter/stone1",
+                "clutter/stone2",
+                "clutter/stone3",
+                "clutter/stone4",
+                "clutter/stone5",
+                "clutter/stone6",
+                "clutter/stone7"
+            ],
+            "chance": 1,
+            "mode": "FAST_MIN_HEIGHT",
+            "underwater": true,
+            "waterloggable": true,
+            "edit": [
+                {
+                    "find": [
+                        {"block": "minecraft:grass_block"},
+                        {"block": "minecraft:dirt"}
+                    ],
+                    "replace": {"palette": [{"block": "minecraft:clay"}]}
+                },
+                {
+                    "find": [
+                        {"block": "minecraft:tall_grass"},
+                        {"block": "minecraft:grass"}
+                    ],
+                    "replace": {"palette": [{"block": "minecraft:seagrass"}]}
+                }
+            ]
+        }
+    ],
+    "generators": [{
+        "generator": "plain",
+        "max": -18,
+        "min": -25
+    }],
+    "derivative": "WARM_OCEAN"
+}

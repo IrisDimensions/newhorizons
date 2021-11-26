@@ -1,5 +1,5 @@
 {
-    "name": "Frozen plains",
+    "name": "Plains",
     "customDerivitives": [{
         "id": "frozen_mountain",
         "grassColor": "#80ab69",
@@ -11,24 +11,28 @@
     "derivative": "PLAINS",
     "vanillaDerivative": "PLAINS",
     "biomeScatter": ["FOREST"],
-    "childStyle": {
-        "style": "CELLULAR_IRIS_DOUBLE",
-        "zoom": 7,
-        "fracture": {
-            "style": "STATIC",
-            "multiplier": 120
-        }
-    },
-    "rarity": 4,
-    "children": [
-        "frozen/frozen-forest",
-        "frozen/frozen-lake",
-        "frozen/frozen-forest"
-    ],
+    "rarity": 1,
     "generators": [{
         "generator": "plain",
-        "max": 10,
+        "max": 5,
         "min": 2
+    }],
+    "decorators": [{
+        "chance": 1,
+        "variance": {
+            "style": "SIMPLEX",
+            "zoom": 0.3
+        },
+        "palette": [
+            {
+                "block": "minecraft:snow",
+                "data": {"layers": 1}
+            },
+            {
+                "block": "minecraft:snow",
+                "data": {"layers": 2}
+            }
+        ]
     }],
     "layers": [
         {
@@ -38,10 +42,22 @@
                 "minimumSlope": 0,
                 "maximumSlope": 2.6
             },
-            "style":{"style": "SIMPLEX","exponent": 1.8,"zoom": 0.8},
+            "style": {
+                "style": "SIMPLEX",
+                "exponent": 1.8,
+                "zoom": 0.8
+            },
             "zoom": 0.5,
-            "palette": [{"block": "minecraft:snow_block","weight": 5},
-            {"block": "minecraft:powder_snow","weight": 1}]
+            "palette": [
+                {
+                    "block": "minecraft:snow_block",
+                    "weight": 5
+                },
+                {
+                    "block": "minecraft:powder_snow",
+                    "weight": 1
+                }
+            ]
         },
         {
             "minHeight": 3,
@@ -119,76 +135,5 @@
         {"block": "minecraft:andesite"},
         {"block": "minecraft:gravel"},
         {"block": "minecraft:basalt"}
-    ]},
-    "objects": [
-        {
-            "mode": "PAINT",
-            "place": [
-                "rock/mrock-1",
-                "rock/mrock-2",
-                "rock/mrock-3",
-                "rock/mrock-4",
-                "rock/mrock-5"
-            ],
-            "chance": 0.15,
-            "rotation": {
-                "enabled": true,
-                "yAxis": {
-                    "enabled": true,
-                    "interval": 90,
-                    "min": -360,
-                    "max": 360
-                }
-            },
-            "edit": [
-                {
-                    "find": [
-                        {
-                            "block": "minecraft:grass"
-                        },
-                        {
-                            "block": "minecraft:dandelion"
-                        },
-                        {
-                            "block": "minecraft:azure_bluet"
-                        },
-                        {
-                            "block": "minecraft:oxeye_daisy"
-                        },
-                        {
-                            "block": "minecraft:tall_grass"
-                        },
-                        {
-                            "block": "minecraft:poppy"
-                        }
-                    ],
-                    "replace":{"palette": [{"block": "minecraft:air"}]}
-                },
-                {
-                    "find": [
-                        {
-                            "block": "minecraft:grass_block"
-                        },
-                        {
-                            "block": "minecraft:mossy_cobblestone"
-                        }
-                    ],
-                    "replace":{"palette": [{"block": "minecraft:ice"}]}
-                },
-                {
-                    "find": [
-                        {
-                            "block": "minecraft:acacia_leaves"
-                        }
-                    ],
-                    "replace":{"palette": [{"block": "minecraft:snow_block"}]}
-                }
-            ],
-            "translate": {
-                "x": 0,
-                "y": -3,
-                "z": 0
-            }
-        }
-    ]
+    ]}
 }

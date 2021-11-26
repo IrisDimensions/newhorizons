@@ -14,10 +14,10 @@
                 "zoom": 2
             }
         },
-        "maxDistance": 13,
+        "maxDistance": 60,
         "yStyle": {
-            "min": -2,
-            "max": 1,
+            "min": -4,
+            "max": 4,
             "generator": {
                 "zoom": 3,
                 "style": "PERLIN"

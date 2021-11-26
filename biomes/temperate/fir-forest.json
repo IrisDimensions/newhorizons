@@ -1,0 +1,183 @@
+{
+    "name": "Fir forest",
+    "derivative": "FOREST",
+    "vanillaDerivative": "FOREST",
+    "color": "#40ef25",
+    "customDerivitives": [{
+        "id": "fir",
+        "grassColor": "#68bd3d",
+        "foliageColor": "#32602f",
+        "category": "forest"
+    }],
+    "entitySpawners": [
+        "temperate/land-passive",
+        "temperate/land-hostile",
+        "temperate/land-cave"
+    ],
+    "layers": [
+        {"palette": [{"block": "minecraft:grass_block"}]},
+        {
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 7
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:stone",
+                    "weight": 2
+                }
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "style": {"style": "STATIC"},
+            "chance": 0.2,
+            "palette": [
+                {
+                    "block": "minecraft:grass",
+                    "weight": 6
+                },
+                {
+                    "block": "minecraft:fern",
+                    "weight": 2
+                }
+            ]
+        },
+        {
+            "chance": 0.2,
+            "variance": {
+                "style": "CELLULAR",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "SIMPLEX",
+                    "zoom": 0.2,
+                    "multiplier": 10,
+                    "fracture": {
+                        "style": "STATIC",
+                        "multiplier": 15
+                    }
+                }
+            },
+            "style": {
+                "style": "TRIOCTAVE_SIMPLEX",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 8
+                }
+            },
+            "palette": [
+                {"block": "minecraft:poppy"},
+                {"block": "minecraft:allium"}
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "chance": 1,
+            "density": 1,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "trees": [{
+                "anySize": true,
+                "treeTypes": [
+                    "TALL_REDWOOD",
+                    "REDWOOD"
+                ],
+                "sizes": [{
+                    "depth": 1,
+                    "width": 1
+                }]
+            }],
+            "place": [
+                "trees/fir/fir1",
+                "trees/fir/fir2",
+                "trees/spruce/small1"
+            ]
+        },
+        {
+            "chance": 0.5,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": [
+                "clutter/mossrock1",
+                "clutter/mossrock2",
+                "clutter/mossrock3"
+            ]
+        },
+        {
+            "mode": "PAINT",
+            "place": [
+                "clutter/arbusto1",
+                "clutter/arbusto2",
+                "clutter/arbusto4",
+                "clutter/arbusto5"
+            ],
+            "chance": 0.6,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": 1}
+        }
+    ],
+    "generators": [{
+        "generator": "plain",
+        "max": 13,
+        "min": 4
+    }],
+    "slab": {
+        "palette": [
+            {
+                "weight": 1,
+                "block": "minecraft:cobblestone_slab"
+            },
+            {
+                "weight": 10,
+                "block": "minecraft:air"
+            }
+        ],
+        "style": {"style": "STATIC"}
+    },
+    "rarity": 1
+}

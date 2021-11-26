@@ -9,23 +9,13 @@
     "vanillaDerivative": "PLAINS",
     "biomeScatter": ["FOREST"],
     "childStyle": {
-        "style": "CELLULAR_IRIS_DOUBLE",
-        "zoom": 7,
-        "fracture": {
-            "style": "STATIC",
-            "multiplier": 120
-        }
+        "style": "GLOB_IRIS_DOUBLE",
+        "zoom": 13
     },
-    "rarity": 4,
-    "children": [
-        "mountain/mountain-forest",
-        "mountain/mountain-flower-plains",
-        "mountain/mountain-lake",
-        "mountain/mountain-forest"
-    ],
+    "rarity": 1,
     "generators": [{
-        "generator": "plain",
-        "max": 10,
+        "generator": "smooth-land",
+        "max": 5,
         "min": 2
     }],
     "layers": [
@@ -34,7 +24,7 @@
             "maxHeight": 1,
             "slopeCondition": {
                 "minimumSlope": 0,
-                "maximumSlope": 2.4
+                "maximumSlope": 2.3
             },
             "palette": [{"block": "minecraft:grass_block"}]
         },

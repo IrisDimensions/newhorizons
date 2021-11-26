@@ -1,0 +1,186 @@
+{
+    "name": "Savanna plains",
+    "derivative": "DESERT",
+    "vanillaDerivative": "DESERT",
+    "generators": [
+        {
+            "min": 2,
+            "max": 10,
+            "generator": "plain"
+        },
+        {
+            "min": 5,
+            "max": 10,
+            "generator": "canyon"
+        }
+    ],
+    "color": "#b1a62f",
+    "customDerivitives": [{
+        "id": "savanna",
+        "downfallType": "none",
+        "grassColor": "#e5db66",
+        "foliageColor": "#98d256"
+    }],
+    "layers": [
+        {
+            "maxHeight": 1,
+            "minHeight": 1,
+            "slopeCondition": {"maximumSlope": 1.3},
+            "palette": [{"block": "minecraft:grass_block"}]
+        },
+        {
+            "slopeCondition": {"maximumSlope": 1.3},
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 7
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "slopeCondition": {"maximumSlope": 1.3},
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:stone",
+                    "weight": 2
+                }
+            ]
+        },
+        {
+            "slopeCondition": {"minimumSlope": 1.4},
+            "style": {
+                "style": "FRACTAL_WATER",
+                "zoom": 2,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 25
+                }
+            },
+            "zoom": 0.3,
+            "maxHeight": 4,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:terracotta",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:light_gray_terracotta",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:stone",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:andesite",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:light_gray_concrete_powder",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "slopeCondition": {
+                "minimumSlope": 2,
+                "maximumSlope": 2.4
+            },
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:stone",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:andesite",
+                    "weight": 1
+                }
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "variance": {
+                "style": "SIMPLEX",
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 15
+                }
+            },
+            "chance": 0.85,
+            "palette": [
+                {
+                    "block": "minecraft:grass",
+                    "weight": 3
+                },
+                {
+                    "block": "minecraft:tall_grass",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "chance": 0.05,
+            "palette": [{"block": "minecraft:dead_bush"}]
+        },
+        {
+            "chance": 0.05,
+            "palette": [{"block": "minecraft:fern"}]
+        }
+    ],
+    "objects": [{
+        "densityStyle": {
+            "max": 3,
+            "min": 0,
+            "style": {
+                "style": "SIMPLEX",
+                "zoom": 10
+            }
+        },
+        "place": [
+            "trees/acacia/t1",
+            "trees/acacia/t2",
+            "trees/acacia/t3",
+            "trees/acacia/t4",
+            "trees/acacia/t5",
+            "trees/acacia/t6",
+            "trees/acacia/t7",
+            "trees/acacia/t8",
+            "trees/acacia/t9",
+            "trees/acacia/t10",
+            "trees/acacia/t11",
+            "trees/acacia/t12"
+        ],
+        "density": 1,
+        "chance": 0.1,
+        "translate": {"y": -1},
+        "rotation": {
+            "enabled": true,
+            "yAxis": {
+                "enabled": true,
+                "interval": 90,
+                "min": -360,
+                "max": 360
+            }
+        }
+    }]
+}

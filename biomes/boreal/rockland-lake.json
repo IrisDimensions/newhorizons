@@ -1,0 +1,168 @@
+{
+    "name": "Rockland lake",
+    "derivative": "PLAINS",
+    "vanillaDerivative": "PLAINS",
+    "customDerivitives": [{
+        "id": "boreal_taiga",
+        "grassColor": "#80ab69",
+        "category": "extreme_hills"
+    }],
+    "rarity": 1,
+    "generators": [{
+        "generator": "plain",
+        "max": -10,
+        "min": -15
+    }],
+    "layers": [
+        {
+            "maxHeight": 1,
+            "minHeight": 1,
+            "slopeCondition": {"maximumSlope": 2},
+            "style": {"style": "STATIC"},
+            "palette": [
+                {
+                    "block": "minecraft:grass_block",
+                    "weight": 10
+                },
+                {
+                    "block": "minecraft:gravel",
+                    "weight": 2
+                }
+            ]
+        },
+        {
+            "maxHeight": 5,
+            "minHeight": 5,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 1.4
+            },
+            "palette": [
+                {
+                    "block": "minecraft:stone",
+                    "weight": 10
+                },
+                {
+                    "block": "minecraft:mossy_cobblestone",
+                    "weight": 2
+                },
+                {
+                    "block": "minecraft:cobblestone",
+                    "weight": 2
+                },
+                {
+                    "block": "minecraft:gravel",
+                    "weight": 1
+                }
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.2,
+            "palette": [{"block": "minecraft:grass"}]
+        },
+        {
+            "chance": 0.15,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        },
+        {
+            "chance": 0.15,
+            "palette": [{"block": "minecraft:fern"}]
+        },
+        {
+            "chance": 0.15,
+            "palette": [{"block": "minecraft:large_fern"}]
+        },
+        {
+            "chance": 0.08,
+            "palette": [{"block": "minecraft:allium"}]
+        },
+        {
+            "chance": 0.08,
+            "palette": [{"block": "minecraft:blue_orchid"}]
+        }
+    ],
+    "objects": [
+        {
+            "mode": "PAINT",
+            "place": [
+                "clutter/arbusto1",
+                "clutter/arbusto2",
+                "clutter/arbusto4",
+                "clutter/arbusto5"
+            ],
+            "chance": 0.3,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": 1}
+        },
+        {
+            "mode": "PAINT",
+            "place": [
+                "clutter/stone1",
+                "clutter/stone2",
+                "clutter/stone3"
+            ],
+            "chance": 0.6,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": -2}
+        },
+        {
+            "trees": [{
+                "anySize": true,
+                "treeTypes": ["REDWOOD"],
+                "sizes": [{
+                    "depth": 1,
+                    "width": 1
+                }]
+            }],
+            "place": [
+                "trees/spruce/vgeneric1",
+                "trees/spruce/vgeneric2",
+                "trees/spruce/vgeneric3",
+                "trees/spruce/vgeneric4",
+                "trees/spruce/vgeneric5",
+                "trees/spruce/vgeneric6",
+                "trees/spruce/vgeneric7",
+                "trees/spruce/vgeneric8",
+                "trees/spruce/vgeneric9",
+                "trees/spruce/vgeneric10",
+                "trees/spruce/vgeneric11",
+                "trees/spruce/vgeneric12",
+                "trees/spruce/vgeneric13",
+                "trees/spruce/vgeneric14",
+                "trees/spruce/vgeneric15",
+                "trees/spruce/vgeneric16",
+                "trees/spruce/vgeneric17",
+                "trees/spruce/vgeneric18",
+                "trees/spruce/vgeneric19"
+            ],
+            "chance": 0.15,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        }
+    ]
+}

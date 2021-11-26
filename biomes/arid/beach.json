@@ -1,0 +1,89 @@
+{
+    "vanillaDerivative": "SAVANNA",
+    "derivative": "DESERT_LAKES",
+    "name": "Beach",
+    "customDerivitives": [{
+        "id": "savanna",
+        "downfallType": "none",
+        "grassColor": "#e5db66",
+        "foliageColor": "#98d256"
+    }],
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {
+                    "block": "minecraft:grass_block",
+                    "weight": 3
+                },
+                {
+                    "block": "minecraft:dirt_path",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:sand",
+                    "weight": 2
+                }
+            ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 3,
+            "palette": [{"block": "minecraft:coarse_dirt"}]
+        },
+        {
+            "slopeCondition": {"maximumSlope": 2.2},
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 7
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "slopeCondition": {"maximumSlope": 2.2},
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:stone",
+                    "weight": 2
+                }
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.85,
+            "palette": [{"block": "minecraft:grass"}]
+        },
+        {
+            "chance": 0.05,
+            "palette": [{"block": "minecraft:dead_bush"}]
+        },
+        {
+            "chance": 0.05,
+            "palette": [{"block": "minecraft:fern"}]
+        }
+    ],
+    "generators": [{
+        "min": 0,
+        "max": 3,
+        "generator": "smooth-land"
+    }]
+}

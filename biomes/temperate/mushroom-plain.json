@@ -1,0 +1,326 @@
+{
+    "name": "Mushroom plains",
+    "derivative": "MUSHROOM_FIELDS",
+    "rarity": 5,
+    "color": "#fc2222",
+    "vanillaDerivative": "MUSHROOM_FIELDS",
+    "customDerivitives": [{
+        "category": "mushroom",
+        "id": "mushroom_forest",
+        "waterColor": "#B4B2FF",
+        "foliageColor": "#2f9341",
+        "waterFogColor": "#BD94DF",
+        "grassColor": "#31af3a",
+        "fogColor": "#CACDFF"
+    }],
+    "layers": [{
+        "zoom": 0.6,
+        "style": {"style": "FRACTAL_SMOKE"},
+        "palette": [
+            {"block": "minecraft:gravel"},
+            {
+                "weight": 3,
+                "block": "minecraft:mycelium"
+            },
+            {
+                "weight": 4,
+                "block": "minecraft:grass_block"
+            }
+        ]
+    }],
+    "generators": [{
+        "min": 2,
+        "max": 4,
+        "generator": "plain"
+    }],
+    "entitySpawners": [
+        "mushroom/land-hostile",
+        "mushroom/land-passive",
+        "temperate/land-cave"
+    ],
+    "decorators": [
+        {
+            "chance": 0.05,
+            "variance": {"style": "STATIC"},
+            "zoom": 0.3,
+            "palette": [
+                {"block": "minecraft:red_mushroom"},
+                {"block": "minecraft:brown_mushroom"}
+            ],
+            "style": {"style": "STATIC"}
+        },
+        {
+            "chance": 0.12,
+            "palette": [{"block": "minecraft:grass"}]
+        },
+        {
+            "chance": 0.01,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        }
+    ],
+    "objects": [
+        {
+            "chance": 0.05,
+            "density": 2,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": [
+                "trees/mushroom/mushclut1",
+                "trees/mushroom/mushclut2",
+                "trees/mushroom/mushclut3",
+                "trees/mushroom/mushclut4",
+                "trees/mushroom/mushclut5",
+                "trees/mushroom/mushclut6",
+                "trees/mushroom/mushclut7",
+                "trees/mushroom/mushclut8",
+                "trees/mushroom/mushclut9",
+                "trees/mushroom/mushclut10"
+            ],
+            "mode": "MIN_HEIGHT",
+            "translate": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            }
+        },
+        {
+            "chance": 0.05,
+            "density": 2,
+            "edit": [{
+                "find": [{"block": "minecraft:red_mushroom_block"}],
+                "replace": {"palette": [{"block": "minecraft:brown_mushroom_block"}]}
+            }],
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": [
+                "trees/mushroom/mushclut1",
+                "trees/mushroom/mushclut2",
+                "trees/mushroom/mushclut3",
+                "trees/mushroom/mushclut4",
+                "trees/mushroom/mushclut5",
+                "trees/mushroom/mushclut6",
+                "trees/mushroom/mushclut7",
+                "trees/mushroom/mushclut8",
+                "trees/mushroom/mushclut9",
+                "trees/mushroom/mushclut10"
+            ],
+            "mode": "MIN_HEIGHT",
+            "translate": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            }
+        },
+        {
+            "chance": 0.2,
+            "density": 2,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "trees": [{
+                "anySize": true,
+                "treeTypes": [
+                    "RED_MUSHROOM",
+                    "BROWN_MUSHROOM"
+                ],
+                "sizes": [{
+                    "depth": 1,
+                    "width": 1
+                }]
+            }],
+            "place": [
+                "trees/mushroom/browngeneric1",
+                "trees/mushroom/browngeneric2",
+                "trees/mushroom/redgeneric3",
+                "trees/mushroom/redgeneric4",
+                "trees/mushroom/redgeneric5",
+                "trees/mushroom/redgeneric6",
+                "trees/mushroom/redgeneric7",
+                "trees/mushroom/redgeneric8",
+                "trees/mushroom/redgeneric9",
+                "trees/mushroom/redgeneric10",
+                "trees/mushroom/redgeneric11"
+            ],
+            "translate": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            }
+        },
+        {
+            "chance": 0.01,
+            "density": 2,
+            "edit": [{
+                "find": [{"block": "minecraft:red_mushroom_block"}],
+                "replace": {"palette": [{"block": "minecraft:brown_mushroom_block"}]}
+            }],
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": [
+                "trees/mushroom/redlumotall1",
+                "trees/mushroom/redlumotall2",
+                "trees/mushroom/redlumotall3",
+                "trees/mushroom/redlumotall4",
+                "trees/mushroom/redlumotall5",
+                "trees/mushroom/redlumotall6",
+                "trees/mushroom/redlumotall7",
+                "trees/mushroom/redlumotall8",
+                "trees/mushroom/redlumotall9",
+                "trees/mushroom/redlumotall10",
+                "trees/mushroom/redlumotall11"
+            ],
+            "translate": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            }
+        },
+        {
+            "chance": 0.1,
+            "density": 1,
+            "edit": [{
+                "find": [{"block": "minecraft:red_mushroom_block"}],
+                "replace": {"palette": [{"block": "minecraft:brown_mushroom_block"}]}
+            }],
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": [
+                "trees/mushroom/browngeneric1",
+                "trees/mushroom/browngeneric2",
+                "trees/mushroom/redgeneric3",
+                "trees/mushroom/redgeneric4",
+                "trees/mushroom/redgeneric5",
+                "trees/mushroom/redgeneric6",
+                "trees/mushroom/redgeneric7",
+                "trees/mushroom/redgeneric8",
+                "trees/mushroom/redgeneric9",
+                "trees/mushroom/redgeneric10",
+                "trees/mushroom/redgeneric11"
+            ],
+            "trees": [{
+                "anySize": true,
+                "treeTypes": [
+                    "RED_MUSHROOM",
+                    "BROWN_MUSHROOM"
+                ],
+                "sizes": [{
+                    "depth": 1,
+                    "width": 1
+                }]
+            }],
+            "translate": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            }
+        },
+        {
+            "chance": 0.01,
+            "density": 1,
+            "edit": [{
+                "find": [{"block": "minecraft:red_mushroom_block"}],
+                "replace": {"palette": [{"block": "minecraft:brown_mushroom_block"}]}
+            }],
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": [
+                "trees/mushroom/smolshroom1",
+                "trees/mushroom/smolshroom2",
+                "trees/mushroom/smolshroom3",
+                "trees/mushroom/smolshroom4",
+                "trees/mushroom/smolshroom5"
+            ],
+            "translate": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            }
+        },
+        {
+            "chance": 0.05,
+            "density": 1,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": [
+                "trees/mushroom/smolshroom1",
+                "trees/mushroom/smolshroom2",
+                "trees/mushroom/smolshroom3",
+                "trees/mushroom/smolshroom4",
+                "trees/mushroom/smolshroom5"
+            ],
+            "translate": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            }
+        }
+    ],
+    "slab": {
+        "style": {"style": "STATIC"},
+        "palette": [
+            {
+                "weight": 8,
+                "block": "minecraft:air"
+            },
+            {
+                "data": {
+                    "waterlogged": false,
+                    "type": "bottom"
+                },
+                "block": "minecraft:cobblestone_slab"
+            },
+            {
+                "weight": 10,
+                "block": "minecraft:air"
+            }
+        ]
+    }
+}

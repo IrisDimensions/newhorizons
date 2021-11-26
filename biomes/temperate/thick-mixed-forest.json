@@ -1,0 +1,345 @@
+{
+    "name": "Thick forest",
+    "derivative": "FOREST",
+    "vanillaDerivative": "FOREST",
+    "rarity": 1,
+    "color": "#6fe765",
+    "generators": [{
+        "generator": "plain",
+        "max": 6,
+        "min": 2
+    }],
+    "entitySpawners": [
+        "temperate/land-passive",
+        "temperate/land-hostile",
+        "temperate/land-cave"
+    ],
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 3.7
+            },
+            "palette": [{"block": "minecraft:grass_block"}]
+        },
+        {
+            "maxHeight": 5,
+            "minHeight": 3,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 3
+            },
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 7
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "maxHeight": 5,
+            "minHeight": 3,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 3
+            },
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:stone",
+                    "weight": 2
+                }
+            ]
+        },
+        {
+            "maxHeight": 4,
+            "minHeight": 4,
+            "slopeCondition": {
+                "minimumSlope": 2.3,
+                "maximumSlope": 4.5
+            },
+            "style": {
+                "style": "SIMPLEX",
+                "zoom": 1,
+                "fracture": {
+                    "style": "GLOB",
+                    "zoom": 0.25,
+                    "multiplier": 70,
+                    "fracture": {
+                        "style": "FRACTAL_WATER",
+                        "zoom": 1.4,
+                        "multiplier": 10
+                    }
+                }
+            },
+            "zoom": 0.7,
+            "palette": [
+                {
+                    "weight": 6,
+                    "block": "minecraft:granite"
+                },
+                {
+                    "weight": 5,
+                    "block": "minecraft:stone"
+                }
+            ]
+        },
+        {
+            "minHeight": 7,
+            "maxHeight": 7,
+            "slopeCondition": {
+                "minimumSlope": 4.5,
+                "maximumSlope": 7
+            },
+            "palette": [{"block": "minecraft:granite"}]
+        }
+    ],
+    "wall": {"palette": [
+        {"block": "minecraft:stone"},
+        {"block": "minecraft:andesite"},
+        {"block": "minecraft:cobblestone"},
+        {"block": "minecraft:mossy_cobblestone"}
+    ]},
+    "decorators": [
+        {
+            "chance": 0.24,
+            "variance": {
+                "style": "CELLULAR",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "SIMPLEX",
+                    "zoom": 0.2,
+                    "multiplier": 10,
+                    "fracture": {
+                        "style": "STATIC",
+                        "multiplier": 15
+                    }
+                }
+            },
+            "style": {
+                "style": "TRIOCTAVE_SIMPLEX",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 8
+                }
+            },
+            "palette": [
+                {"block": "minecraft:dandelion"},
+                {"block": "minecraft:poppy"},
+                {"block": "minecraft:blue_orchid"},
+                {"block": "minecraft:allium"},
+                {"block": "minecraft:azure_bluet"},
+                {"block": "minecraft:red_tulip"},
+                {"block": "minecraft:orange_tulip"},
+                {"block": "minecraft:white_tulip"},
+                {"block": "minecraft:pink_tulip"},
+                {"block": "minecraft:oxeye_daisy"},
+                {"block": "minecraft:cornflower"},
+                {"block": "minecraft:lily_of_the_valley"}
+            ]
+        },
+        {
+            "chance": 0.02,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        },
+        {
+            "chance": 0.4,
+            "palette": [{"block": "minecraft:grass"}]
+        },
+        {
+            "chance": 0.07,
+            "palette": [{"block": "minecraft:fern"}]
+        }
+    ],
+    "objects": [
+        {
+            "mode": "PAINT",
+            "place": [
+                "clutter/boulder1",
+                "clutter/boulder2",
+                "clutter/boulder3",
+                "clutter/boulder4",
+                "clutter/boulder5",
+                "clutter/boulder6",
+                "clutter/boulder7",
+                "clutter/boulder8",
+                "clutter/boulder9",
+                "clutter/boulder10",
+                "clutter/boulder11",
+                "clutter/boulder12",
+                "clutter/boulder13",
+                "clutter/boulder14",
+                "clutter/boulder15"
+            ],
+            "chance": 0.34,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": -2}
+        },
+        {
+            "trees": [{
+                "anySize": true,
+                "treeTypes": ["TREE"],
+                "sizes": [{
+                    "depth": 1,
+                    "width": 1
+                }]
+            }],
+            "carvingSupport": "SURFACE_ONLY",
+            "place": [
+                "trees/oak/thoakgeneric1",
+                "trees/oak/thoakgeneric2",
+                "trees/oak/thoakgeneric3",
+                "trees/oak/thoakgeneric4"
+            ],
+            "chance": 0.04,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        },
+        {
+            "trees": [{
+                "anySize": true,
+                "treeTypes": ["TREE"],
+                "sizes": [{
+                    "depth": 1,
+                    "width": 1
+                }]
+            }],
+            "carvingSupport": "SURFACE_ONLY",
+            "place": [
+                "trees/oak/lponderosa1",
+                "trees/oak/lponderosa2",
+                "trees/oak/lponderosa3",
+                "trees/oak/lponderosa4",
+                "trees/oak/lponderosa5",
+                "trees/oak/lponderosa6",
+                "trees/oak/lponderosa7",
+                "trees/oak/lponderosa8",
+                "trees/oak/lponderosa9",
+                "trees/oak/lponderosa10",
+                "trees/birch/tall1",
+                "trees/birch/tall2",
+                "trees/birch/tall3",
+                "trees/birch/tall4",
+                "trees/birch/tall5",
+                "trees/birch/tall6",
+                "trees/birch/tall7",
+                "trees/birch/tall8",
+                "trees/birch/tall9",
+                "trees/birch/tall10",
+                "trees/oak/antioch1",
+                "trees/oak/antioch1",
+                "trees/oak/antioch1",
+                "trees/oak/antioch1",
+                "trees/oak/antioch1",
+                "trees/oak/thoakgeneric1",
+                "trees/oak/thoakgeneric2",
+                "trees/oak/thoakgeneric3",
+                "trees/oak/thoakgeneric4",
+                "trees/oak/thoakgeneric5",
+                "trees/oak/thoakgeneric7",
+                "trees/spruce/s1",
+                "trees/spruce/s2",
+                "trees/spruce/s3",
+                "trees/spruce/s4",
+                "trees/spruce/s5",
+                "trees/spruce/s6",
+                "trees/spruce/s7"
+            ],
+            "chance": 1,
+            "density": 1,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        },
+        {
+            "trees": [{
+                "anySize": true,
+                "treeTypes": ["TREE"],
+                "sizes": [{
+                    "depth": 1,
+                    "width": 1
+                }]
+            }],
+            "carvingSupport": "SURFACE_ONLY",
+            "place": [
+                "trees/sakura/genericsak1",
+                "trees/sakura/genericsak2",
+                "trees/sakura/genericsak3",
+                "trees/sakura/genericsak4",
+                "trees/sakura/genericsak5"
+            ],
+            "edit": [{
+                "find": [{"block": "minecraft:stripped_birch_wood"}],
+                "replace": {"palette": [{"block": "minecraft:oak_wood"}]}
+            }],
+            "chance": 0.5,
+            "density": 1,
+            "translate": {"y": -5},
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        },
+        {
+            "carvingSupport": "SURFACE_ONLY",
+            "mode": "PAINT",
+            "place": [
+                "clutter/arbusto1",
+                "clutter/arbusto2",
+                "clutter/arbusto4",
+                "clutter/arbusto5"
+            ],
+            "chance": 0.25,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": 1}
+        }
+    ]
+}

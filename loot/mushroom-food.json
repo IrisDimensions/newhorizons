@@ -1,0 +1,28 @@
+{
+    "name": "Mushroom Food",
+    "rarity": 1,
+    "maxPicked": 2,
+    "minPicked": 0,
+    "loot": [
+        {
+            "type": "spider_eye",
+            "maxAmount": 3,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "beetroot",
+            "maxAmount": 5,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "mushroom_stew",
+            "maxAmount": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "rotten_flesh",
+            "maxAmount": 1,
+            "slotTypes": "STORAGE"
+        }
+    ]
+}

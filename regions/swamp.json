@@ -1,55 +1,92 @@
 {
-    "landBiomes": [
-        "swamp/swamp-forest",
-        "swamp/swamp-forest-dense"
+    "landBiomes": ["swamp/swamp-forest"],
+    "color": "#26692e",
+    "seaBiomes": [
+        "swamp/swamp-river",
+        "swamp/swamp-mangrove-lake"
     ],
+    "landBiomeZoom": 1.1,
     "biomeImplosionRatio": 0.25,
-    "seaBiomes": ["swamp/swamp-river"],
-    "deposits": [{
-        "minHeight": 15,
-        "maxPerChunk": 2,
-        "maxHeight": 122,
-        "minPerChunk": 0,
-        "minSize": 4,
-        "maxSize": 12,
-        "palette": [
-            {"block": "minecraft:iron_ore"},
-            {"block": "minecraft:coal_ore"}
-        ],
-        "varience": 4
-    }],
-    "riverRarity": 1,
-    "landBiomeZoom": 1.25,
-    "riverStyle": {
-        "style": "VASCULAR",
-        "zoom": 4.77,
-        "fracture": {
-            "multiplier": 240,
-            "style": "IRIS",
-            "zoom": 5
-        }
-    },
-    "blockDrops": [{
-        "drops": [{
-            "type": "slime_ball",
-            "rarity": 20
-        }],
-        "blocks": [
-            {"block": "minecraft:grass_block"},
-            {"block": "minecraft:oak_leaves"},
-            {"block": "minecraft:grass"},
-            {"block": "minecraft:tall_grass"}
-        ]
+    "shoreBiomes": ["swamp/swamp-beach"],
+    "name": "Swamp forest",
+    "shoreHeightMax": 1,
+    "shoreHeightMin": 0,
+    "rarity": 1,
+    "jigsawStructures": [{
+        "structure": "witch",
+        "rarity": 250
     }],
     "entitySpawners": [
         "swamp/land-passive",
-        "genhostile"
+        "swamp/land-hostile",
+        "swamp/land-cave"
     ],
-    "shoreHeightMin": 2.2,
-    "shoreBiomes": ["swamp/swamp-beach"],
-    "name": "Swamp forest",
-    "shoreHeightMax": 0,
-    "shoreHeightZoom": 1.14,
-    "riverThickness": 0.025,
-    "rarity": 3
+    "objects": [
+        {
+            "trees": [{
+                "anySize": true,
+                "treeTypes": [
+                    "TREE",
+                    "BIG_TREE"
+                ],
+                "sizes": [{
+                    "depth": 1,
+                    "width": 1
+                }]
+            }],
+            "place": [
+                "trees/willow/t1",
+                "trees/willow/t2",
+                "trees/willow/t3",
+                "trees/willow/t4",
+                "trees/willow/t5",
+                "trees/willow/t6",
+                "trees/willow/t7",
+                "trees/willow/t8",
+                "trees/tree1/t1",
+                "trees/tree1/t2",
+                "trees/tree1/t3",
+                "trees/tree1/t4"
+            ],
+            "translate": {"y": -2},
+            "chance": 0
+        },
+        {
+            "trees": [{
+                "anySize": true,
+                "treeTypes": [
+                    "JUNGLE",
+                    "JUNGLE_BUSH"
+                ],
+                "sizes": [{
+                    "depth": 1,
+                    "width": 1
+                }]
+            }],
+            "place": [
+                "trees/mangrove/tree1",
+                "trees/mangrove/tree2",
+                "trees/mangrove/tree3",
+                "trees/mangrove/tree4",
+                "trees/mangrove/tree5",
+                "trees/mangrove/tree6",
+                "trees/mangrove/tree7",
+                "trees/mangrove/tree8",
+                "trees/mangrove/tree9",
+                "trees/mangrove/tree10",
+                "trees/mangrove/tree11",
+                "trees/mangrove/tree12",
+                "trees/mangrove/tree13",
+                "trees/mangrove/tree14",
+                "trees/mangrove/tree15",
+                "trees/mangrove/tree16",
+                "trees/mangrove/tree17",
+                "trees/mangrove/tree18",
+                "trees/mangrove/tree19",
+                "trees/mangrove/tree20",
+                "trees/mangrove/tree21"
+            ],
+            "chance": 0
+        }
+    ]
 }

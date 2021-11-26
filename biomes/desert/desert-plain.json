@@ -5,8 +5,8 @@
     "rarity": 1,
     "customDerivitives": [{
         "id": "desert",
-        "foliageColor": "#27810b",
-        "grassColor": "#367925",
+        "foliageColor": "#6ec52b",
+        "grassColor": "#41A726",
         "category": "desert",
         "downfallType": "none"
     }],
@@ -15,6 +15,16 @@
         "max": 8,
         "min": 5
     }],
+    "childStyle": {
+        "style": "SIMPLEX",
+        "zoom": 5,
+        "exponent": 3,
+        "fracture": {
+            "style": "STATIC",
+            "multiplier": 10
+        }
+    },
+    "children": ["desert/desert-oasis"],
     "layers": [
         {
             "minHeight": 3,
@@ -42,19 +52,10 @@
             ]
         }
     ],
-    "decorators": [
-        {
-            "chance": 0.002,
-            "palette": [{"block": "minecraft:dead_bush"}]
-        },
-        {
-            "heightVariance": {"style": "STATIC"},
-            "stackMax": 4,
-            "stackMin": 1,
-            "chance": 0.003,
-            "palette": [{"block": "minecraft:cactus"}]
-        }
-    ],
+    "decorators": [{
+        "chance": 0.002,
+        "palette": [{"block": "minecraft:dead_bush"}]
+    }],
     "objects": [
         {
             "mode": "MIN_HEIGHT",
@@ -89,7 +90,7 @@
         {
             "mode": "MIN_HEIGHT",
             "place": ["structures/pyramid"],
-            "chance": 3.9E-5,
+            "chance": 6.5E-4,
             "rotation": {
                 "enabled": true,
                 "yAxis": {

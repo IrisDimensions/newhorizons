@@ -1,0 +1,276 @@
+{
+    "name": "Mountain plains",
+    "customDerivitives": [{
+        "id": "mountain",
+        "grassColor": "#80ab69",
+        "category": "plains"
+    }],
+    "derivative": "PLAINS",
+    "vanillaDerivative": "PLAINS",
+    "biomeScatter": ["FOREST"],
+    "childStyle": {
+        "style": "GLOB_IRIS_DOUBLE",
+        "zoom": 13
+    },
+    "rarity": 1,
+    "generators": [{
+        "generator": "smooth-land",
+        "max": 5,
+        "min": 2
+    }],
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 2.3
+            },
+            "palette": [{"block": "minecraft:grass_block"}]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 3,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 2.43
+            },
+            "palette": [{"block": "minecraft:dirt"}]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "style": {
+                "style": "FRACTAL_WATER",
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 15
+                }
+            },
+            "zoom": 0.4,
+            "slopeCondition": {
+                "minimumSlope": 3.95,
+                "maximumSlope": 6
+            },
+            "palette": [
+                {
+                    "block": "minecraft:diorite",
+                    "weight": 4
+                },
+                {
+                    "block": "minecraft:stone",
+                    "weight": 10
+                }
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "style": {"style": "STATIC"},
+            "slopeCondition": {"minimumSlope": 1.5},
+            "palette": [
+                {
+                    "block": "minecraft:basalt",
+                    "weight": 3
+                },
+                {
+                    "block": "minecraft:stone",
+                    "weight": 5
+                },
+                {
+                    "block": "minecraft:gray_concrete_powder",
+                    "weight": 3
+                }
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 18,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {
+                    "block": "minecraft:stone",
+                    "weight": 2
+                },
+                {
+                    "block": "minecraft:andesite",
+                    "weight": 1
+                }
+            ]
+        }
+    ],
+    "wall": {"palette": [
+        {"block": "minecraft:stone"},
+        {"block": "minecraft:andesite"},
+        {"block": "minecraft:gravel"},
+        {"block": "minecraft:basalt"}
+    ]},
+    "decorators": [
+        {
+            "chance": 0.2,
+            "variance": {
+                "style": "CELLULAR",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "SIMPLEX",
+                    "zoom": 0.2,
+                    "multiplier": 10,
+                    "fracture": {
+                        "style": "STATIC",
+                        "multiplier": 15
+                    }
+                }
+            },
+            "style": {
+                "style": "TRIOCTAVE_SIMPLEX",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 8
+                }
+            },
+            "palette": [
+                {"block": "minecraft:dandelion"},
+                {"block": "minecraft:poppy"},
+                {"block": "minecraft:blue_orchid"},
+                {"block": "minecraft:allium"},
+                {"block": "minecraft:azure_bluet"},
+                {"block": "minecraft:red_tulip"},
+                {"block": "minecraft:orange_tulip"},
+                {"block": "minecraft:white_tulip"},
+                {"block": "minecraft:pink_tulip"},
+                {"block": "minecraft:oxeye_daisy"},
+                {"block": "minecraft:cornflower"},
+                {"block": "minecraft:lily_of_the_valley"}
+            ]
+        },
+        {
+            "chance": 0.01,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        },
+        {
+            "chance": 0.5,
+            "palette": [{"block": "minecraft:grass"}]
+        },
+        {
+            "chance": 0.15,
+            "palette": [{"block": "minecraft:fern"}]
+        },
+        {
+            "chance": 0.15,
+            "palette": [{"block": "minecraft:fern"}]
+        },
+        {
+            "variance": {
+                "style": "CELLULAR",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "SIMPLEX",
+                    "zoom": 0.2,
+                    "multiplier": 10,
+                    "fracture": {
+                        "style": "STATIC",
+                        "multiplier": 15
+                    }
+                }
+            },
+            "style": {
+                "style": "TRIOCTAVE_SIMPLEX",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 8
+                }
+            },
+            "chance": 0.2,
+            "palette": [{
+                "block": "minecraft:wheat",
+                "data": {"age": 7}
+            }]
+        }
+    ],
+    "objects": [
+        {
+            "trees": [{
+                "anySize": true,
+                "treeTypes": ["REDWOOD"],
+                "sizes": [{
+                    "depth": 1,
+                    "width": 1
+                }]
+            }],
+            "place": [
+                "trees/spruce/vgeneric1",
+                "trees/spruce/vgeneric2",
+                "trees/spruce/vgeneric3",
+                "trees/spruce/vgeneric4",
+                "trees/spruce/vgeneric5",
+                "trees/spruce/vgeneric6",
+                "trees/spruce/vgeneric7",
+                "trees/spruce/vgeneric8",
+                "trees/spruce/vgeneric9",
+                "trees/spruce/vgeneric10",
+                "trees/spruce/vgeneric11",
+                "trees/spruce/vgeneric12",
+                "trees/spruce/vgeneric13",
+                "trees/spruce/vgeneric14",
+                "trees/spruce/vgeneric15",
+                "trees/spruce/vgeneric16",
+                "trees/spruce/vgeneric17",
+                "trees/spruce/vgeneric18",
+                "trees/spruce/vgeneric19"
+            ],
+            "clamp": {
+                "minimumHeight": 0,
+                "maximumHeight": 140
+            },
+            "chance": 1,
+            "density": 2,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        },
+        {
+            "mode": "PAINT",
+            "place": [
+                "clutter/arbusto1",
+                "clutter/arbusto2",
+                "clutter/arbusto4",
+                "clutter/arbusto5"
+            ],
+            "chance": 0.2,
+            "translate": {"y": 1}
+        },
+        {
+            "mode": "PAINT",
+            "place": [
+                "rock/mrock-1",
+                "rock/mrock-2",
+                "rock/mrock-3",
+                "rock/mrock-4",
+                "rock/mrock-5"
+            ],
+            "chance": 0.15,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ]
+}

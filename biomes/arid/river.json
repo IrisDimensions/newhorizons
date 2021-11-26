@@ -1,0 +1,46 @@
+{
+    "vanillaDerivative": "SAVANNA",
+    "name": "River",
+    "decorators": [{
+        "chance": 0.2,
+        "palette": [{"block": "minecraft:seagrass"}]
+    }],
+    "customDerivitives": [{
+        "id": "savanna",
+        "downfallType": "none",
+        "grassColor": "#e5db66",
+        "foliageColor": "#98d256"
+    }],
+    "layers": [
+        {
+            "style": {"style": "IRIS"},
+            "zoom": 0.3,
+            "palette": [
+                {"block": "minecraft:sand"},
+                {"block": "minecraft:dirt"}
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 3,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {"block": "minecraft:sand"},
+                {"block": "minecraft:terracotta"},
+                {"block": "minecraft:gravel"},
+                {"block": "minecraft:sand"},
+                {"block": "minecraft:dirt"},
+                {
+                    "weight": 2,
+                    "block": "minecraft:sand"
+                }
+            ]
+        }
+    ],
+    "generators": [{
+        "generator": "river",
+        "max": -5,
+        "min": -10
+    }],
+    "derivative": "SAVANNA"
+}

@@ -1,0 +1,118 @@
+{
+    "name": "Desert oasis",
+    "derivative": "DESERT",
+    "vanillaDerivative": "DESERT",
+    "rarity": 1,
+    "customDerivitives": [{
+        "id": "desert",
+        "foliageColor": "#6ec52b",
+        "grassColor": "#41A726",
+        "category": "desert",
+        "downfallType": "none"
+    }],
+    "generators": [{
+        "generator": "plain",
+        "max": 3,
+        "min": -8
+    }],
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [{
+                "weight": 2,
+                "block": "minecraft:grass_block"
+            }]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 10,
+            "slopeCondition": {
+                "minimumSlope": 4.5,
+                "maximumSlope": 20
+            },
+            "palette": [{"block": "minecraft:sandstone"}]
+        },
+        {
+            "slopeCondition": {"maximumSlope": 2.2},
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 7
+                },
+                {
+                    "block": "minecraft:sand",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "slopeCondition": {"maximumSlope": 2.2},
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:sandstone",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:sand",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:stone",
+                    "weight": 2
+                }
+            ]
+        }
+    ],
+    "decorators": [{
+        "chance": 0.4,
+        "palette": [{"block": "minecraft:grass"}]
+    }],
+    "objects": [
+        {
+            "place": [
+                "trees/jungle/palm1",
+                "trees/jungle/palm5"
+            ],
+            "chance": 1,
+            "density": 3,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            }
+        },
+        {
+            "place": [
+                "trees/jungle/palm3",
+                "trees/jungle/palm4",
+                "trees/jungle/palm6"
+            ],
+            "chance": 1,
+            "density": 3,
+            "translate": {"y": 1},
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        }
+    ]
+}

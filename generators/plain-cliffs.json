@@ -1,10 +1,10 @@
 {
     "composite": [{
         "style": {
-            "style": "IRIS_HALF",
+            "style": "IRIS_DOUBLE",
             "zoom": 0.87,
             "fracture": {
-                "style": "SIMPLEX",
+                "style": "IRIS_HALF",
                 "zoom": 0.295,
                 "multiplier": 18
             }
@@ -15,7 +15,24 @@
     }],
     "interpolator": {
         "function": "BILINEAR_STARCAST_9",
-        "horizontalScale": 2
+        "horizontalScale": 25
     },
-    "seed": 7246661
+    "seed": 7246661,
+    "cliffHeightMax": 80,
+    "cliffHeightMin": 45,
+    "cliffHeightGenerator": {
+        "style": {"style": "IRIS"},
+        "sinCentered": false,
+        "seed": 50056,
+        "parametric": false,
+        "zoom": 4.2,
+        "enabled": true,
+        "offsetX": 0,
+        "octaves": 3,
+        "offsetZ": 0,
+        "offsetY": 0,
+        "opacity": 1,
+        "bezier": false,
+        "exponent": 1.125
+    }
 }

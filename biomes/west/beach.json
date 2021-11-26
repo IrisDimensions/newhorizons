@@ -1,0 +1,51 @@
+{
+    "vanillaDerivative": "DESERT_LAKES",
+    "name": "Beach",
+    "customDerivitives": [{
+        "id": "west",
+        "downfallType": "none",
+        "grassColor": "#dde048",
+        "foliageColor": "#ced256"
+    }],
+    "layers": [
+        {
+            "minHeight": 3,
+            "maxHeight": 6,
+            "palette": [{"block": "minecraft:red_sand"}]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 3,
+            "palette": [{"block": "minecraft:red_sandstone"}]
+        }
+    ],
+    "generators": [{
+        "min": 0,
+        "max": 1,
+        "generator": "plain"
+    }],
+    "derivative": "DESERT_LAKES",
+    "wall": {
+        "style": {"style": "STATIC"},
+        "palette": [
+            {"block": "minecraft:red_sandstone"},
+            {"block": "minecraft:red_sand"}
+        ]
+    },
+    "slab": {
+        "style": {"style": "STATIC"},
+        "palette": [
+            {
+                "data": {
+                    "waterlogged": false,
+                    "type": "bottom"
+                },
+                "block": "minecraft:red_sandstone_slab"
+            },
+            {
+                "weight": 2,
+                "block": "minecraft:air"
+            }
+        ]
+    }
+}

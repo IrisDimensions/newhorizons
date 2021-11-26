@@ -1,0 +1,21 @@
+{
+    "name": "Beach",
+    "derivative": "TAIGA",
+    "vanillaDerivative": "TAIGA",
+    "rarity": 1,
+    "customDerivitives": [{
+        "id": "boreal_taiga",
+        "grassColor": "#80ab69",
+        "category": "beach"
+    }],
+    "generators": [{
+        "generator": "plain",
+        "max": 1,
+        "min": 0
+    }],
+    "layers": [{
+        "maxHeight": 2,
+        "minHeight": 2,
+        "palette": [{"block": "minecraft:gravel"}]
+    }]
+}

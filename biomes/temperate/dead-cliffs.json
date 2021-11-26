@@ -1,0 +1,170 @@
+{
+    "name": "Dead cliffs",
+    "derivative": "BASALT_DELTAS",
+    "vanillaDerivative": "BASALT_DELTAS",
+    "rarity": 1,
+    "color": "#ab6e36",
+    "customDerivitives": [{
+        "id": "dead",
+        "foliageColor": "#947747",
+        "waterColor": "#947747",
+        "grassColor": "#947747",
+        "category": "plains",
+        "downfallType": "rain",
+        "skyColor": "#bdbdbd",
+        "fogColor": "#ffffff",
+        "waterFogColor": "#947747"
+    }],
+    "generators": [{
+        "generator": "plain",
+        "max": 24,
+        "min": 16
+    }],
+    "entitySpawners": [
+        "temperate/land-hostile",
+        "temperate/land-cave"
+    ],
+    "layers": [
+        {
+            "style": {
+                "style": "FRACTAL_WATER",
+                "zoom": 0.8
+            },
+            "slopeCondition": {"maximumSlope": 1.4},
+            "zoom": 0.5,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 8
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 8
+                },
+                {
+                    "block": "minecraft:podzol",
+                    "weight": 3
+                },
+                {
+                    "block": "minecraft:rooted_dirt",
+                    "weight": 6
+                },
+                {
+                    "block": "minecraft:terracotta",
+                    "weight": 3
+                }
+            ]
+        },
+        {
+            "maxHeight": 5,
+            "minHeight": 3,
+            "slopeCondition": {"maximumSlope": 1.4},
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 7
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "maxHeight": 5,
+            "minHeight": 3,
+            "slopeCondition": {"maximumSlope": 1.4},
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:stone",
+                    "weight": 2
+                }
+            ]
+        },
+        {
+            "maxHeight": 2,
+            "minHeight": 2,
+            "style": {"style": "IRIS"},
+            "zoom": 0.3,
+            "slopeCondition": {
+                "minimumSlope": 1.4,
+                "maximumSlope": 3
+            },
+            "palette": [
+                {
+                    "block": "minecraft:stone",
+                    "weight": 10
+                },
+                {
+                    "block": "minecraft:cobblestone",
+                    "weight": 5
+                }
+            ]
+        },
+        {
+            "maxHeight": 2,
+            "minHeight": 2,
+            "style": {
+                "style": "IRIS",
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 10
+                }
+            },
+            "zoom": 0.1,
+            "slopeCondition": {"minimumSlope": 3},
+            "palette": [
+                {
+                    "block": "minecraft:stone",
+                    "weight": 3
+                },
+                {
+                    "block": "minecraft:cobblestone",
+                    "weight": 4
+                },
+                {
+                    "block": "minecraft:gravel",
+                    "weight": 4
+                }
+            ]
+        }
+    ],
+    "decorators": [{
+        "chance": 0.01,
+        "palette": [{"block": "minecraft:dead_bush"}]
+    }],
+    "objects": [{
+        "place": [
+            "trees/oak/dead1",
+            "trees/oak/dead2",
+            "trees/oak/dead3",
+            "trees/oak/dead4",
+            "trees/oak/dead5",
+            "trees/oak/dead6"
+        ],
+        "chance": 0.17,
+        "rotation": {
+            "enabled": true,
+            "yAxis": {
+                "enabled": true,
+                "interval": 90,
+                "min": -360,
+                "max": 360
+            }
+        }
+    }],
+    "wall": {"palette": [
+        {"block": "minecraft:stone"},
+        {"block": "minecraft:andesite"},
+        {"block": "minecraft:cobblestone"},
+        {"block": "minecraft:mossy_cobblestone"}
+    ]}
+}

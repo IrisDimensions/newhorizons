@@ -1,0 +1,204 @@
+{
+    "name": "Mega taiga",
+    "derivative": "TAIGA",
+    "vanillaDerivative": "TAIGA",
+    "rarity": 1,
+    "customDerivitives": [{
+        "id": "boreal_taiga",
+        "grassColor": "#80ab69",
+        "category": "forest"
+    }],
+    "generators": [{
+        "generator": "plain",
+        "max": 12,
+        "min": 2
+    }],
+    "layers": [
+        {
+            "slopeCondition": {"maximumSlope": 2.2},
+            "style": {
+                "style": "FRACTAL_WATER",
+                "zoom": 0.8,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 7
+                }
+            },
+            "zoom": 0.7,
+            "maxHeight": 1,
+            "minHeight": 1,
+            "palette": [
+                {
+                    "block": "minecraft:grass_block",
+                    "weight": 6
+                },
+                {
+                    "block": "minecraft:podzol",
+                    "weight": 2
+                }
+            ]
+        },
+        {
+            "slopeCondition": {"maximumSlope": 2.2},
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 7
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "slopeCondition": {"maximumSlope": 2.2},
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:stone",
+                    "weight": 2
+                }
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.1,
+            "variance": {
+                "style": "CELLULAR",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "SIMPLEX",
+                    "zoom": 0.2,
+                    "multiplier": 10
+                }
+            },
+            "style": {
+                "style": "TRIOCTAVE_SIMPLEX",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 8
+                }
+            },
+            "palette": [
+                {"block": "minecraft:dandelion"},
+                {"block": "minecraft:poppy"},
+                {"block": "minecraft:blue_orchid"},
+                {"block": "minecraft:allium"},
+                {"block": "minecraft:azure_bluet"},
+                {"block": "minecraft:red_tulip"},
+                {"block": "minecraft:orange_tulip"},
+                {"block": "minecraft:white_tulip"},
+                {"block": "minecraft:pink_tulip"},
+                {"block": "minecraft:oxeye_daisy"},
+                {"block": "minecraft:cornflower"},
+                {"block": "minecraft:lily_of_the_valley"}
+            ]
+        },
+        {
+            "chance": 0.02,
+            "palette": [
+                {"block": "minecraft:tall_grass"},
+                {"block": "minecraft:fern"},
+                {"block": "minecraft:large_fern"}
+            ]
+        },
+        {
+            "chance": 0.16,
+            "palette": [{"block": "minecraft:grass"}]
+        }
+    ],
+    "objects": [
+        {
+            "place": [
+                "trees/spruce/sup-pine-1",
+                "trees/spruce/sup-pine-2",
+                "trees/spruce/sup-pine-3",
+                "trees/spruce/sup-pine-11",
+                "trees/spruce/sup-pine-12",
+                "trees/spruce/sup-pine-13"
+            ],
+            "clamp": {
+                "minimumHeight": 0,
+                "maximumHeight": 200
+            },
+            "chance": 0.6,
+            "translate": {"y": -5},
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        },
+        {
+            "place": [
+                "trees/spruce/sup-pine-5",
+                "trees/spruce/sup-pine-4",
+                "trees/spruce/sup-pine-7"
+            ],
+            "clamp": {
+                "minimumHeight": 0,
+                "maximumHeight": 200
+            },
+            "chance": 0.5,
+            "translate": {"y": -2},
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        },
+        {
+            "trees": [{
+                "anySize": true,
+                "treeTypes": ["REDWOOD"],
+                "sizes": [{
+                    "depth": 1,
+                    "width": 1
+                }]
+            }],
+            "clamp": {
+                "minimumHeight": 0,
+                "maximumHeight": 140
+            },
+            "place": [
+                "trees/spruce/sup-pine-6",
+                "trees/spruce/sup-pine-9",
+                "trees/spruce/sup-pine-8",
+                "trees/spruce/sup-pine-10"
+            ],
+            "chance": 0.3,
+            "translate": {"y": -2},
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,269 @@
+{
+    "name": "Sequoia forest",
+    "derivative": "FOREST",
+    "vanillaDerivative": "FOREST",
+    "color": "#407747",
+    "customDerivitives": [{
+        "category": "forest",
+        "id": "sequoia",
+        "foliageColor": "#2b5e31",
+        "grassColor": "#AC7B1F",
+        "fogColor": "#8091C6"
+    }],
+    "layers": [
+        {
+            "style": {
+                "style": "SIMPLEX",
+                "fracture": {
+                    "style": "FRACTAL_WATER",
+                    "zoom": 0.39,
+                    "multiplier": 23
+                }
+            },
+            "zoom": 0.7,
+            "palette": [
+                {"block": "minecraft:coarse_dirt"},
+                {"block": "minecraft:grass_block"},
+                {"block": "minecraft:podzol"},
+                {"block": "minecraft:podzol"},
+                {"block": "minecraft:grass_block"},
+                {"block": "minecraft:coarse_dirt"}
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 2,
+            "palette": [{"block": "minecraft:dirt"}]
+        },
+        {
+            "style": {"style": "STATIC"},
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {"block": "minecraft:dirt"},
+                {"block": "minecraft:stone"}
+            ]
+        }
+    ],
+    "entityInitialSpawns": [
+        {
+            "entity": "wolf",
+            "minSpawns": 2,
+            "maxSpawns": 5,
+            "rarity": 70
+        },
+        {
+            "entity": "fox",
+            "maxSpawns": 1,
+            "minSpawns": 3,
+            "rarity": 90
+        }
+    ],
+    "decorators": [
+        {
+            "style": {"style": "STATIC"},
+            "chance": 0.2,
+            "palette": [
+                {
+                    "block": "minecraft:grass",
+                    "weight": 6
+                },
+                {
+                    "block": "minecraft:fern",
+                    "weight": 2
+                }
+            ]
+        },
+        {
+            "chance": 0.2,
+            "variance": {
+                "style": "CELLULAR",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "SIMPLEX",
+                    "zoom": 0.2,
+                    "multiplier": 10,
+                    "fracture": {
+                        "style": "STATIC",
+                        "multiplier": 15
+                    }
+                }
+            },
+            "style": {
+                "style": "TRIOCTAVE_SIMPLEX",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 8
+                }
+            },
+            "palette": [
+                {"block": "minecraft:poppy"},
+                {"block": "minecraft:allium"}
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "mode": "PAINT",
+            "place": [
+                "clutter/boulder1",
+                "clutter/boulder2",
+                "clutter/boulder3",
+                "clutter/boulder4",
+                "clutter/boulder5",
+                "clutter/boulder6",
+                "clutter/boulder7",
+                "clutter/boulder8",
+                "clutter/boulder9",
+                "clutter/boulder10",
+                "clutter/boulder11",
+                "clutter/boulder12",
+                "clutter/boulder13",
+                "clutter/boulder14",
+                "clutter/boulder15"
+            ],
+            "chance": 0.4,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": -3}
+        },
+        {
+            "chance": 0.35,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": [
+                "clutter/spruceclutt1",
+                "clutter/spruceclutt2",
+                "clutter/spruceclutt3",
+                "clutter/spruceclutt4",
+                "clutter/spruceclutt5"
+            ],
+            "clamp": {
+                "minimumHeight": 0,
+                "maximumHeight": 140
+            },
+            "translate": {
+                "x": 0,
+                "y": -8,
+                "z": 0
+            }
+        },
+        {
+            "chance": 0.35,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "trees": [{
+                "anySize": true,
+                "treeTypes": ["REDWOOD"],
+                "sizes": [{
+                    "depth": 1,
+                    "width": 1
+                }]
+            }],
+            "place": [
+                "trees/sequoia/1",
+                "trees/sequoia/2",
+                "trees/sequoia/3",
+                "trees/sequoia/4",
+                "trees/sequoia/5",
+                "trees/sequoia/6",
+                "trees/sequoia/7",
+                "trees/sequoia/8",
+                "trees/sequoia/9",
+                "trees/sequoia/10"
+            ]
+        },
+        {
+            "chance": 0.04,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": ["trees/sequoia/dec1"]
+        },
+        {
+            "chance": 0.02,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": ["trees/sequoia/dec2"],
+            "translate": {
+                "yRandom": -2,
+                "y": -3
+            }
+        },
+        {
+            "mode": "PAINT",
+            "chance": 0.5,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": [
+                "clutter/arbusto1",
+                "clutter/arbusto2",
+                "clutter/arbusto3",
+                "clutter/arbusto4",
+                "clutter/arbusto5"
+            ],
+            "translate": {"y": 1}
+        }
+    ],
+    "generators": [{
+        "generator": "plain",
+        "max": 13,
+        "min": 4
+    }],
+    "slab": {
+        "palette": [
+            {
+                "weight": 1,
+                "block": "minecraft:cobblestone_slab"
+            },
+            {
+                "weight": 10,
+                "block": "minecraft:air"
+            }
+        ],
+        "style": {"style": "STATIC"}
+    },
+    "rarity": 1
+}

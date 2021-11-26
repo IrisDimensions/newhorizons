@@ -1,0 +1,63 @@
+{
+    "vanillaDerivative": "WARM_OCEAN",
+    "name": "Tropical beach",
+    "customDerivitives": [{
+        "id": "tropical",
+        "foliageColor": "#40C42B",
+        "grassColor": "#41A726",
+        "category": "jungle",
+        "waterColor": "#3AB2A2",
+        "waterFogColor": "#3AB2A2"
+    }],
+    "layers": [
+        {
+            "style": {
+                "style": "IRIS",
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 5
+                }
+            },
+            "zoom": 0.24,
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {"block": "minecraft:podzol"},
+                {"block": "minecraft:terracotta"},
+                {"block": "minecraft:coarse_dirt"}
+            ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 6,
+            "palette": [{"block": "minecraft:terracotta"}]
+        }
+    ],
+    "generators": [{
+        "min": 0,
+        "max": 0,
+        "generator": "plain"
+    }],
+    "decorators": [{
+        "chance": 0.002,
+        "palette": [
+            {
+                "block": "minecraft:turtle_egg",
+                "data": {"eggs": 1}
+            },
+            {
+                "block": "minecraft:turtle_egg",
+                "data": {"eggs": 2}
+            },
+            {
+                "block": "minecraft:turtle_egg",
+                "data": {"eggs": 3}
+            },
+            {
+                "block": "minecraft:turtle_egg",
+                "data": {"eggs": 4}
+            }
+        ]
+    }],
+    "derivative": "WARM_OCEAN"
+}

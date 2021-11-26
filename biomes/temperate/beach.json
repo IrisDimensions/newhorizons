@@ -1,0 +1,28 @@
+{
+    "name": "Beach",
+    "derivative": "BEACH",
+    "vanillaDerivative": "BEACH",
+    "color": "#e7ea48",
+    "generators": [{
+        "min": 0,
+        "max": 4,
+        "generator": "smooth-land"
+    }],
+    "entitySpawners": [
+        "temperate/land-passive",
+        "temperate/land-hostile",
+        "temperate/land-cave"
+    ],
+    "layers": [
+        {
+            "minHeight": 2,
+            "maxHeight": 2,
+            "palette": [{"block": "minecraft:sand"}]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 6,
+            "palette": [{"block": "minecraft:sandstone"}]
+        }
+    ]
+}

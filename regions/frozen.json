@@ -1,9 +1,11 @@
 {
     "riverBiomes": ["frozen/frozen-river"],
     "landBiomes": [
-        "frozen/frozen-mountain",
-        "frozen/frozen-plains"
+        "frozen/frozen-forest",
+        "frozen/frozen-plains",
+        "frozen/frozen-lake"
     ],
+    "color": "#e5ebff",
     "biomeImplosionRatio": 0.25,
     "seaBiomes": ["frozen/frozen-river"],
     "deposits": [{
@@ -19,48 +21,27 @@
         ],
         "varience": 4
     }],
-    "blockDrops": [
-        {
-            "replaceVanillaDrops": true,
-            "blocks": [
-                {
-                    "block": "minecraft:oak_leaves"
-                }
-            ],
-            "drops": [
-                {
-                    "type": "spruce_sapling",
-                    "minAmount": 1,
-                    "maxAmount": 2
-                }
-            ]
-        }
-    ],
-    "riverRarity": 200,
-    "landBiomeZoom": 5,
-    "lakes": false,
-    "lakeBiomeZoom": 4,
-    "lakeStyle": {"style": "SIMPLEX"},
-    "lakeRarity": 60,
-    "riverStyle": {
-        "style": "VASCULAR",
-        "zoom": 4,
-        "fracture": {
-            "multiplier": 100,
-            "style": "IRIS",
-            "zoom": 1
-        }
-    },
+    "blockDrops": [{
+        "replaceVanillaDrops": true,
+        "blocks": [{"block": "minecraft:oak_leaves"}],
+        "drops": [{
+            "type": "spruce_sapling",
+            "minAmount": 1,
+            "maxAmount": 2
+        }]
+    }],
+    "landBiomeZoom": 1,
     "entitySpawners": [
-        "cold/land-passive",
-        "genhostile"
+        "frozen/land-passive",
+        "frozen/land-hostile",
+        "frozen/land-cave"
     ],
-    "riverBiomeZoom": 10,
+    "riverBiomeZoom": 1,
     "shoreHeightMin": 0,
     "shoreBiomes": ["frozen/frozen-beach"],
     "name": "Frozen",
     "shoreHeightMax": 0,
     "shoreHeightZoom": 1.14,
     "riverThickness": 0.5,
-    "rarity": 2
+    "rarity": 1
 }

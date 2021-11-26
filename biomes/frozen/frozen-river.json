@@ -49,9 +49,13 @@
     "seaLayers": [{
         "minHeight": 4,
         "maxHeight": 7,
-        "style": {"style": "GLOB_IRIS_THICK",
-        "fracture":{"style": "STATIC",
-        "multiplier": 3}},
+        "style": {
+            "style": "GLOB_IRIS_THICK",
+            "fracture": {
+                "style": "STATIC",
+                "multiplier": 3
+            }
+        },
         "zoom": 0.7,
         "palette": [
             {
@@ -266,29 +270,30 @@
             }
         },
         {
-        "place": [
-            "structures/kship1",
-            "structures/kship2",
-            "structures/kship3",
-            "structures/kship4"
-        ],
-        "chance": 0.0035,
-        "onwater": true,
-        "translate": {"y": -1},
-        "rotation": {
-            "enabled": true,
-            "yAxis": {
+            "place": [
+                "structures/kship1",
+                "structures/kship2",
+                "structures/kship3",
+                "structures/kship4"
+            ],
+            "chance": 0.0035,
+            "onwater": true,
+            "translate": {"y": -1},
+            "rotation": {
                 "enabled": true,
-                "interval": 90,
-                "min": -360,
-                "max": 360
-            }
-        },
-        "edit": [{
-            "find": [{"block": "minecraft:bone_block"}],
-            "replace": {"palette": [{"block": "minecraft:gray_wool"}]}
-        }],
-        "waterloggable": true
-    }],
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "edit": [{
+                "find": [{"block": "minecraft:bone_block"}],
+                "replace": {"palette": [{"block": "minecraft:gray_wool"}]}
+            }],
+            "waterloggable": true
+        }
+    ],
     "derivative": "RIVER"
 }

@@ -1,45 +1,42 @@
 {
-    "riverBiomes": ["desert/desert-river"],
+    "name": "Desert",
+    "rarity": 1,
+    "color": "#fffa66",
+    "landBiomeZoom": 2,
+    "biomeImplosionRatio": 0.2,
     "landBiomes": [
         "desert/desert-plain",
         "desert/desert-dunes"
     ],
-    "biomeImplosionRatio": 0.25,
-    "seaBiomes": ["desert/desert-river"],
-    "riverStyle": {
-        "style": "VASCULAR",
-        "zoom": 4.77,
-        "fracture": {
-            "multiplier": 240,
-            "style": "IRIS",
-            "zoom": 5
-        }
-    },
-    "deposits": [{
-        "minHeight": 8,
-        "maxPerChunk": 12,
-        "maxHeight": 57,
-        "minPerChunk": 7,
-        "minSize": 12,
-        "maxSize": 22,
-        "palette": [{"block": "minecraft:blackstone"}],
-        "varience": 4
-    }],
     "entitySpawners": [
         "hot/land-passive",
-        "genhostile"
+        "hot/land-hostile",
+        "hot/land-cave"
     ],
-    "riverRarity": 1,
-    "landBiomeZoom": 1.25,
-    "shoreHeightMin": 2,
+    "shoreHeightMax": 1,
+    "shoreHeightMin": 1,
     "shoreBiomes": [
         "desert/desert-sand-beach",
         "desert/desert-beach"
     ],
-    "name": "Desert",
-    "shoreHeightMax": 4,
-    "shoreRatio": 0.8,
-    "shoreHeightZoom": 1.14,
-    "riverThickness": 0.006,
-    "rarity": 2
+    "seaBiomes": ["desert/desert-river"],
+    "objects": [{
+        "trees": [{
+            "anySize": true,
+            "treeTypes": [
+                "SMALL_JUNGLE",
+                "JUNGLE"
+            ],
+            "sizes": [{
+                "depth": 1,
+                "width": 1
+            }]
+        }],
+        "place": [
+            "trees/jungle/palm3",
+            "trees/jungle/palm4",
+            "trees/jungle/palm6"
+        ],
+        "chance": 0
+    }]
 }

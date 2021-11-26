@@ -31,10 +31,16 @@
             "rarity": 25
         },
         {
+            "entity": "standard/passive/rabbit",
+            "maxSpawns": 2,
+            "minSpawns": 1,
+            "rarity": 1
+        },
+        {
             "entity": "standard/passive/wanderingtrader",
             "maxSpawns": 1,
             "minSpawns": 1,
-            "rarity": 100,
+            "rarity": 150,
             "energyMultiplier": 5
         }
     ]

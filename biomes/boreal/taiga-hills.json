@@ -1,0 +1,148 @@
+{
+    "name": "Taiga hills",
+    "derivative": "TAIGA",
+    "vanillaDerivative": "TAIGA",
+    "rarity": 1,
+    "customDerivitives": [{
+        "id": "boreal_taiga",
+        "grassColor": "#80ab69",
+        "category": "forest"
+    }],
+    "generators": [{
+        "generator": "smooth-land",
+        "max": 43,
+        "min": 5
+    }],
+    "layers": [
+        {
+            "slopeCondition": {"maximumSlope": 2.5},
+            "maxHeight": 1,
+            "minHeight": 1,
+            "palette": [{"block": "minecraft:grass_block"}]
+        },
+        {
+            "slopeCondition": {"maximumSlope": 2.2},
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 7
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "slopeCondition": {"maximumSlope": 2.2},
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:stone",
+                    "weight": 2
+                }
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.18,
+            "variance": {
+                "style": "CELLULAR",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "SIMPLEX",
+                    "zoom": 0.2,
+                    "multiplier": 10
+                }
+            },
+            "style": {
+                "style": "TRIOCTAVE_SIMPLEX",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 8
+                }
+            },
+            "palette": [
+                {"block": "minecraft:dandelion"},
+                {"block": "minecraft:poppy"},
+                {"block": "minecraft:blue_orchid"},
+                {"block": "minecraft:allium"},
+                {"block": "minecraft:azure_bluet"},
+                {"block": "minecraft:red_tulip"},
+                {"block": "minecraft:orange_tulip"},
+                {"block": "minecraft:white_tulip"},
+                {"block": "minecraft:pink_tulip"},
+                {"block": "minecraft:oxeye_daisy"},
+                {"block": "minecraft:cornflower"},
+                {"block": "minecraft:lily_of_the_valley"}
+            ]
+        },
+        {
+            "chance": 0.01,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        },
+        {
+            "chance": 0.3,
+            "palette": [{"block": "minecraft:grass"}]
+        }
+    ],
+    "objects": [{
+        "trees": [{
+            "anySize": true,
+            "treeTypes": ["REDWOOD"],
+            "sizes": [{
+                "depth": 1,
+                "width": 1
+            }]
+        }],
+        "place": [
+            "trees/spruce/vgeneric1",
+            "trees/spruce/vgeneric2",
+            "trees/spruce/vgeneric3",
+            "trees/spruce/vgeneric4",
+            "trees/spruce/vgeneric5",
+            "trees/spruce/vgeneric6",
+            "trees/spruce/vgeneric7",
+            "trees/spruce/vgeneric8",
+            "trees/spruce/vgeneric9",
+            "trees/spruce/vgeneric10",
+            "trees/spruce/vgeneric11",
+            "trees/spruce/vgeneric12",
+            "trees/spruce/vgeneric13",
+            "trees/spruce/vgeneric14",
+            "trees/spruce/vgeneric15",
+            "trees/spruce/vgeneric16",
+            "trees/spruce/vgeneric17",
+            "trees/spruce/vgeneric18",
+            "trees/spruce/vgeneric19"
+        ],
+        "clamp": {
+            "minimumHeight": 0,
+            "maximumHeight": 140
+        },
+        "chance": 1,
+        "density": 3,
+        "rotation": {
+            "enabled": true,
+            "yAxis": {
+                "enabled": true,
+                "interval": 90,
+                "min": -360,
+                "max": 360
+            }
+        }
+    }]
+}

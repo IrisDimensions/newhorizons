@@ -1,0 +1,41 @@
+{
+    "vanillaDerivative": "RIVER",
+    "derivative": "RIVER",
+    "name": "River",
+    "color": "#3289c8",
+    "layers": [{
+        "minHeight": 2,
+        "maxHeight": 10,
+        "style": {"style": "FRACTAL_FBM_IRIS"},
+        "zoom": 0.6,
+        "palette": [
+            {"block": "minecraft:sand"},
+            {"block": "minecraft:clay"},
+            {"block": "minecraft:sand"},
+            {"block": "minecraft:gravel"},
+            {"block": "minecraft:sand"},
+            {"block": "minecraft:dirt"},
+            {
+                "weight": 2,
+                "block": "minecraft:sand"
+            }
+        ]
+    }],
+    "decorators": [
+        {
+            "chance": 0.02,
+            "palette": [{"block": "minecraft:kelp_plant"}],
+            "stackMin": 2,
+            "stackMax": 6
+        },
+        {
+            "chance": 0.05,
+            "palette": [{"block": "minecraft:seagrass"}]
+        }
+    ],
+    "generators": [{
+        "generator": "river",
+        "max": -14,
+        "min": -25
+    }]
+}

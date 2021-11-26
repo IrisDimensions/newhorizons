@@ -3,8 +3,8 @@
     "name": "Desert beach",
     "customDerivitives": [{
         "id": "desert",
-        "foliageColor": "#27810b",
-        "grassColor": "#367925",
+        "foliageColor": "#6ec52b",
+        "grassColor": "#41A726",
         "category": "desert",
         "downfallType": "none"
     }],
@@ -13,7 +13,7 @@
             "style": {"style": "FRACTAL_WATER"},
             "zoom": 0.4,
             "minHeight": 1,
-            "maxHeight": 3,
+            "maxHeight": 1,
             "palette": [
                 {
                     "block": "minecraft:sand",
@@ -22,10 +22,6 @@
                 {
                     "block": "minecraft:grass_block",
                     "weight": 4
-                },
-                {
-                    "block": "minecraft:dirt",
-                    "weight": 3
                 }
             ]
         },
@@ -67,7 +63,7 @@
         {
             "place": [
                 "trees/jungle/palm1",
-                "trees/jungle/palm2"
+                "trees/jungle/palm5"
             ],
             "chance": 1,
             "density": 2,
@@ -90,7 +86,6 @@
             "place": [
                 "trees/jungle/palm3",
                 "trees/jungle/palm4",
-                "trees/jungle/palm5",
                 "trees/jungle/palm6"
             ],
             "chance": 1,

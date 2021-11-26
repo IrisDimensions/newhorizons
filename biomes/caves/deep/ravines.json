@@ -31,16 +31,10 @@
         "maxHeight": 1,
         "minHeight": 1,
         "style": {"style": "STATIC"},
-        "palette": [
-            {
-                "block": "minecraft:shroomlight",
-                "weight": 1
-            },
-            {
-                "block": "minecraft:stone",
-                "weight": 16
-            }
-        ]
+        "palette": [{
+            "block": "minecraft:stone",
+            "weight": 16
+        }]
     }],
     "childStyle": {
         "style": "STATIC",

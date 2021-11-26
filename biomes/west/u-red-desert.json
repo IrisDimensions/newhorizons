@@ -1,0 +1,314 @@
+{
+    "name": "Red desert",
+    "derivative": "DESERT",
+    "vanillaDerivative": "DESERT",
+    "generators": [{
+        "generator": "smooth-land",
+        "max": 15,
+        "min": 3
+    }],
+    "lockLayers": true,
+    "layers": [
+        {
+            "maxHeight": 2,
+            "minHeight": 2,
+            "style": {
+                "style": "FRACTAL_WATER",
+                "exponent": 3.7,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 30
+                }
+            },
+            "slopeCondition": {"maximumSlope": 2.5},
+            "zoom": 0.68,
+            "palette": [
+                {
+                    "block": "minecraft:red_sand",
+                    "weight": 9
+                },
+                {
+                    "block": "minecraft:sand",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:gravel",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:clay",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 2
+                }
+            ]
+        },
+        {
+            "maxHeight": 5,
+            "minHeight": 5,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:terracotta"}]
+        },
+        {
+            "maxHeight": 1,
+            "minHeight": 1,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:red_terracotta"}]
+        },
+        {
+            "maxHeight": 2,
+            "minHeight": 2,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:brown_terracotta"}]
+        },
+        {
+            "maxHeight": 3,
+            "minHeight": 3,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:white_terracotta"}]
+        },
+        {
+            "maxHeight": 1,
+            "minHeight": 1,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:terracotta"}]
+        },
+        {
+            "maxHeight": 2,
+            "minHeight": 2,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:red_terracotta"}]
+        },
+        {
+            "maxHeight": 2,
+            "minHeight": 2,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:terracotta"}]
+        },
+        {
+            "maxHeight": 1,
+            "minHeight": 1,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:brown_terracotta"}]
+        },
+        {
+            "maxHeight": 2,
+            "minHeight": 2,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:red_terracotta"}]
+        },
+        {
+            "maxHeight": 2,
+            "minHeight": 2,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:terracotta"}]
+        },
+        {
+            "maxHeight": 1,
+            "minHeight": 1,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:brown_terracotta"}]
+        },
+        {
+            "maxHeight": 5,
+            "minHeight": 5,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:terracotta"}]
+        },
+        {
+            "maxHeight": 2,
+            "minHeight": 2,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:brown_terracotta"}]
+        },
+        {
+            "maxHeight": 2,
+            "minHeight": 2,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:terracotta"}]
+        },
+        {
+            "maxHeight": 3,
+            "minHeight": 3,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:red_sand"}]
+        },
+        {
+            "maxHeight": 3,
+            "minHeight": 3,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:yellow_terracotta"}]
+        },
+        {
+            "maxHeight": 2,
+            "minHeight": 2,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:red_terracotta"}]
+        },
+        {
+            "maxHeight": 1,
+            "minHeight": 1,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:yellow_terracotta"}]
+        },
+        {
+            "maxHeight": 1,
+            "minHeight": 1,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:red_terracotta"}]
+        },
+        {
+            "maxHeight": 3,
+            "minHeight": 3,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:red_sand"}]
+        },
+        {
+            "maxHeight": 1,
+            "minHeight": 1,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:brown_terracotta"}]
+        },
+        {
+            "maxHeight": 1,
+            "minHeight": 1,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:yellow_terracotta"}]
+        },
+        {
+            "maxHeight": 2,
+            "minHeight": 2,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:red_sand"}]
+        },
+        {
+            "maxHeight": 5,
+            "minHeight": 5,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:terracotta"}]
+        },
+        {
+            "maxHeight": 2,
+            "minHeight": 2,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:light_gray_terracotta"}]
+        },
+        {
+            "maxHeight": 2,
+            "minHeight": 2,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:white_terracotta"}]
+        },
+        {
+            "maxHeight": 2,
+            "minHeight": 2,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:brown_terracotta"}]
+        },
+        {
+            "maxHeight": 3,
+            "minHeight": 3,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 2
+            },
+            "palette": [{"block": "minecraft:terracotta"}]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.008,
+            "palette": [{"block": "minecraft:dead_bush"}]
+        },
+        {
+            "heightVariance": {"style": "STATIC"},
+            "stackMax": 4,
+            "stackMin": 1,
+            "chance": 0.003,
+            "palette": [{"block": "minecraft:cactus"}]
+        }
+    ]
+}

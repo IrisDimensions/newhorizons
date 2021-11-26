@@ -1,0 +1,406 @@
+{
+    "name": "Sakura Forest",
+    "derivative": "FOREST",
+    "vanillaDerivative": "FOREST",
+    "color": "#FFADF0",
+    "customDerivitives": [{
+        "id": "sakura",
+        "foliageColor": "#FFADF0",
+        "waterColor": "#A5FFED",
+        "grassColor": "#A8FF98",
+        "category": "forest"
+    }],
+    "layers": [
+        {
+            "style": {"style": "STATIC"},
+            "zoom": 0.656,
+            "palette": [
+                {
+                    "weight": 19,
+                    "block": "minecraft:grass_block"
+                },
+                {
+                    "weight": 2,
+                    "block": "minecraft:gravel"
+                },
+                {
+                    "weight": 19,
+                    "block": "minecraft:grass_block"
+                }
+            ]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 3,
+            "palette": [{"block": "minecraft:dirt"}]
+        },
+        {
+            "minHeight": 6,
+            "maxHeight": 18,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {"block": "minecraft:stone"},
+                {"block": "minecraft:andesite"},
+                {"block": "minecraft:stone"}
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.0015,
+            "stackMax": 6,
+            "palette": [{"block": "minecraft:sugar_cane"}],
+            "stackMin": 1
+        },
+        {
+            "chance": 0.003,
+            "variance": {"style": "STATIC"},
+            "palette": [
+                {
+                    "data": {
+                        "face": "floor",
+                        "powered": false,
+                        "facing": "east"
+                    },
+                    "block": "minecraft:stone_button"
+                },
+                {
+                    "data": {
+                        "face": "floor",
+                        "powered": false,
+                        "facing": "south"
+                    },
+                    "block": "minecraft:stone_button"
+                }
+            ]
+        },
+        {
+            "chance": 9.0E-4,
+            "stackMax": 6,
+            "palette": [{"block": "minecraft:sunflower"}],
+            "stackMin": 3
+        },
+        {
+            "stackMin": 1,
+            "stackMax": 11,
+            "chance": 0.0025,
+            "variance": {
+                "style": "STATIC",
+                "zoom": 0.1
+            },
+            "topPalette": [{
+                "data": {
+                    "stage": 0,
+                    "age": 0,
+                    "leaves": "small"
+                },
+                "block": "minecraft:bamboo"
+            }],
+            "palette": [
+                {
+                    "data": {
+                        "stage": 0,
+                        "age": 0,
+                        "leaves": "none"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 1,
+                        "age": 0,
+                        "leaves": "none"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 0,
+                        "age": 1,
+                        "leaves": "none"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 1,
+                        "age": 1,
+                        "leaves": "none"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 0,
+                        "age": 0,
+                        "leaves": "small"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 1,
+                        "age": 0,
+                        "leaves": "small"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 0,
+                        "age": 1,
+                        "leaves": "small"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 1,
+                        "age": 1,
+                        "leaves": "small"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 0,
+                        "age": 0,
+                        "leaves": "large"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 1,
+                        "age": 0,
+                        "leaves": "large"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 0,
+                        "age": 1,
+                        "leaves": "large"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 1,
+                        "age": 1,
+                        "leaves": "large"
+                    },
+                    "block": "minecraft:bamboo"
+                }
+            ],
+            "style": {"style": "STATIC"}
+        },
+        {
+            "chance": 0.2,
+            "variance": {"style": "STATIC"},
+            "zoom": 0.2,
+            "palette": [
+                {"block": "minecraft:dandelion"},
+                {
+                    "weight": 10,
+                    "block": "minecraft:grass"
+                },
+                {"block": "minecraft:pink_tulip"},
+                {"block": "minecraft:grass"},
+                {"block": "minecraft:tall_grass"},
+                {"block": "minecraft:grass"},
+                {"block": "minecraft:grass"},
+                {
+                    "weight": 4,
+                    "block": "minecraft:peony"
+                },
+                {
+                    "weight": 5,
+                    "block": "minecraft:lilac"
+                },
+                {"block": "minecraft:tall_grass"},
+                {"block": "minecraft:grass"},
+                {"block": "minecraft:grass"},
+                {"block": "minecraft:grass"},
+                {"block": "minecraft:grass"},
+                {"block": "minecraft:grass"},
+                {"block": "minecraft:lily_of_the_valley"}
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "chance": 0.3,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": [
+                "trees/sakura/em1",
+                "trees/sakura/em2",
+                "trees/sakura/em3",
+                "trees/sakura/em4",
+                "trees/sakura/em5",
+                "trees/sakura/em6"
+            ],
+            "translate": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            },
+            "edit": [{
+                "find": [{"block": "minecraft:redstone_lamp"}],
+                "replace": {"palette": [{"block": "minecraft:shroomlight"}]}
+            }]
+        },
+        {
+            "chance": 0.4,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": [
+                "clutter/boulder1",
+                "clutter/boulder2",
+                "clutter/boulder3",
+                "clutter/boulder4",
+                "clutter/boulder5",
+                "clutter/boulder6",
+                "clutter/boulder7",
+                "clutter/boulder8",
+                "clutter/boulder9",
+                "clutter/boulder10",
+                "clutter/boulder11",
+                "clutter/boulder12",
+                "clutter/boulder13",
+                "clutter/boulder14"
+            ],
+            "translate": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            }
+        },
+        {
+            "mode": "PAINT",
+            "chance": 0.35,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": [
+                "clutter/arbusto1",
+                "clutter/arbusto2",
+                "clutter/arbusto3",
+                "clutter/arbusto4",
+                "clutter/arbusto5"
+            ],
+            "translate": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            }
+        },
+        {
+            "chance": 0.1,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "trees": [{
+                "anySize": true,
+                "treeTypes": [
+                    "TREE",
+                    "BIRCH"
+                ],
+                "sizes": [{
+                    "depth": 1,
+                    "width": 1
+                }]
+            }],
+            "place": [
+                "trees/sakura/em7",
+                "trees/sakura/em8",
+                "trees/sakura/em9",
+                "trees/sakura/em10",
+                "trees/sakura/em11",
+                "trees/sakura/em12",
+                "trees/sakura/em13"
+            ],
+            "translate": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            },
+            "edit": [{
+                "find": [{"block": "minecraft:redstone_lamp"}],
+                "replace": {"palette": [{"block": "minecraft:shroomlight"}]}
+            }]
+        }
+    ],
+    "generators": [{
+        "generator": "plain",
+        "max": 15,
+        "min": 4
+    }],
+    "slab": {
+        "palette": [
+            {
+                "weight": 1,
+                "block": "minecraft:cobblestone_slab"
+            },
+            {
+                "weight": 10,
+                "block": "minecraft:air"
+            }
+        ],
+        "style": {"style": "STATIC"}
+    },
+    "entityInitialSpawns": [
+        {
+            "entity": "cow",
+            "maxSpawns": 2,
+            "minSpawns": 1,
+            "rarity": 7
+        },
+        {
+            "entity": "panda",
+            "maxSpawns": 4,
+            "minSpawns": 1,
+            "rarity": 6
+        },
+        {
+            "entity": "fox",
+            "maxSpawns": 3,
+            "minSpawns": 1,
+            "rarity": 5
+        }
+    ],
+    "entitySpawners": [
+        "temperate/land-passive",
+        "temperate/land-hostile",
+        "temperate/land-cave"
+    ],
+    "rarity": 3
+}

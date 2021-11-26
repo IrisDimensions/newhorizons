@@ -1,0 +1,28 @@
+{
+    "name": "Temperate Food",
+    "rarity": 1,
+    "maxPicked": 2,
+    "minPicked": 1,
+    "loot": [
+        {
+            "type": "bread",
+            "maxAmount": 2,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "wheat",
+            "maxAmount": 4,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "carrot",
+            "maxAmount": 2,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "wheat_seeds",
+            "maxAmount": 2,
+            "slotTypes": "STORAGE"
+        }
+    ]
+}

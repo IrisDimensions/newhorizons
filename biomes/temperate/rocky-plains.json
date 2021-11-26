@@ -1,0 +1,356 @@
+{
+    "name": "Rocky plains",
+    "derivative": "PLAINS",
+    "vanillaDerivative": "PLAINS",
+    "rarity": 1,
+    "color": "#808789",
+    "generators": [{
+        "generator": "plain",
+        "max": 5,
+        "min": 2
+    }],
+    "entitySpawners": [
+        "temperate/land-passive",
+        "temperate/land-hostile",
+        "temperate/land-cave"
+    ],
+    "layers": [
+        {
+            "style": {
+                "style": "IRIS",
+                "exponent": 1.2
+            },
+            "zoom": 0.8,
+            "minHeight": 1,
+            "maxHeight": 1,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 3.7
+            },
+            "palette": [
+                {
+                    "block": "minecraft:grass_block",
+                    "weight": 2
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "maxHeight": 5,
+            "minHeight": 3,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 3.7
+            },
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 7
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 3.7
+            },
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:stone",
+                    "weight": 2
+                }
+            ]
+        },
+        {
+            "maxHeight": 1,
+            "minHeight": 1,
+            "palette": [{"block": "minecraft:stone"}]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.23,
+            "variance": {
+                "style": "CELLULAR",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "SIMPLEX",
+                    "zoom": 0.2,
+                    "multiplier": 10,
+                    "fracture": {
+                        "style": "STATIC",
+                        "multiplier": 15
+                    }
+                }
+            },
+            "style": {
+                "style": "TRIOCTAVE_SIMPLEX",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 8
+                }
+            },
+            "palette": [
+                {"block": "minecraft:dandelion"},
+                {"block": "minecraft:poppy"},
+                {"block": "minecraft:blue_orchid"},
+                {"block": "minecraft:allium"},
+                {"block": "minecraft:azure_bluet"},
+                {"block": "minecraft:red_tulip"},
+                {"block": "minecraft:orange_tulip"},
+                {"block": "minecraft:white_tulip"},
+                {"block": "minecraft:pink_tulip"},
+                {"block": "minecraft:oxeye_daisy"},
+                {"block": "minecraft:cornflower"},
+                {"block": "minecraft:lily_of_the_valley"}
+            ]
+        },
+        {
+            "chance": 0.1,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        },
+        {
+            "chance": 0.5,
+            "palette": [{"block": "minecraft:grass"}]
+        }
+    ],
+    "objects": [
+        {
+            "mode": "PAINT",
+            "place": [
+                "clutter/srock1",
+                "clutter/srock2",
+                "clutter/srock3",
+                "clutter/srock4",
+                "clutter/srock5",
+                "clutter/srock6",
+                "clutter/srock7",
+                "clutter/srock8"
+            ],
+            "chance": 0.18,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": -3},
+            "edit": [
+                {
+                    "find": [{"block": "minecraft:stone"}],
+                    "chance": 0.01,
+                    "replace": {
+                        "style": {"style": "STATIC"},
+                        "palette": [
+                            {"block": "minecraft:coal_ore"},
+                            {"block": "minecraft:iron_ore"},
+                            {"block": "minecraft:gold_ore"},
+                            {"block": "minecraft:copper_ore"}
+                        ]
+                    }
+                },
+                {
+                    "find": [{"block": "minecraft:stone"}],
+                    "chance": 0.08,
+                    "replace": {
+                        "style": {"style": "SIMPLEX"},
+                        "palette": [
+                            {
+                                "block": "minecraft:andesite",
+                                "weight": 2
+                            },
+                            {
+                                "block": "minecraft:cobblestone",
+                                "weight": 1
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "mode": "PAINT",
+            "place": [
+                "clutter/mrock1",
+                "clutter/mrock2",
+                "clutter/mrock3",
+                "clutter/mrock4",
+                "clutter/mrock5",
+                "clutter/mrock6",
+                "clutter/mrock7",
+                "clutter/mrock8"
+            ],
+            "chance": 0.1,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": -8},
+            "edit": [
+                {
+                    "find": [{"block": "minecraft:stone"}],
+                    "chance": 0.01,
+                    "replace": {
+                        "style": {"style": "STATIC"},
+                        "palette": [
+                            {"block": "minecraft:coal_ore"},
+                            {"block": "minecraft:iron_ore"},
+                            {"block": "minecraft:gold_ore"},
+                            {"block": "minecraft:copper_ore"}
+                        ]
+                    }
+                },
+                {
+                    "find": [{"block": "minecraft:stone"}],
+                    "chance": 0.08,
+                    "replace": {
+                        "style": {"style": "SIMPLEX"},
+                        "palette": [
+                            {
+                                "block": "minecraft:andesite",
+                                "weight": 2
+                            },
+                            {
+                                "block": "minecraft:cobblestone",
+                                "weight": 1
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "mode": "PAINT",
+            "place": [
+                "clutter/lrock1",
+                "clutter/lrock2",
+                "clutter/lrock3",
+                "clutter/lrock4",
+                "clutter/lrock5",
+                "clutter/lrock6",
+                "clutter/lrock7",
+                "clutter/lrock8"
+            ],
+            "chance": 0.05,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": -15},
+            "edit": [
+                {
+                    "find": [{"block": "minecraft:stone"}],
+                    "chance": 0.01,
+                    "replace": {
+                        "style": {"style": "STATIC"},
+                        "palette": [
+                            {"block": "minecraft:coal_ore"},
+                            {"block": "minecraft:iron_ore"},
+                            {"block": "minecraft:gold_ore"},
+                            {"block": "minecraft:copper_ore"}
+                        ]
+                    }
+                },
+                {
+                    "find": [{"block": "minecraft:stone"}],
+                    "chance": 0.08,
+                    "replace": {
+                        "style": {"style": "SIMPLEX"},
+                        "palette": [
+                            {
+                                "block": "minecraft:andesite",
+                                "weight": 2
+                            },
+                            {
+                                "block": "minecraft:cobblestone",
+                                "weight": 1
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "mode": "PAINT",
+            "place": [
+                "clutter/arbusto1",
+                "clutter/arbusto2",
+                "clutter/arbusto4",
+                "clutter/arbusto5"
+            ],
+            "chance": 0.05,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": 1}
+        },
+        {
+            "mode": "PAINT",
+            "place": [
+                "trees/oak/smoak1",
+                "trees/oak/smoak3",
+                "trees/oak/smoak4",
+                "trees/oak/smoak5",
+                "trees/oak/smoak6",
+                "trees/oak/smoak7",
+                "trees/oak/smoak9",
+                "trees/oak/smoak10",
+                "trees/oak/smoak11",
+                "trees/oak/smoak12",
+                "trees/oak/smoak13"
+            ],
+            "edit": [{
+                "find": [{"block": "minecraft:spruce_fence"}],
+                "replace": {"palette": [{"block": "minecraft:oak_log"}]}
+            }],
+            "chance": 0.1,
+            "translate": {"y": 1},
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        }
+    ]
+}

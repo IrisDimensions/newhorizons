@@ -1,0 +1,23 @@
+{
+    "name": "Temperate Clutter",
+    "rarity": 1,
+    "maxPicked": 2,
+    "minPicked": 1,
+    "loot": [
+        {
+            "type": "oak_planks",
+            "maxAmount": 3,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "stick",
+            "maxAmount": 4,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "oak_wood",
+            "maxAmount": 3,
+            "slotTypes": "STORAGE"
+        }
+    ]
+}

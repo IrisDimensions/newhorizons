@@ -1,0 +1,301 @@
+{
+    "name": "Sacred forest",
+    "derivative": "FOREST",
+    "vanillaDerivative": "FOREST",
+    "color": "#3273ed",
+    "customDerivitives": [{
+        "id": "magic",
+        "foliageColor": "#3273ed",
+        "grassColor": "#00ab83",
+        "downfallType": "rain",
+        "waterColor": "#ffffff",
+        "waterFogColor": "#ffffff",
+        "category": "forest"
+    }],
+    "effects": [
+        {
+            "particleAltX": 0.301,
+            "particleAltY": -0.33885,
+            "particleAltZ": 0.301,
+            "chance": 13,
+            "particleEffect": "ENCHANTMENT_TABLE",
+            "particleOffset": 12,
+            "interval": 200,
+            "particleCount": 25
+        },
+        {
+            "potionTicksMin": 50,
+            "potionEffect": "REGENERATION",
+            "chance": 100,
+            "potionStrength": 0,
+            "potionTicksMax": 150,
+            "interval": 750
+        }
+    ],
+    "layers": [
+        {
+            "style": {"style": "STATIC"},
+            "zoom": 0.656,
+            "palette": [
+                {
+                    "weight": 19,
+                    "block": "minecraft:grass_block"
+                },
+                {
+                    "weight": 2,
+                    "block": "minecraft:gravel"
+                },
+                {
+                    "weight": 19,
+                    "block": "minecraft:grass_block"
+                }
+            ]
+        },
+        {
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 7
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:stone",
+                    "weight": 2
+                }
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.003,
+            "stackMin": 2,
+            "stackMax": 4,
+            "heightVariance": {"style": "STATIC"},
+            "style": {"style": "STATIC"},
+            "topPalette": [{"block": "minecraft:soul_lantern"}],
+            "palette": [{"block": "minecraft:diorite_wall"}]
+        },
+        {
+            "chance": 0.2,
+            "variance": {
+                "style": "CELLULAR",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "SIMPLEX",
+                    "zoom": 0.2,
+                    "multiplier": 10,
+                    "fracture": {
+                        "style": "STATIC",
+                        "multiplier": 15
+                    }
+                }
+            },
+            "style": {
+                "style": "TRIOCTAVE_SIMPLEX",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 8
+                }
+            },
+            "palette": [
+                {"block": "minecraft:dandelion"},
+                {"block": "minecraft:poppy"},
+                {"block": "minecraft:blue_orchid"},
+                {"block": "minecraft:allium"},
+                {"block": "minecraft:azure_bluet"},
+                {"block": "minecraft:red_tulip"},
+                {"block": "minecraft:orange_tulip"},
+                {"block": "minecraft:white_tulip"},
+                {"block": "minecraft:pink_tulip"},
+                {"block": "minecraft:oxeye_daisy"},
+                {"block": "minecraft:cornflower"},
+                {"block": "minecraft:lily_of_the_valley"}
+            ]
+        },
+        {
+            "chance": 0.01,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        },
+        {
+            "chance": 0.5,
+            "palette": [{"block": "minecraft:grass"}]
+        },
+        {
+            "chance": 0.15,
+            "palette": [{"block": "minecraft:fern"}]
+        },
+        {
+            "chance": 0.06,
+            "palette": [{"block": "minecraft:fern"}]
+        },
+        {
+            "variance": {
+                "style": "CELLULAR",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "SIMPLEX",
+                    "zoom": 0.2,
+                    "multiplier": 10,
+                    "fracture": {
+                        "style": "STATIC",
+                        "multiplier": 15
+                    }
+                }
+            },
+            "style": {
+                "style": "TRIOCTAVE_SIMPLEX",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 8
+                }
+            },
+            "chance": 0.16,
+            "palette": [{"block": "minecraft:warped_roots"}]
+        }
+    ],
+    "objects": [
+        {
+            "mode": "FAST_MIN_HEIGHT",
+            "chance": 0.01,
+            "place": ["structures/altar1"]
+        },
+        {
+            "chance": 0.5,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": [
+                "clutter/boulder1",
+                "clutter/boulder2",
+                "clutter/boulder3",
+                "clutter/boulder4",
+                "clutter/boulder5",
+                "clutter/boulder6",
+                "clutter/boulder7",
+                "clutter/boulder8",
+                "clutter/boulder9",
+                "clutter/boulder10",
+                "clutter/boulder11",
+                "clutter/boulder12",
+                "clutter/boulder13",
+                "clutter/boulder14",
+                "clutter/boulder15"
+            ],
+            "translate": {
+                "x": 0,
+                "y": -2,
+                "z": 0
+            }
+        },
+        {
+            "chance": 0.7,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "trees": [{
+                "anySize": true,
+                "treeTypes": [
+                    "TREE",
+                    "BIRCH"
+                ],
+                "sizes": [{
+                    "depth": 1,
+                    "width": 1
+                }]
+            }],
+            "place": [
+                "trees/oak/hoakgeneric1",
+                "trees/oak/hoakgeneric2",
+                "trees/oak/hoakgeneric3",
+                "trees/oak/hoakgeneric4"
+            ],
+            "translate": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            },
+            "edit": [{
+                "find": [{"block": "minecraft:oak_wood"}],
+                "replace": {"palette": [{"block": "minecraft:birch_wood"}]}
+            }]
+        },
+        {
+            "chance": 0.5,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 0,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "mode": "PAINT",
+            "place": [
+                "clutter/arbusto1",
+                "clutter/arbusto3",
+                "clutter/arbusto2",
+                "clutter/arbusto4",
+                "clutter/arbusto5"
+            ],
+            "translate": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            }
+        }
+    ],
+    "generators": [{
+        "generator": "mountain",
+        "max": 25,
+        "min": 4
+    }],
+    "entitySpawners": ["temperate/land-passive"],
+    "slab": {
+        "palette": [
+            {
+                "weight": 1,
+                "block": "minecraft:cobblestone_slab"
+            },
+            {
+                "weight": 10,
+                "block": "minecraft:air"
+            }
+        ],
+        "style": {"style": "STATIC"}
+    },
+    "rarity": 3
+}

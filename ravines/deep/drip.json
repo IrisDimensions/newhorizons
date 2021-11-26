@@ -1,5 +1,5 @@
 {
-    "customBiome": "caves/deep/main",
+    "customBiome": "caves/deep/drip",
     "nodeThreshold": 40,
     "depthStyle": {
         "generator": {"style": "PERLIN"},

@@ -1,0 +1,145 @@
+{
+    "name": "Wetland",
+    "derivative": "TAIGA",
+    "vanillaDerivative": "TAIGA",
+    "rarity": 1,
+    "customDerivitives": [{
+        "id": "boreal_taiga",
+        "grassColor": "#80ab69",
+        "category": "forest"
+    }],
+    "generators": [{
+        "generator": "plain",
+        "max": 5,
+        "min": -5
+    }],
+    "childShrinkFactor": 1.6,
+    "childStyle": {
+        "style": "PERLIN",
+        "zoom": 2,
+        "exponent": 1.1
+    },
+    "layers": [
+        {
+            "slopeCondition": {"maximumSlope": 2.2},
+            "maxHeight": 1,
+            "minHeight": 1,
+            "palette": [{"block": "minecraft:grass_block"}]
+        },
+        {
+            "slopeCondition": {"maximumSlope": 2.2},
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 7
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "slopeCondition": {"maximumSlope": 2.2},
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:stone",
+                    "weight": 2
+                }
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.2,
+            "variance": {
+                "style": "CELLULAR",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "SIMPLEX",
+                    "zoom": 0.2,
+                    "multiplier": 10
+                }
+            },
+            "style": {
+                "style": "TRIOCTAVE_SIMPLEX",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 8
+                }
+            },
+            "palette": [
+                {"block": "minecraft:dandelion"},
+                {"block": "minecraft:poppy"},
+                {"block": "minecraft:blue_orchid"},
+                {"block": "minecraft:allium"},
+                {"block": "minecraft:azure_bluet"},
+                {"block": "minecraft:red_tulip"},
+                {"block": "minecraft:orange_tulip"},
+                {"block": "minecraft:white_tulip"},
+                {"block": "minecraft:pink_tulip"},
+                {"block": "minecraft:oxeye_daisy"},
+                {"block": "minecraft:cornflower"},
+                {"block": "minecraft:lily_of_the_valley"}
+            ]
+        },
+        {
+            "chance": 0.01,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        },
+        {
+            "chance": 0.5,
+            "palette": [{"block": "minecraft:grass"}]
+        }
+    ],
+    "objects": [{
+        "trees": [{
+            "anySize": true,
+            "treeTypes": ["REDWOOD"],
+            "sizes": [{
+                "depth": 1,
+                "width": 1
+            }]
+        }],
+        "clamp": {
+            "minimumHeight": 0,
+            "maximumHeight": 140
+        },
+        "place": [
+            "trees/spruce/unfrostedlarge2",
+            "trees/spruce/unfrostedlarge3",
+            "trees/spruce/unfrostedlarge4",
+            "trees/spruce/unfrostedlarge5",
+            "trees/spruce/unfrostedlarge6",
+            "trees/spruce/unfrostedlarge7",
+            "trees/spruce/unfrostedsmol1",
+            "trees/spruce/unfrostedsmol2",
+            "trees/spruce/unfrostedsmol3",
+            "trees/spruce/unfrostedsmol4",
+            "trees/spruce/unfrostedsmol5"
+        ],
+        "chance": 0.8,
+        "rotation": {
+            "enabled": true,
+            "yAxis": {
+                "enabled": true,
+                "interval": 90,
+                "min": -360,
+                "max": 360
+            }
+        }
+    }]
+}

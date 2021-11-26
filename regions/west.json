@@ -1,0 +1,45 @@
+{
+    "name": "West zone",
+    "rarity": 1,
+    "color": "#d8a56e",
+    "landBiomeZoom": 1,
+    "biomeImplosionRatio": 0.8,
+    "landBiomes": ["west/plains"],
+    "shoreHeightMax": 1,
+    "shoreHeightMin": 1,
+    "shoreBiomes": ["west/beach"],
+    "seaBiomes": ["west/river"],
+    "entitySpawners": [
+        "hot/land-passive",
+        "hot/land-hostile",
+        "hot/land-cave"
+    ],
+    "objects": [{
+        "trees": [{
+            "sizes": [{
+                "depth": 1,
+                "width": 1
+            }],
+            "treeTypes": [
+                "TREE",
+                "BIG_TREE"
+            ]
+        }],
+        "chance": 0,
+        "place": [
+            "trees/oak/denmyre1",
+            "trees/oak/denmyre2",
+            "trees/oak/denmyre3",
+            "trees/oak/denmyre4",
+            "trees/oak/denmyre5",
+            "trees/oak/denmyre6",
+            "trees/oak/denmyre7",
+            "trees/oak/denmyre8",
+            "trees/oak/denmyre9",
+            "trees/oak/denmyre10",
+            "trees/oak/denmyre11",
+            "trees/oak/denmyre12",
+            "trees/oak/denmyre13"
+        ]
+    }]
+}

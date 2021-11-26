@@ -1,0 +1,42 @@
+{
+    "name": "Arid zone",
+    "rarity": 2,
+    "color": "#fbd746",
+    "landBiomeZoom": 1,
+    "landBiomes": ["arid/hill"],
+    "biomeImplosionRatio": 0.25,
+    "shoreHeightMax": 1,
+    "shoreHeightMin": 1,
+    "shoreBiomes": ["arid/beach"],
+    "seaBiomes": ["arid/river"],
+    "entitySpawners": [
+        "hot/land-passive",
+        "hot/land-hostile",
+        "hot/land-cave"
+    ],
+    "objects": [{
+        "trees": [{
+            "anySize": true,
+            "treeTypes": ["ACACIA"],
+            "sizes": [{
+                "depth": 1,
+                "width": 1
+            }]
+        }],
+        "place": [
+            "trees/acacia/t1",
+            "trees/acacia/t2",
+            "trees/acacia/t3",
+            "trees/acacia/t4",
+            "trees/acacia/t5",
+            "trees/acacia/t6",
+            "trees/acacia/t7",
+            "trees/acacia/t8",
+            "trees/acacia/t9",
+            "trees/acacia/t10",
+            "trees/acacia/t11",
+            "trees/acacia/t12"
+        ],
+        "chance": 0
+    }]
+}

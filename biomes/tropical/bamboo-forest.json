@@ -1,0 +1,171 @@
+{
+    "name": "Tropical Bamboo forest",
+    "derivative": "JUNGLE",
+    "vanillaDerivative": "JUNGLE",
+    "rarity": 1,
+    "customDerivitives": [{
+        "id": "tropical",
+        "foliageColor": "#40C42B",
+        "grassColor": "#41A726",
+        "category": "jungle",
+        "waterColor": "#3AB2A2",
+        "waterFogColor": "#3AB2A2"
+    }],
+    "generators": [{
+        "generator": "smooth-land",
+        "max": 15,
+        "min": 3
+    }],
+    "layers": [
+        {
+            "slopeCondition": {"maximumSlope": 4},
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [{"block": "minecraft:grass_block"}]
+        },
+        {
+            "slopeCondition": {"maximumSlope": 4},
+            "minHeight": 3,
+            "maxHeight": 3,
+            "palette": [{"block": "minecraft:dirt"}]
+        },
+        {
+            "minHeight": 6,
+            "maxHeight": 10,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {
+                    "block": "minecraft:stone",
+                    "weight": 4
+                },
+                {"block": "minecraft:andesite"},
+                {"block": "minecraft:mossy_cobblestone"},
+                {"block": "minecraft:cobblestone"}
+            ]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 6,
+            "palette": [{"block": "minecraft:stone"}]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.05,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        },
+        {
+            "chance": 0.42,
+            "palette": [
+                {"block": "minecraft:grass"},
+                {"block": "minecraft:fern"}
+            ]
+        },
+        {
+            "chance": 0.003,
+            "palette": [
+                {"block": "minecraft:oxeye_daisy"},
+                {"block": "minecraft:pink_tulip"},
+                {"block": "minecraft:lily_of_the_valley"}
+            ]
+        },
+        {
+            "chance": 0.02,
+            "palette": [
+                {"block": "minecraft:dandelion"},
+                {"block": "minecraft:poppy"},
+                {"block": "minecraft:rose_bush"}
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "place": [
+                "trees/bamboo/1",
+                "trees/bamboo/2",
+                "trees/bamboo/3",
+                "trees/bamboo/4",
+                "trees/bamboo/5",
+                "trees/bamboo/6",
+                "trees/bamboo/7"
+            ],
+            "clamp": {
+                "minimumHeight": 0,
+                "maximumHeight": 120
+            },
+            "chance": 1,
+            "density": 8,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "edit": [{
+                "find": [{"block": "minecraft:bamboo"}],
+                "replace": {
+                    "style": {"style": "STATIC"},
+                    "palette": [
+                        {
+                            "block": "minecraft:bamboo",
+                            "data": {
+                                "age": 1,
+                                "leaves": "large"
+                            }
+                        },
+                        {
+                            "block": "minecraft:bamboo",
+                            "data": {
+                                "age": 1,
+                                "leaves": "small"
+                            }
+                        },
+                        {
+                            "block": "minecraft:bamboo",
+                            "data": {
+                                "age": 1,
+                                "leaves": "none"
+                            }
+                        }
+                    ]
+                }
+            }],
+            "translate": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            }
+        },
+        {
+            "mode": "PAINT",
+            "place": [
+                "bushes/1",
+                "bushes/2",
+                "bushes/3",
+                "bushes/4",
+                "bushes/5",
+                "bushes/6",
+                "bushes/7"
+            ],
+            "chance": 1,
+            "density": 6,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            }
+        }
+    ]
+}

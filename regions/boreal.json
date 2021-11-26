@@ -1,0 +1,51 @@
+{
+    "name": "Boreal zone",
+    "rarity": 1,
+    "color": "#00b35c",
+    "landBiomeZoom": 2,
+    "shoreBiomeZoom": 0.5,
+    "landBiomes": [
+        "boreal/mega-taiga",
+        "boreal/rockland",
+        "boreal/shrublands",
+        "boreal/taiga",
+        "boreal/wetland",
+        "boreal/sequoia-forest"
+    ],
+    "shoreHeightMax": 1,
+    "shoreHeightMin": 1,
+    "shoreBiomes": [
+        "boreal/beach",
+        "boreal/beach-grass"
+    ],
+    "seaBiomes": ["boreal/river"],
+    "entitySpawners": [
+        "tundra/land-passive",
+        "tundra/land-hostile",
+        "tundra/land-cave"
+    ],
+    "objects": [{
+        "trees": [{
+            "anySize": true,
+            "treeTypes": ["REDWOOD"],
+            "sizes": [{
+                "depth": 1,
+                "width": 1
+            }]
+        }],
+        "place": [
+            "trees/spruce/unfrostedlarge2",
+            "trees/spruce/unfrostedlarge3",
+            "trees/spruce/unfrostedlarge4",
+            "trees/spruce/unfrostedlarge5",
+            "trees/spruce/unfrostedlarge6",
+            "trees/spruce/unfrostedlarge7",
+            "trees/spruce/unfrostedsmol1",
+            "trees/spruce/unfrostedsmol2",
+            "trees/spruce/unfrostedsmol3",
+            "trees/spruce/unfrostedsmol4",
+            "trees/spruce/unfrostedsmol5"
+        ],
+        "chance": 0
+    }]
+}

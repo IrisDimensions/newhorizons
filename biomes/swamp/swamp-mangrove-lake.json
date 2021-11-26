@@ -1,0 +1,137 @@
+{
+    "name": "Swamp forest",
+    "derivative": "SWAMP",
+    "vanillaDerivative": "SWAMP",
+    "rarity": 2,
+    "generators": [{
+        "generator": "plain",
+        "max": -4,
+        "min": -5
+    }],
+    "customDerivitives": [{
+        "id": "swamp",
+        "foliageColor": "#4a532f",
+        "waterColor": "#49521d",
+        "waterFogColor": "#49521d",
+        "fogColor": "#325729",
+        "grassColor": "#4b5332",
+        "category": "forest"
+    }],
+    "layers": [
+        {
+            "minHeight": 2,
+            "maxHeight": 3,
+            "style": {
+                "style": "SIMPLEX",
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 15
+                }
+            },
+            "zoom": 0.8,
+            "palette": [
+                {"block": "minecraft:dirt"},
+                {"block": "minecraft:coarse_dirt"}
+            ]
+        },
+        {
+            "maxHeight": 3,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 7
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "maxHeight": 3,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 7
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 7
+                },
+                {
+                    "block": "minecraft:stone",
+                    "weight": 8
+                },
+                {
+                    "block": "minecraft:coal_ore",
+                    "weight": 1
+                }
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "mode": "FAST_STILT",
+            "onwater": true,
+            "chance": 1,
+            "density": 8,
+            "place": [
+                "trees/mangrove/tree1",
+                "trees/mangrove/tree2",
+                "trees/mangrove/tree3",
+                "trees/mangrove/tree4",
+                "trees/mangrove/tree5",
+                "trees/mangrove/tree6",
+                "trees/mangrove/tree7",
+                "trees/mangrove/tree8",
+                "trees/mangrove/tree9",
+                "trees/mangrove/tree10",
+                "trees/mangrove/tree11",
+                "trees/mangrove/tree12",
+                "trees/mangrove/tree13",
+                "trees/mangrove/tree14",
+                "trees/mangrove/tree15",
+                "trees/mangrove/tree16",
+                "trees/mangrove/tree17",
+                "trees/mangrove/tree18",
+                "trees/mangrove/tree19",
+                "trees/mangrove/tree20",
+                "trees/mangrove/tree21"
+            ],
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": -3},
+            "edit": [{
+                "find": [{"block": "minecraft:oak_fence"}],
+                "replace": {"palette": [{"block": "minecraft:air"}]}
+            }]
+        },
+        {
+            "place": [
+                "clutter/l1",
+                "clutter/l2",
+                "clutter/l3",
+                "clutter/l4"
+            ],
+            "chance": 0.2,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        }
+    ]
+}

@@ -3,8 +3,8 @@
     "name": "Hot river",
     "customDerivitives": [{
         "id": "desert",
-        "foliageColor": "#27810b",
-        "grassColor": "#367925",
+        "foliageColor": "#6ec52b",
+        "grassColor": "#41A726",
         "category": "desert",
         "downfallType": "none"
     }],

@@ -1,0 +1,99 @@
+{
+    "name": "Tropical Treasure",
+    "rarity": 1,
+    "maxPicked": 2,
+    "minPicked": 0,
+    "loot": [
+        {
+            "type": "raw_copper",
+            "maxamount": 5,
+            "minAmount": 1,
+            "rarity": 1,
+            "slottypes": "STORAGE"
+        },
+        {
+            "type": "quartz",
+            "maxamount": 5,
+            "minAmount": 1,
+            "rarity": 1,
+            "slottypes": "STORAGE"
+        },
+        {
+            "type": "trident",
+            "maxamount": 5,
+            "minAmount": 1,
+            "rarity": 5,
+            "slottypes": "STORAGE"
+        },
+        {
+            "type": "glow_berries",
+            "maxamount": 5,
+            "minAmount": 1,
+            "rarity": 1,
+            "slottypes": "STORAGE"
+        },
+        {
+            "type": "scute",
+            "maxamount": 3,
+            "minAmount": 2,
+            "rarity": 2,
+            "slottypes": "STORAGE"
+        },
+        {
+            "type": "raw_copper",
+            "maxamount": 5,
+            "minAmount": 1,
+            "rarity": 1,
+            "slottypes": "STORAGE"
+        },
+        {
+            "type": "heart_of_the_sea",
+            "maxamount": 1,
+            "minAmount": 1,
+            "rarity": 5,
+            "slottypes": "STORAGE"
+        },
+        {
+            "type": "axolotl_bucket",
+            "maxamount": 5,
+            "minAmount": 1,
+            "rarity": 1,
+            "slottypes": "STORAGE"
+        },
+        {
+            "type": "totem_of_undying",
+            "maxamount": 5,
+            "minAmount": 1,
+            "rarity": 3,
+            "slottypes": "STORAGE"
+        },
+        {
+            "type": "sea_lantern",
+            "maxamount": 5,
+            "minAmount": 1,
+            "rarity": 1,
+            "slottypes": "STORAGE"
+        },
+        {
+            "type": "glow_ink_sac",
+            "maxamount": 5,
+            "minAmount": 1,
+            "rarity": 1,
+            "slottypes": "STORAGE"
+        },
+        {
+            "type": "prismarine_shard",
+            "maxamount": 5,
+            "minAmount": 1,
+            "rarity": 2,
+            "slottypes": "STORAGE"
+        },
+        {
+            "type": "prismarine_crystals",
+            "maxamount": 5,
+            "minAmount": 1,
+            "rarity": 2,
+            "slottypes": "STORAGE"
+        }
+    ]
+}

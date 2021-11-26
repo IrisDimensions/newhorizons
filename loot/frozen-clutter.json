@@ -1,0 +1,44 @@
+{
+    "name": "Frozen Clutter",
+    "maxPicked": 2,
+    "minPicked": 1,
+    "rarity": 1,
+    "loot": [
+        {
+            "type": "blackstone",
+            "maxAmount": 12,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "stone_bricks",
+            "maxAmount": 12,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "zombie_head",
+            "rarity": 3,
+            "maxAmount": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "wheat",
+            "maxAmount": 6,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "cobblestone",
+            "maxAmount": 7,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "diorite",
+            "maxAmount": 7,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "blue_candle",
+            "maxAmount": 3,
+            "slotTypes": "STORAGE"
+        }
+    ]
+}

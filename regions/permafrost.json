@@ -1,15 +1,42 @@
 {
     "landBiomes": ["permafrost/pf-plains"],
-    "biomeImplosionRatio": 0.26,
     "seaBiomes": ["permafrost/pf-river-ice"],
-    "landBiomeZoom": 0.5,
+    "landBiomeZoom": 2.7,
     "shoreHeightMin": 0,
     "shoreHeightMax": 0,
     "shoreBiomes": ["permafrost/pf-beach"],
-    "name": "Permafrost forest",
-    "rarity": 3,
+    "name": "Permafrost",
+    "color": "#baee59",
+    "rarity": 1,
     "entitySpawners": [
-        "cold/land-passive",
-        "genhostile"
-    ]
+        "frozen/land-passive",
+        "frozen/land-hostile",
+        "frozen/land-cave"
+    ],
+    "objects": [{
+        "trees": [{
+            "anySize": true,
+            "treeTypes": ["REDWOOD"],
+            "sizes": [{
+                "depth": 1,
+                "width": 1
+            }]
+        }],
+        "place": [
+            "trees/spruce/s1",
+            "trees/spruce/s2",
+            "trees/spruce/s3",
+            "trees/spruce/s4",
+            "trees/spruce/s5",
+            "trees/spruce/s6",
+            "trees/spruce/s7",
+            "trees/spruce/s8",
+            "trees/spruce/s9",
+            "trees/spruce/s10",
+            "trees/spruce/s11",
+            "trees/spruce/s12",
+            "trees/spruce/s13"
+        ],
+        "chance": 0
+    }]
 }

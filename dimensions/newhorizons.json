@@ -1,46 +1,51 @@
 {
+    "name": "New horizons",
+    "version": 1,
+    "environment": "NORMAL",
     "continentalStyle": {
         "style": "NOWHERE_SUPERFRACTAL",
-        "zoom": 5,
-        "exponent": 7.625
+        "zoom": 1.9,
+        "exponent": 14
     },
-    "preventLeafDecay": true,
-    "decorate": true,
-    "landZoom": 3.15,
-    "placeObjects": true,
-    "regions": [
-        "mountain",
-        "canyon",
-        "desert",
-        "mangrove",
-        "permafrost",
-        "frozen",
-        "swamp",
-        "temperate",
-        "tropical"
-    ],
-    "seaBiomeStyle": {"style": "CELLULAR_IRIS_THICK"},
-    "seaZoom": 1.25,
-    "biomeZoom": 32,
-    "lootTries": 32,
-    "continentZoom": 5,
+    "regionStyle": {
+        "style": "CELLULAR_BILINEAR_STARCAST_6",
+        "zoom": 3.1,
+        "fracture": {
+            "style": "PERLIN",
+            "zoom": 0.07,
+            "multiplier": 10,
+            "fracture": {
+                "style": "STATIC",
+                "multiplier": 3
+            }
+        }
+    },
     "landBiomeStyle": {
         "style": "CELLULAR",
-        "axialFracturing": true,
         "fracture": {
             "multiplier": 30,
-            "axialFracturing": true,
-            "style": "NOWHERE",
+            "style": "PERLIN",
             "zoom": 0.15,
             "fracture": {
-                "axialFracturing": true,
                 "style": "STATIC",
                 "multiplier": 4
             }
         }
     },
-    "postProcessing": true,
-    "bedrock": true,
+    "shoreBiomeStyle": {
+        "style": "CELLULAR",
+        "fracture": {
+            "multiplier": 18,
+            "maxFractureAccuracy": true,
+            "style": "FRACTAL_WATER",
+            "zoom": 0.255,
+            "fracture": {
+                "maxFractureAccuracy": true,
+                "style": "STATIC",
+                "multiplier": 4
+            }
+        }
+    },
     "riverBiomeStyle": {
         "style": "CELLULAR",
         "fracture": {
@@ -49,29 +54,74 @@
             "multiplier": 4
         }
     },
-    "regionStyle": {
-        "style": "CELLULAR",
-        "fracture": {
-            "axialFracturing": true,
-            "style": "STATIC",
-            "multiplier": 4
-        }
-    },
+    "regions": [
+        "desert",
+        "desert",
+        "desert",
+        "west",
+        "arid",
+        "tropical",
+        "swamp",
+        "temperate",
+        "temperate",
+        "temperate",
+        "mountain-plains",
+        "mountain",
+        "mountain-cold-plains",
+        "boreal",
+        "boreal",
+        "permafrost",
+        "frozen",
+        "frozen"
+    ],
     "carving": {"caves": [{
-        "breakSurface": false,
+        "breakSurface": true,
         "cave": "deep/main",
-        "rarity": 27,
+        "rarity": 14,
         "caveStartHeight": {
-            "max": 45,
-            "min": 3,
+            "max": 60,
+            "min": 5,
             "style": {"style": "STATIC"}
         }
     }]},
-    "aggressiveBiomeReshuffle": true,
+    "treeSettings": {
+        "enabled": true,
+        "mode": "FIRST"
+    },
+    "islandBiomeStyle": {"style": "CELLULAR_IRIS_THICK"},
+    "skylandBiomeStyle": {"style": "CELLULAR_IRIS_THICK"},
+    "seaBiomeStyle": {"style": "CELLULAR_IRIS_THICK"},
+    "fluidPalette": {"palette": [{"block": "minecraft:water"}]},
+    "fluidHeight": 63,
+    "landZoom": 3.15,
+    "seaZoom": 1.25,
+    "continentZoom": 5,
+    "biomeZoom": 9,
+    "lootTries": 32,
     "terrainZoom": 1,
     "coordFractureZoom": 0.15,
-    "fluidHeight": 63,
-    "fluidPalette": {"palette": [{"block": "minecraft:water"}]},
+    "stronghold": "stronghold",
+    "strongholdJumpDistance": 670,
+    "maxStrongholds": 27,
+    "regionZoom": 6.5,
+    "dimensionAngleDeg": 12,
+    "landChance": 0.69,
+    "preventLeafDecay": true,
+    "decorate": true,
+    "placeObjects": true,
+    "postProcessing": true,
+    "bedrock": true,
+    "aggressiveBiomeReshuffle": true,
+    "postProcessingSlabs": true,
+    "postProcessingWalls": true,
+    "coordFractureDistance": 926,
+    "postProcessCaves": true,
+    "caves": true,
+    "loot": {"tables": [
+        "global-treasure",
+        "global-tools",
+        "global-clutter"
+    ]},
     "rockPalette": {
         "palette": [
             {
@@ -90,107 +140,6 @@
             }
         }
     },
-    "postProcessingSlabs": true,
-    "postProcessingWalls": true,
-    "coordFractureDistance": 926,
-    "postProcessCaves": true,
-    "shoreBiomeStyle": {
-        "style": "CELLULAR",
-        "fracture": {
-            "multiplier": 18,
-            "maxFractureAccuracy": true,
-            "style": "FRACTAL_WATER",
-            "zoom": 0.255,
-            "fracture": {
-                "maxFractureAccuracy": true,
-                "style": "STATIC",
-                "multiplier": 4
-            }
-        }
-    },
-    "fluidBodies":{
-        "lakes": [
-            {
-                "rarity": 1,
-                "widthStyle":{"min": 10,"max": 10,"generator":{"style": "IRIS"}},
-            "depthStyle":{"max": -5,"min": -20,"generator":{"style": "SIMPLEX"}},
-                "worm": {
-        "girth": {
-            "max": 4,
-            "min": 2,
-            "style": {"style": "STATIC"}
-        },
-        "maxDistance": 300,
-        "yStyle": {
-            "min": -1,
-            "max": 2,
-            "generator": {
-                "zoom": 1,
-                "style": "PERLIN"
-            }
-        },
-        "xStyle": {
-            "min": -7,
-            "max": 7,
-            "generator": {
-                "zoom": 1,
-                "style": "PERLIN"
-            }
-        },
-        "zStyle": {
-            "min": -7,
-            "max": 7,
-            "generator": {
-                "zoom": 1,
-                "style": "PERLIN"
-            }
-        }
-    }
-            }
-        ],
-        "rivers": [{
-            "rarity": 1,
-            "width":{"max": 10,"min": 4,"style":{"style": "IRIS"}},
-            "widthStyle":{"min": 3,"max": 7,"generator":{"style": "IRIS"}},
-            "depthStyle":{"max": -5,"min": -20,"generator":{"style": "SIMPLEX"}},
-            "worm": {
-        "girth": {
-            "max": 4,
-            "min": 2,
-            "style": {"style": "STATIC"}
-        },
-        "maxDistance": 300,
-        "yStyle": {
-            "min": -1,
-            "max": 2,
-            "generator": {
-                "zoom": 1,
-                "style": "PERLIN"
-            }
-        },
-        "xStyle": {
-            "min": -7,
-            "max": 7,
-            "generator": {
-                "zoom": 1,
-                "style": "PERLIN"
-            }
-        },
-        "zStyle": {
-            "min": -7,
-            "max": 7,
-            "generator": {
-                "zoom": 1,
-                "style": "PERLIN"
-            }
-        }
-    }
-            }
-        ]
-    },
-    "caves": true,
-    "landChance": 0.69,
-    "version": 5,
     "deposits": [
         {
             "minHeight": 19,
@@ -233,12 +182,12 @@
             "varience": 2
         },
         {
-            "minHeight": 5,
+            "minHeight": 1,
             "maxPerChunk": 128,
             "maxHeight": 13,
             "minPerChunk": 128,
-            "minSize": 8,
-            "maxSize": 4,
+            "minSize": 5,
+            "maxSize": 20,
             "palette": [{"block": "minecraft:deepslate"}],
             "varience": 4
         },
@@ -335,7 +284,6 @@
             "varience": 9
         }
     ],
-    "environment": "NORMAL",
     "overlayNoise": [
         {
             "min": 0,
@@ -353,13 +301,5 @@
                 "zoom": 1.1
             }
         }
-    ],
-    "islandBiomeStyle": {"style": "CELLULAR_IRIS_THICK"},
-    "skylandBiomeStyle": {"style": "CELLULAR_IRIS_THICK"},
-    "name": "New horizons",
-    "stronghold": "stronghold",
-    "strongholdJumpDistance": 670,
-    "maxStrongholds": 27,
-    "regionZoom": 9,
-    "dimensionAngleDeg": 19
+    ]
 }

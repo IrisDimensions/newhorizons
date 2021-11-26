@@ -8,19 +8,19 @@
         "category": "extreme_hills"
     }],
     "biomeZoom": 0.73,
-    "rarity": 3,
+    "rarity": 1,
     "generators": [{
         "generator": "mountain",
         "max": 180,
-        "min": 90
+        "min": 95
     }],
     "layers": [
         {
             "minHeight": 1,
             "maxHeight": 1,
             "slopeCondition": {
-                "minimumSlope": 0.1,
-                "maximumSlope": 1.3
+                "minimumSlope": 0,
+                "maximumSlope": 2
             },
             "palette": [{"block": "minecraft:snow_block"}]
         },
@@ -114,16 +114,6 @@
             }
         ]
     },
-    "carving": {"caves": [{
-        "breakSurface": true,
-        "cave": "mountain/main",
-        "rarity": 14,
-        "caveStartHeight": {
-            "max": 220,
-            "min": 70,
-            "style": {"style": "STATIC"}
-        }
-    }]},
     "decorators": [
         {
             "chance": 0.2,

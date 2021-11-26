@@ -1,0 +1,46 @@
+{
+    "vanillaDerivative": "DESERT_LAKES",
+    "name": "River",
+    "decorators": [{
+        "chance": 0.2,
+        "palette": [{"block": "minecraft:seagrass"}]
+    }],
+    "customDerivitives": [{
+        "id": "west",
+        "downfallType": "none",
+        "grassColor": "#dde048",
+        "foliageColor": "#ced256"
+    }],
+    "layers": [
+        {
+            "style": {"style": "FRACTAL_WATER"},
+            "zoom": 0.7,
+            "palette": [
+                {"block": "minecraft:red_sand"},
+                {"block": "minecraft:orange_terracotta"}
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 3,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {"block": "minecraft:red_sand"},
+                {"block": "minecraft:terracotta"},
+                {"block": "minecraft:gravel"},
+                {"block": "minecraft:red_sand"},
+                {"block": "minecraft:dirt"},
+                {
+                    "weight": 2,
+                    "block": "minecraft:red_sand"
+                }
+            ]
+        }
+    ],
+    "generators": [{
+        "generator": "river",
+        "max": -10,
+        "min": -15
+    }],
+    "derivative": "DESERT_LAKES"
+}

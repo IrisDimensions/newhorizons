@@ -1,0 +1,17 @@
+{
+    "customBiome": "caves/mountain",
+    "nodeThreshold": 40,
+    "depthStyle": {
+        "generator": {"style": "IRIS"},
+        "max": 14,
+        "min": 0
+    },
+    "angle": 50,
+    "topAngle": 70,
+    "ribThickness": 8,
+    "baseWidthStyle": {
+        "generator": {"style": "SIMPLEX"},
+        "max": 5,
+        "min": 1
+    }
+}

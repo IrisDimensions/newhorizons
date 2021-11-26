@@ -5,19 +5,35 @@
         "min": 10
     },
     "customBiome": "caves/deep/vines",
+    "fork": {
+        "caves": [{
+            "breakSurface": false,
+            "cave": "deep/small",
+            "rarity": 10
+        }],
+        "elipsoids": [{
+            "fill": {"block": "minecraft:cave_air"},
+            "rarity": 90,
+            "baseWidth": {
+                "min": 5,
+                "max": 17,
+                "style": {"style": "STATIC"}
+            }
+        }]
+    },
     "worm": {
         "girth": {
-            "max": 4,
-            "min": 3,
+            "max": 5,
+            "min": 2,
             "style": {
                 "style": "SIMPLEX",
                 "zoom": 0.5
             }
         },
-        "maxDistance": 230,
+        "maxDistance": 40,
         "yStyle": {
-            "min": -2,
-            "max": 1,
+            "min": -4,
+            "max": 4,
             "generator": {
                 "zoom": 3,
                 "style": "PERLIN"

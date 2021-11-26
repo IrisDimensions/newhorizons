@@ -1,0 +1,316 @@
+{
+    "name": "Mixed Forest Hills",
+    "derivative": "FOREST",
+    "vanillaDerivative": "FOREST",
+    "rarity": 3,
+    "color": "#80f471",
+    "generators": [{
+        "generator": "smooth-land",
+        "max": 50,
+        "min": 20
+    }],
+    "entitySpawners": [
+        "temperate/land-passive",
+        "temperate/land-hostile",
+        "temperate/land-cave"
+    ],
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 3.7
+            },
+            "palette": [{"block": "minecraft:grass_block"}]
+        },
+        {
+            "slopeCondition": {
+                "maximumSlope": 3,
+                "minimumSlope": 0
+            },
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 7
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "slopeCondition": {
+                "maximumSlope": 3,
+                "minimumSlope": 0
+            },
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:stone",
+                    "weight": 2
+                }
+            ]
+        },
+        {
+            "maxHeight": 4,
+            "minHeight": 4,
+            "slopeCondition": {
+                "minimumSlope": 2.3,
+                "maximumSlope": 4.5
+            },
+            "style": {
+                "style": "SIMPLEX",
+                "zoom": 1,
+                "fracture": {
+                    "style": "GLOB",
+                    "zoom": 0.25,
+                    "multiplier": 70,
+                    "fracture": {
+                        "style": "FRACTAL_WATER",
+                        "zoom": 1.4,
+                        "multiplier": 10
+                    }
+                }
+            },
+            "zoom": 0.7,
+            "palette": [
+                {
+                    "weight": 6,
+                    "block": "minecraft:granite"
+                },
+                {
+                    "weight": 5,
+                    "block": "minecraft:stone"
+                }
+            ]
+        },
+        {
+            "minHeight": 7,
+            "maxHeight": 7,
+            "slopeCondition": {
+                "minimumSlope": 4.5,
+                "maximumSlope": 7
+            },
+            "palette": [{"block": "minecraft:granite"}]
+        }
+    ],
+    "wall": {"palette": [
+        {"block": "minecraft:stone"},
+        {"block": "minecraft:andesite"},
+        {"block": "minecraft:cobblestone"},
+        {"block": "minecraft:mossy_cobblestone"}
+    ]},
+    "decorators": [
+        {
+            "chance": 0.24,
+            "variance": {
+                "style": "CELLULAR",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "SIMPLEX",
+                    "zoom": 0.2,
+                    "multiplier": 10,
+                    "fracture": {
+                        "style": "STATIC",
+                        "multiplier": 15
+                    }
+                }
+            },
+            "style": {
+                "style": "TRIOCTAVE_SIMPLEX",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 8
+                }
+            },
+            "palette": [
+                {"block": "minecraft:dandelion"},
+                {"block": "minecraft:poppy"},
+                {"block": "minecraft:blue_orchid"},
+                {"block": "minecraft:allium"},
+                {"block": "minecraft:azure_bluet"},
+                {"block": "minecraft:red_tulip"},
+                {"block": "minecraft:orange_tulip"},
+                {"block": "minecraft:white_tulip"},
+                {"block": "minecraft:pink_tulip"},
+                {"block": "minecraft:oxeye_daisy"},
+                {"block": "minecraft:cornflower"},
+                {"block": "minecraft:lily_of_the_valley"}
+            ]
+        },
+        {
+            "chance": 0.02,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        },
+        {
+            "chance": 0.4,
+            "palette": [{"block": "minecraft:grass"}]
+        },
+        {
+            "chance": 0.07,
+            "palette": [{"block": "minecraft:fern"}]
+        }
+    ],
+    "objects": [
+        {
+            "mode": "PAINT",
+            "place": [
+                "clutter/boulder1",
+                "clutter/boulder2",
+                "clutter/boulder3",
+                "clutter/boulder4",
+                "clutter/boulder5",
+                "clutter/boulder6",
+                "clutter/boulder7",
+                "clutter/boulder8",
+                "clutter/boulder9",
+                "clutter/boulder10",
+                "clutter/boulder11",
+                "clutter/boulder12",
+                "clutter/boulder13",
+                "clutter/boulder14",
+                "clutter/boulder15"
+            ],
+            "chance": 0.34,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": -2}
+        },
+        {
+            "chance": 1,
+            "density": 1,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "trees": [{
+                "anySize": true,
+                "treeTypes": [
+                    "REDWOOD",
+                    "TREE",
+                    "BIG_TREE",
+                    "BIRCH",
+                    "TALL_BIRCH",
+                    "TALL_REDWOOD"
+                ],
+                "sizes": [{
+                    "depth": 1,
+                    "width": 1
+                }]
+            }],
+            "place": [
+                "trees/birch/tall1",
+                "trees/birch/tall2",
+                "trees/birch/tall3",
+                "trees/birch/tall4",
+                "trees/birch/tall5",
+                "trees/birch/tall6",
+                "trees/birch/tall7",
+                "trees/birch/tall8",
+                "trees/birch/tall9",
+                "trees/birch/tall10",
+                "trees/decideous/1",
+                "trees/decideous/2",
+                "trees/decideous/3",
+                "trees/decideous/4",
+                "trees/decideous/5",
+                "trees/decideous/6",
+                "trees/decideous/7",
+                "trees/decideous/8",
+                "trees/decideous/9",
+                "trees/decideous/10",
+                "trees/decideous/11",
+                "trees/decideous/12",
+                "trees/oak/hoakgeneric1",
+                "trees/oak/hoakgeneric2",
+                "trees/oak/hoakgeneric3",
+                "trees/oak/hoakgeneric4",
+                "trees/oak/hoakgeneric5",
+                "trees/spruce/vgeneric1",
+                "trees/spruce/vgeneric2",
+                "trees/spruce/vgeneric3",
+                "trees/spruce/vgeneric4",
+                "trees/spruce/vgeneric5",
+                "trees/spruce/vgeneric6",
+                "trees/spruce/vgeneric7",
+                "trees/spruce/vgeneric8",
+                "trees/spruce/vgeneric9",
+                "trees/spruce/vgeneric10",
+                "trees/oak/thoakgeneric1",
+                "trees/oak/thoakgeneric2",
+                "trees/oak/thoakgeneric3",
+                "trees/oak/thoakgeneric4",
+                "trees/oak/thoakgeneric4"
+            ],
+            "translate": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "edit": [{
+                "find": [
+                    {"block": "minecraft:oak_leaves"},
+                    {"block": "minecraft:birch_leaves"}
+                ],
+                "chance": 3.0E-4,
+                "replace": {"palette": [{"block": "minecraft:bee_nest"}]}
+            }]
+        },
+        {
+            "mode": "PAINT",
+            "place": [
+                "clutter/arbusto1",
+                "clutter/arbusto2",
+                "clutter/arbusto4",
+                "clutter/arbusto5"
+            ],
+            "chance": 0.47,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": 1}
+        }
+    ],
+    "carving": {"caves": [{
+        "breakSurface": true,
+        "cave": "hill/temperate",
+        "rarity": 14,
+        "caveStartHeight": {
+            "max": 190,
+            "min": 90,
+            "style": {"style": "STATIC"}
+        }
+    }]}
+}

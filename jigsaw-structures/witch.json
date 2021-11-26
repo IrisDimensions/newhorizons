@@ -1,0 +1,9 @@
+{
+    "maxDepth": 10,
+    "pieces": ["witch"],
+    "terminate": true,
+    "feature": {
+        "blockRadius": 10,
+        "entitySpawners": ["witch"]
+    }
+}

@@ -1,0 +1,176 @@
+{
+    "name": "Forest hill",
+    "derivative": "PLAINS",
+    "vanillaDerivative": "PLAINS",
+    "customDerivitives": [{
+        "id": "frozen_mountain",
+        "grassColor": "#80ab69",
+        "foliageColor": "#fcfcfc",
+        "downfallType": "snow",
+        "temperature": -3,
+        "category": "icy"
+    }],
+    "generators": [{
+        "generator": "plain-hills",
+        "max": 45,
+        "min": 25
+    }],
+    "rarity": 1,
+    "decorators": [{
+        "chance": 1,
+        "variance": {
+            "style": "SIMPLEX",
+            "zoom": 0.3
+        },
+        "palette": [
+            {
+                "block": "minecraft:snow",
+                "data": {"layers": 1}
+            },
+            {
+                "block": "minecraft:snow",
+                "data": {"layers": 2}
+            }
+        ]
+    }],
+    "layers": [
+        {
+            "minHeight": 2,
+            "maxHeight": 2,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 2.6
+            },
+            "style": {
+                "style": "SIMPLEX",
+                "exponent": 1.8,
+                "zoom": 0.8
+            },
+            "zoom": 0.5,
+            "palette": [
+                {
+                    "block": "minecraft:snow_block",
+                    "weight": 5
+                },
+                {
+                    "block": "minecraft:powder_snow",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "slopeCondition": {"minimumSlope": 4},
+            "palette": [
+                {"block": "minecraft:gravel"},
+                {"block": "minecraft:cyan_terracotta"}
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "slopeCondition": {"minimumSlope": 4},
+            "palette": [
+                {"block": "minecraft:stone"},
+                {"block": "minecraft:stone"},
+                {"block": "minecraft:cobblestone"}
+            ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 4
+            },
+            "palette": [{"block": "minecraft:snow_block"}]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 3,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 3
+            },
+            "palette": [{"block": "minecraft:dirt"}]
+        }
+    ],
+    "objects": [
+        {
+            "place": [
+                "trees/spruce/sup-pine-1",
+                "trees/spruce/sup-pine-2",
+                "trees/spruce/sup-pine-3",
+                "trees/spruce/sup-pine-11",
+                "trees/spruce/sup-pine-12",
+                "trees/spruce/sup-pine-13"
+            ],
+            "snow": 0.8,
+            "chance": 0.5,
+            "translate": {"y": -5},
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        },
+        {
+            "place": [
+                "trees/spruce/sup-pine-5",
+                "trees/spruce/sup-pine-4",
+                "trees/spruce/sup-pine-7"
+            ],
+            "snow": 0.8,
+            "chance": 0.4,
+            "translate": {"y": -2},
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        },
+        {
+            "trees": [{
+                "anySize": true,
+                "treeTypes": ["REDWOOD"],
+                "sizes": [{
+                    "depth": 1,
+                    "width": 1
+                }]
+            }],
+            "place": [
+                "trees/spruce/sup-pine-6",
+                "trees/spruce/sup-pine-9",
+                "trees/spruce/sup-pine-8",
+                "trees/spruce/sup-pine-10"
+            ],
+            "snow": 0.8,
+            "chance": 0.2,
+            "translate": {"y": -2},
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        }
+    ],
+    "wall": {"palette": [
+        {"block": "minecraft:stone"},
+        {"block": "minecraft:andesite"},
+        {"block": "minecraft:gravel"},
+        {"block": "minecraft:cyan_terracotta"}
+    ]}
+}

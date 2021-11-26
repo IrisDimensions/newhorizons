@@ -1,0 +1,45 @@
+{
+    "name": "Beach",
+    "derivative": "TAIGA",
+    "vanillaDerivative": "TAIGA",
+    "rarity": 3,
+    "customDerivitives": [{
+        "id": "boreal_taiga",
+        "grassColor": "#80ab69",
+        "category": "beach"
+    }],
+    "generators": [{
+        "generator": "plain",
+        "max": 1,
+        "min": 0
+    }],
+    "layers": [
+        {
+            "zoom": 0.6,
+            "maxHeight": 1,
+            "minHeight": 1,
+            "palette": [
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 2
+                },
+                {
+                    "block": "minecraft:rooted_dirt",
+                    "weight": 2
+                },
+                {
+                    "block": "minecraft:cobblestone",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "maxHeight": 2,
+            "minHeight": 2,
+            "palette": [
+                {"block": "minecraft:coarse_dirt"},
+                {"block": "minecraft:dirt"}
+            ]
+        }
+    ]
+}

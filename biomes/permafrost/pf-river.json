@@ -61,7 +61,7 @@
         ]}
     ],
     "generators": [{
-        "generator": "smooth-land",
+        "generator": "river",
         "max": -18,
         "min": -25
     }],
@@ -129,30 +129,30 @@
             }
         },
         {
-        "place": [
-            "structures/kship1",
-            "structures/kship2",
-            "structures/kship3",
-            "structures/kship4"
-        ],
-        "chance": 0.0035,
-        "onwater": true,
-        "translate": {"y": -1},
-        "rotation": {
-            "enabled": true,
-            "yAxis": {
+            "place": [
+                "structures/kship1",
+                "structures/kship2",
+                "structures/kship3",
+                "structures/kship4"
+            ],
+            "chance": 0.0035,
+            "onwater": true,
+            "translate": {"y": -1},
+            "rotation": {
                 "enabled": true,
-                "interval": 90,
-                "min": -360,
-                "max": 360
-            }
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "edit": [{
+                "find": [{"block": "minecraft:bone_block"}],
+                "replace": {"palette": [{"block": "minecraft:gray_wool"}]}
+            }],
+            "waterloggable": true
         },
-        "edit": [{
-            "find": [{"block": "minecraft:bone_block"}],
-            "replace": {"palette": [{"block": "minecraft:gray_wool"}]}
-        }],
-        "waterloggable": true
-    },
         {
             "chance": 0.2,
             "rotation": {

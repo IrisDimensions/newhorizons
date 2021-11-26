@@ -1,0 +1,213 @@
+{
+    "name": "Steppe",
+    "derivative": "PLAINS",
+    "vanillaDerivative": "PLAINS",
+    "rarity": 1,
+    "color": "#b8e84a",
+    "customDerivitives": [{
+        "id": "templains",
+        "foliageColor": "#7FA528",
+        "waterColor": "#2840A5",
+        "grassColor": "#A4C646",
+        "category": "forest"
+    }],
+    "generators": [{
+        "min": 4,
+        "max": 8,
+        "generator": "plain"
+    }],
+    "entitySpawners": [
+        "temperate/land-passive",
+        "temperate/land-hostile",
+        "temperate/land-cave"
+    ],
+    "layers": [
+        {"palette": [{"block": "minecraft:grass_block"}]},
+        {
+            "minHeight": 2,
+            "maxHeight": 2,
+            "palette": [{"block": "minecraft:dirt"}]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 3,
+            "palette": [
+                {"block": "minecraft:dirt"},
+                {"block": "minecraft:coarse_dirt"}
+            ]
+        },
+        {
+            "minHeight": 6,
+            "maxHeight": 18,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {"block": "minecraft:dirt"},
+                {"block": "minecraft:stone"}
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.19,
+            "variance": {"style": "STATIC"},
+            "zoom": 0.3,
+            "palette": [{"block": "minecraft:grass"}],
+            "style": {"style": "STATIC"}
+        },
+        {
+            "chance": 0.025,
+            "variance": {"style": "STATIC"},
+            "zoom": 0.3,
+            "palette": [{
+                "data": {"age": 7},
+                "block": "minecraft:wheat"
+            }],
+            "style": {
+                "style": "IRIS",
+                "zoom": 0.28
+            }
+        },
+        {
+            "chance": 0.28,
+            "variance": {
+                "style": "CELLULAR",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "SIMPLEX",
+                    "zoom": 0.2,
+                    "multiplier": 10
+                }
+            },
+            "style": {
+                "style": "TRIOCTAVE_SIMPLEX",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 8
+                }
+            },
+            "palette": [
+                {"block": "minecraft:dandelion"},
+                {"block": "minecraft:poppy"},
+                {"block": "minecraft:blue_orchid"},
+                {"block": "minecraft:allium"},
+                {"block": "minecraft:azure_bluet"},
+                {"block": "minecraft:red_tulip"},
+                {"block": "minecraft:orange_tulip"},
+                {"block": "minecraft:white_tulip"},
+                {"block": "minecraft:pink_tulip"},
+                {"block": "minecraft:oxeye_daisy"},
+                {"block": "minecraft:cornflower"},
+                {"block": "minecraft:lily_of_the_valley"}
+            ]
+        },
+        {
+            "chance": 0.05,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        },
+        {
+            "chance": 0.5,
+            "palette": [{"block": "minecraft:grass"}]
+        },
+        {
+            "chance": 0.02,
+            "palette": [
+                {
+                    "block": "minecraft:beetroots",
+                    "data": {"age": 2}
+                },
+                {
+                    "block": "minecraft:pumpkin_stem",
+                    "data": {"age": 4}
+                },
+                {
+                    "block": "minecraft:melon_stem",
+                    "data": {"age": 4}
+                }
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "trees": [{
+                "anySize": true,
+                "treeTypes": ["TREE"],
+                "sizes": [{
+                    "depth": 1,
+                    "width": 1
+                }]
+            }],
+            "carvingSupport": "SURFACE_ONLY",
+            "place": [
+                "trees/oak/thoakgeneric1",
+                "trees/oak/thoakgeneric2",
+                "trees/oak/thoakgeneric3",
+                "trees/oak/thoakgeneric4"
+            ],
+            "chance": 0.04,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        },
+        {
+            "trees": [{
+                "anySize": true,
+                "treeTypes": ["TREE"],
+                "sizes": [{
+                    "depth": 1,
+                    "width": 1
+                }]
+            }],
+            "carvingSupport": "SURFACE_ONLY",
+            "place": [
+                "trees/oak/lponderosa1",
+                "trees/oak/lponderosa2",
+                "trees/oak/lponderosa3",
+                "trees/oak/lponderosa4",
+                "trees/oak/lponderosa5",
+                "trees/oak/lponderosa6",
+                "trees/oak/lponderosa7",
+                "trees/oak/lponderosa8",
+                "trees/oak/lponderosa9",
+                "trees/oak/lponderosa10"
+            ],
+            "chance": 0.015,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        },
+        {
+            "carvingSupport": "SURFACE_ONLY",
+            "mode": "PAINT",
+            "place": [
+                "clutter/arbusto1",
+                "clutter/arbusto2",
+                "clutter/arbusto4",
+                "clutter/arbusto5"
+            ],
+            "chance": 0.25,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": 1}
+        }
+    ]
+}

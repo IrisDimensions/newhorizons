@@ -4,25 +4,25 @@
         "max": 220,
         "min": 30
     },
-    "customBiome": "caves/mountain/bs",
-    "fork": {"elipsoids": [{
-        "fill": {"block": "minecraft:cave_air"},
-        "rarity": 10,
-        "baseWidth": {
-            "min": 5,
-            "max": 30,
-            "style": {"style": "STATIC"}
+    "customBiome": "caves/mountain",
+    "fork": {"caves": [{
+        "cave": "mountain/small",
+        "rarity": 50,
+        "caveStartHeight": {
+            "style": {"style": "STATIC"},
+            "max": 180,
+            "min": 70
         }
     }]},
     "worm": {
         "girth": {
-            "max": 3,
-            "min": 5,
+            "max": 2,
+            "min": 6,
             "style": {"style": "STATIC"}
         },
-        "maxDistance": 300,
+        "maxDistance": 400,
         "yStyle": {
-            "min": -3,
+            "min": -7,
             "max": 2,
             "generator": {
                 "zoom": 3,
@@ -30,18 +30,18 @@
             }
         },
         "xStyle": {
-            "min": -12,
-            "max": 12,
+            "min": -7,
+            "max": 7,
             "generator": {
-                "zoom": 2,
+                "zoom": 1,
                 "style": "IRIS_DOUBLE"
             }
         },
         "zStyle": {
-            "min": -12,
-            "max": 12,
+            "min": -7,
+            "max": 7,
             "generator": {
-                "zoom": 2,
+                "zoom": 1,
                 "style": "IRIS_DOUBLE"
             }
         }

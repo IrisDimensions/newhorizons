@@ -1,0 +1,69 @@
+{
+    "name": "Volcano",
+    "derivative": "JUNGLE",
+    "vanillaDerivative": "JUNGLE",
+    "rarity": 1,
+    "customDerivitives": [{
+        "id": "tropical",
+        "foliageColor": "#40C42B",
+        "grassColor": "#41A726",
+        "category": "jungle",
+        "waterColor": "#3AB2A2",
+        "waterFogColor": "#3AB2A2"
+    }],
+    "generators": [{
+        "generator": "smooth-land",
+        "max": 100,
+        "min": 90
+    }],
+    "layers": [
+        {
+            "minHeight": 6,
+            "maxHeight": 8,
+            "slopeCondition": {"maximumSlope": 2.5},
+            "palette": [{"block": "minecraft:cave_air"}]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "slopeCondition": {"maximumSlope": 2.5},
+            "palette": [{
+                "block": "minecraft:lava",
+                "data": {"level": 1}
+            }]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 10,
+            "slopeCondition": {"maximumSlope": 2.5},
+            "palette": [{
+                "block": "minecraft:lava",
+                "data": {"level": 0}
+            }]
+        },
+        {
+            "maxHeight": 10,
+            "minHeight": 10,
+            "style": {
+                "style": "FRACTAL_WATER",
+                "zoom": 0.84
+            },
+            "zoom": 0.6,
+            "slopeCondition": {
+                "maximumSlope": 255,
+                "minimumSlope": 1.4
+            },
+            "palette": [
+                {
+                    "block": "minecraft:basalt",
+                    "data": {"axis": "y"},
+                    "weight": 10
+                },
+                {
+                    "block": "minecraft:magma_block",
+                    "weight": 4
+                }
+            ]
+        }
+    ]
+}

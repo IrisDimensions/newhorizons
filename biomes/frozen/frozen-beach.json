@@ -17,17 +17,17 @@
                 "minimumSlope": 0,
                 "maximumSlope": 2.6
             },
-            "style":{"style": "FRACTAL_SMOKE"},
+            "style": {"style": "FRACTAL_SMOKE"},
             "zoom": 0.3,
-            "palette": [{"block": "minecraft:ice"},
-            {"block": "minecraft:packed_ice"}]
+            "palette": [
+                {"block": "minecraft:ice"},
+                {"block": "minecraft:packed_ice"}
+            ]
         },
         {
             "minHeight": 1,
             "maxHeight": 1,
-            "palette": [
-                {"block": "minecraft:snow_block"}
-            ]
+            "palette": [{"block": "minecraft:snow_block"}]
         },
         {
             "minHeight": 1,

@@ -1,0 +1,186 @@
+{
+    "name": "Dark forest",
+    "derivative": "FOREST",
+    "vanillaDerivative": "FOREST",
+    "color": "#4e3e1d",
+    "customDerivitives": [{
+        "id": "dark_forest",
+        "grassColor": "#2e7925",
+        "foliageColor": "#4b6f2a",
+        "spawns": [{
+            "type": "WITCH",
+            "maxCount": 2,
+            "minCount": 1,
+            "weight": 2,
+            "group": "CREATURE"
+        }],
+        "category": "forest"
+    }],
+    "entitySpawners": [
+        "temperate/land-passive",
+        "temperate/land-hostile",
+        "temperate/land-cave"
+    ],
+    "layers": [
+        {"palette": [{"block": "minecraft:grass_block"}]},
+        {
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 7
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:stone",
+                    "weight": 2
+                }
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "style": {"style": "STATIC"},
+            "chance": 0.1,
+            "palette": [
+                {
+                    "block": "minecraft:grass",
+                    "weight": 6
+                },
+                {
+                    "block": "minecraft:fern",
+                    "weight": 2
+                }
+            ]
+        },
+        {
+            "style": {"style": "STATIC"},
+            "chance": 0.01,
+            "palette": [
+                {
+                    "block": "minecraft:red_mushroom",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:brown_mushroom",
+                    "weight": 1
+                }
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "chance": 1,
+            "density": 1,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "translate": {"y": -3},
+            "trees": [{
+                "anySize": true,
+                "treeTypes": ["DARK_OAK"],
+                "sizes": [{
+                    "depth": 1,
+                    "width": 1
+                }]
+            }],
+            "place": [
+                "trees/sakura/genericsak1",
+                "trees/sakura/genericsak2",
+                "trees/sakura/genericsak3",
+                "trees/sakura/genericsak4",
+                "trees/sakura/genericsak5"
+            ],
+            "edit": [
+                {
+                    "find": [{"block": "minecraft:stripped_birch_wood"}],
+                    "replace": {"palette": [{"block": "minecraft:dark_oak_wood"}]}
+                },
+                {
+                    "find": [{"block": "minecraft:oak_leaves"}],
+                    "replace": {"palette": [{"block": "minecraft:dark_oak_leaves"}]}
+                }
+            ]
+        },
+        {
+            "chance": 0.5,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": [
+                "clutter/mossrock1",
+                "clutter/mossrock2",
+                "clutter/mossrock3"
+            ]
+        },
+        {
+            "mode": "PAINT",
+            "place": [
+                "clutter/arbusto1",
+                "clutter/arbusto2",
+                "clutter/arbusto4",
+                "clutter/arbusto5"
+            ],
+            "chance": 0.6,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": 1}
+        }
+    ],
+    "generators": [{
+        "generator": "plain",
+        "max": 10,
+        "min": 4
+    }],
+    "slab": {
+        "palette": [
+            {
+                "weight": 1,
+                "block": "minecraft:cobblestone_slab"
+            },
+            {
+                "weight": 10,
+                "block": "minecraft:air"
+            }
+        ],
+        "style": {"style": "STATIC"}
+    },
+    "rarity": 1
+}

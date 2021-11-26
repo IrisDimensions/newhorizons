@@ -1,0 +1,19 @@
+{
+    "weather": "ANY",
+    "group": "NORMAL",
+    "timeBlock": {
+        "startHour": 18,
+        "endHour": 6
+    },
+    "maximumRate": {
+        "amount": 1,
+        "per": {"minutes": 1}
+    },
+    "maxEntitiesPerChunk": 2,
+    "spawns": [{
+        "entity": "standard/hostile/witch",
+        "maxSpawns": 1,
+        "minSpawns": 1,
+        "rarity": 1
+    }]
+}

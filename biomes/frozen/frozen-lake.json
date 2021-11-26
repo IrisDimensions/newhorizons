@@ -15,6 +15,24 @@
         "max": 5,
         "min": -10
     }],
+    "rarity": 1,
+    "decorators": [{
+        "chance": 1,
+        "variance": {
+            "style": "SIMPLEX",
+            "zoom": 0.3
+        },
+        "palette": [
+            {
+                "block": "minecraft:snow",
+                "data": {"layers": 1}
+            },
+            {
+                "block": "minecraft:snow",
+                "data": {"layers": 2}
+            }
+        ]
+    }],
     "layers": [
         {
             "minHeight": 2,
@@ -23,10 +41,22 @@
                 "minimumSlope": 0,
                 "maximumSlope": 2.6
             },
-            "style":{"style": "SIMPLEX","exponent": 1.8,"zoom": 0.8},
+            "style": {
+                "style": "SIMPLEX",
+                "exponent": 1.8,
+                "zoom": 0.8
+            },
             "zoom": 0.5,
-            "palette": [{"block": "minecraft:snow_block","weight": 5},
-            {"block": "minecraft:powder_snow","weight": 1}]
+            "palette": [
+                {
+                    "block": "minecraft:snow_block",
+                    "weight": 5
+                },
+                {
+                    "block": "minecraft:powder_snow",
+                    "weight": 1
+                }
+            ]
         },
         {
             "minHeight": 3,

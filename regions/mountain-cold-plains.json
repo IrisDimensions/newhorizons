@@ -1,0 +1,21 @@
+{
+    "riverBiomes": ["mountain/mountain-river"],
+    "landBiomes": ["mountain/mountain-cold-plains"],
+    "color": "#476b4d",
+    "biomeImplosionRatio": 0.25,
+    "seaBiomes": ["mountain/mountain-river"],
+    "landBiomeZoom": 1,
+    "entitySpawners": [
+        "tundra/land-passive",
+        "tundra/land-hostile",
+        "tundra/land-cave"
+    ],
+    "riverBiomeZoom": 10,
+    "shoreHeightMin": 2.2,
+    "shoreBiomes": ["mountain/mountain-beach"],
+    "name": "Mountains",
+    "shoreHeightMax": 1.2,
+    "shoreHeightZoom": 1.14,
+    "riverThickness": 0.5,
+    "rarity": 2
+}

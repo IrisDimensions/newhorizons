@@ -1,97 +1,48 @@
 {
-    "riverBiomes": ["temperate/temp-river"],
+    "name": "Temperate zone",
+    "rarity": 1,
+    "color": "#72d86e",
+    "landBiomeZoom": 3,
     "landBiomes": [
-        "temperate/temp-autumn-forest",
-        "temperate/temp-barren-lands",
-        "temperate/temp-birch-forest",
-        "temperate/temp-cliffs-plains",
-        "temperate/temp-dead-plains",
-        "temperate/temp-farm-wheat",
-        "temperate/temp-fir-forest",
-        "temperate/temp-old-fir-forest",
-        "temperate/temp-mix-forest",
-        "temperate/temp-oak-forest",
-        "temperate/temp-plains",
-        "temperate/temp-sacred-forest",
-        "temperate/temp-sakura-forest",
-        "temperate/temp-sequoia-forest",
-        "temperate/temp-wilds"
+        "temperate/autumn-forest",
+        "temperate/barren-lands",
+        "temperate/birch-forest",
+        "temperate/dead-plains",
+        "temperate/decideous-forest",
+        "temperate/fir-forest",
+        "temperate/mixed-forest",
+        "temperate/old-fir-forest",
+        "temperate/mushroom-plain",
+        "temperate/rocky-plains",
+        "temperate/thick-mixed-forest",
+        "temperate/dark-forest",
+        "temperate/sacred-forest",
+        "temperate/sakura-forest",
+        "temperate/schrublands",
+        "temperate/steppe",
+        "temperate/autumn-forest",
+        "temperate/barren-lands",
+        "temperate/birch-forest",
+        "temperate/dead-plains",
+        "temperate/decideous-forest",
+        "temperate/fir-forest",
+        "temperate/mixed-forest",
+        "temperate/old-fir-forest",
+        "temperate/rocky-plains",
+        "temperate/dark-forest",
+        "temperate/thick-mixed-forest",
+        "temperate/sacred-forest",
+        "temperate/sakura-forest",
+        "temperate/schrublands",
+        "temperate/steppe",
+        "temperate/mushroom-plain"
     ],
-    "biomeImplosionRatio": 0.25,
-    "seaBiomes": ["temperate/temp-river"],
-    "deposits": [{
-        "minHeight": 15,
-        "maxPerChunk": 2,
-        "maxHeight": 122,
-        "minPerChunk": 0,
-        "minSize": 4,
-        "maxSize": 12,
-        "palette": [
-            {"block": "minecraft:iron_ore"},
-            {"block": "minecraft:coal_ore"}
-        ],
-        "varience": 4
-    }],
-    "riverRarity": 1,
-    "landBiomeZoom": 4,
-    "riverStyle": {
-        "style": "VASCULAR",
-        "zoom": 4.77,
-        "fracture": {
-            "multiplier": 240,
-            "style": "IRIS",
-            "zoom": 5
-        }
-    },
     "entitySpawners": [
         "temperate/land-passive",
-        "genhostile"
+        "temperate/land-hostile"
     ],
-    "objects": [{
-        "heightmap": {
-            "seed": 3301,
-            "style": {
-                "style": "SIMPLEX",
-                "multiplier": 10
-            },
-            "offsetY": 5
-        },
-        "chance": 0.05,
-        "bottom": true,
-        "density": 1,
-        "place": [
-            "structures/amethyst1",
-            "structures/amethyst2",
-            "structures/amethyst3",
-            "structures/amethyst4",
-            "structures/amethyst5",
-            "structures/amethyst6"
-        ],
-        "edit": [{
-            "find": [{"block": "minecraft:glass"}],
-            "replace": {"palette": [{"block": "minecraft:void_air"}]}
-        }],
-        "enabled": true,
-        "xAxis": {
-            "interval": 90,
-            "max": 360,
-            "min": 0
-        },
-        "yAxis": {
-            "interval": 90,
-            "max": 360,
-            "min": 0
-        },
-        "translate": {
-            "yRandom": 10,
-            "y": 2
-        }
-    }],
-    "shoreHeightMin": 2.2,
-    "shoreBiomes": ["temperate/temp-beach"],
-    "name": "Temperate",
-    "shoreHeightMax": 1.2,
-    "shoreHeightZoom": 1.14,
-    "riverThickness": 0.025,
-    "rarity": 1
+    "shoreHeightMax": 1,
+    "shoreHeightMin": 1,
+    "shoreBiomes": ["temperate/beach"],
+    "seaBiomes": ["temperate/river"]
 }

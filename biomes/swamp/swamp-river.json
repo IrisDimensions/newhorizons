@@ -19,34 +19,21 @@
             "style": {"style": "STATIC"}
         },
         {
-            "chance": 0.25,
+            "chance": 0.13,
             "variance": {"style": "STATIC"},
             "zoom": 5,
             "palette": [{"block": "minecraft:seagrass"}],
             "style": {"style": "STATIC"}
         },
         {
-            "chance": 0.35,
+            "chance": 0.1,
             "variance": {"style": "STATIC"},
-            "stackMax": 6,
+            "stackMax": 1,
             "zoom": 1,
             "palette": [{"block": "minecraft:kelp_plant"}],
             "style": {"style": "STATIC"},
             "heightVariance": {"style": "IRIS"},
-            "stackMin": 2
-        },
-        {
-            "chance": 0.012,
-            "variance": {"style": "STATIC"},
-            "zoom": 1,
-            "palette": [{
-                "data": {
-                    "waterlogged": true,
-                    "pickles": 1
-                },
-                "block": "minecraft:sea_pickle"
-            }],
-            "style": {"style": "STATIC"}
+            "stackMin": 1
         }
     ],
     "name": "Swamp river",
@@ -67,21 +54,45 @@
                 {"block": "minecraft:coarse_dirt"}
             ]
         },
-        {"palette": [{"block": "minecraft:dirt"}]},
         {
-            "minHeight": 1,
             "maxHeight": 3,
+            "minHeight": 3,
             "palette": [
                 {
-                    "weight": 2,
-                    "block": "minecraft:dirt"
+                    "block": "minecraft:dirt",
+                    "weight": 7
                 },
-                {"block": "minecraft:coarse_dirt"}
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "maxHeight": 3,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:dirt",
+                    "weight": 7
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 7
+                },
+                {
+                    "block": "minecraft:stone",
+                    "weight": 8
+                },
+                {
+                    "block": "minecraft:coal_ore",
+                    "weight": 1
+                }
             ]
         }
     ],
     "generators": [{
-        "generator": "puddles",
+        "generator": "plain",
         "max": -2,
         "min": -3
     }],

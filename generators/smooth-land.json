@@ -10,8 +10,8 @@
             "style": "IRIS",
             "zoom": 1.9,
             "fracture": {
-                "style": "PERLIN_IRIS_DOUBLE",
-                "zoom": 0.8,
+                "style": "PERLIN_IRIS",
+                "zoom": 0.5,
                 "multiplier": 30,
                 "fracture": {
                     "style": "SIMPLEX",

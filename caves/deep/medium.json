@@ -4,13 +4,25 @@
         "max": 50,
         "min": 10
     },
-    "customBiome": "caves/deep/main",
+    "customBiome": "caves/deep/drip",
     "fork": {
-        "caves": [{
-            "breakSurface": false,
-            "cave": "deep/small",
-            "rarity": 10
-        }],
+        "caves": [
+            {
+                "breakSurface": false,
+                "cave": "deep/small",
+                "rarity": 10
+            },
+            {
+                "breakSurface": false,
+                "cave": "deep/calcite",
+                "rarity": 16
+            },
+            {
+                "breakSurface": false,
+                "cave": "deep/amethyst",
+                "rarity": 16
+            }
+        ],
         "elipsoids": [{
             "fill": {"block": "minecraft:cave_air"},
             "rarity": 90,
@@ -23,17 +35,17 @@
     },
     "worm": {
         "girth": {
-            "max": 4,
+            "max": 6,
             "min": 3,
             "style": {
                 "style": "SIMPLEX",
                 "zoom": 0.5
             }
         },
-        "maxDistance": 230,
+        "maxDistance": 10,
         "yStyle": {
-            "min": -2,
-            "max": 1,
+            "min": -4,
+            "max": 4,
             "generator": {
                 "zoom": 3,
                 "style": "PERLIN"
