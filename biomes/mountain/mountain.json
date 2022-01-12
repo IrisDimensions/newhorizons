@@ -1,7 +1,7 @@
 {
     "name": "Mountain",
-    "derivative": "TAIGA_MOUNTAINS",
-    "vanillaDerivative": "TAIGA_MOUNTAINS",
+    "derivative": "TAIGA",
+    "vanillaDerivative": "TAIGA",
     "customDerivitives": [{
         "id": "mountain",
         "grassColor": "#80ab69",
@@ -11,8 +11,8 @@
     "rarity": 1,
     "generators": [{
         "generator": "mountain",
-        "max": 180,
-        "min": 95
+        "max": 340,
+        "min": 220
     }],
     "layers": [
         {
@@ -20,7 +20,7 @@
             "maxHeight": 1,
             "slopeCondition": {
                 "minimumSlope": 0,
-                "maximumSlope": 2
+                "maximumSlope": 3.1
             },
             "palette": [{"block": "minecraft:snow_block"}]
         },

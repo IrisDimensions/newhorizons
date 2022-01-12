@@ -1,7 +1,7 @@
 {
     "interpolator": {
         "function": "BILINEAR_STARCAST_6",
-        "horizontalScale": 14
+        "horizontalScale": 20
     },
     "seed": 9875476,
     "composite": [{

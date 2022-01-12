@@ -15,7 +15,7 @@
     "rarity": 1,
     "generators": [{
         "generator": "smooth-land",
-        "max": 5,
+        "max": 7,
         "min": 2
     }],
     "layers": [

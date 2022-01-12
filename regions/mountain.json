@@ -3,7 +3,7 @@
     "color": "#a0a6a2",
     "biomeImplosionRatio": 0.25,
     "seaBiomes": ["mountain/mountain-river"],
-    "landBiomeZoom": 5,
+    "landBiomeZoom": 7,
     "shoreHeightMin": 2.2,
     "shoreBiomes": ["mountain/mountain-beach"],
     "name": "Mountains",
@@ -19,5 +19,5 @@
             "style": {"style": "STATIC"}
         }
     }]},
-    "rarity": 2
+    "rarity": 1
 }

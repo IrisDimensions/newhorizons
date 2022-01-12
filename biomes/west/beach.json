@@ -1,5 +1,5 @@
 {
-    "vanillaDerivative": "DESERT_LAKES",
+    "vanillaDerivative": "DESERT",
     "name": "Beach",
     "customDerivitives": [{
         "id": "west",
@@ -24,7 +24,7 @@
         "max": 1,
         "generator": "plain"
     }],
-    "derivative": "DESERT_LAKES",
+    "derivative": "DESERT",
     "wall": {
         "style": {"style": "STATIC"},
         "palette": [

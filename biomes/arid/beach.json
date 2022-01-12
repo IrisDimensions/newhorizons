@@ -1,6 +1,6 @@
 {
     "vanillaDerivative": "SAVANNA",
-    "derivative": "DESERT_LAKES",
+    "derivative": "DESERT",
     "name": "Beach",
     "customDerivitives": [{
         "id": "savanna",
