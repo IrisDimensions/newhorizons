@@ -3,6 +3,7 @@
         "function": "BILINEAR_STARCAST_9",
         "horizontalScale": 85
     },
+    "multiplicitive": true,
     "seed": 75675,
     "composite": [{
         "seed": 24564,
@@ -17,7 +18,7 @@
         "seed": 56467457,
         "style": {
             "style": "SEPTOCTAVE_FRACTAL_FBM_SIMPLEX",
-            "zoom": 1.9,
+            "zoom": 3.1,
             "exponent": 1
         },
         "negative": true

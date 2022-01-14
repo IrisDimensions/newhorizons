@@ -11,7 +11,7 @@
     "rarity": 1,
     "generators": [{
         "generator": "mountain",
-        "max": 340,
+        "max": 310,
         "min": 220
     }],
     "layers": [
