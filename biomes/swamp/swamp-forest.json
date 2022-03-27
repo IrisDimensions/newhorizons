@@ -5,14 +5,13 @@
     "rarity": 2,
     "generators": [{
         "generator": "plain",
-        "max": 2,
+        "max": 4,
         "min": 1
     }],
     "children": ["swamp/swamp-puddle"],
     "childStyle": {
         "style": "IRIS",
-        "exponent": 1.2,
-        "zoom": 1
+        "exponent": 1.3
     },
     "childShrinkFactor": 8,
     "customDerivitives": [{
@@ -26,6 +25,20 @@
     }],
     "decorators": [
         {
+            "chance": 0.1,
+            "absoluteMaxStack": 2,
+            "heightVariance":{
+                "style": "SIMPLEX",
+                "zoom": 0.4
+            },
+            "style":{
+                "style": "IRIS",
+                "exponent": 1.4,
+                "zoom": 0.8
+            },
+            "palette": [{"block": "minecraft:dark_oak_leaves"}]
+        },
+        {
             "chance": 0.25,
             "palette": [{"block": "minecraft:grass"}]
         },
@@ -36,6 +49,10 @@
         {
             "chance": 0.005,
             "palette": [{"block": "minecraft:blue_orchid"}]
+        },
+        {
+            "chance": 0.005,
+            "palette": [{"block": "minecraft:brown_mushroom"},{"block": "minecraft:red_mushroom"}]
         },
         {
             "chance": 0.065,
@@ -111,21 +128,40 @@
     ],
     "objects": [
         {
+            "mode": "STILT",
+        "place": [
+            "trees/mixed/dotree1",
+            "trees/mixed/dotree2",
+            "trees/mixed/dotree3",
+            "trees/mixed/dotree4",
+            "trees/mixed/dotree5",
+            "trees/mixed/dotree6",
+            "trees/mixed/dotree7",
+            "trees/mixed/dotree8",
+            "trees/mixed/dotree9",
+            "trees/mixed/dotree10"
+        ],
+        "chance": 0.65,
+        "rotation": {
+            "enabled": true,
+            "yAxis": {
+                "enabled": true,
+                "interval": 90,
+                "min": -360,
+                "max": 360
+            }
+        },
+        "translate": {"y": -1}
+    },
+        {
             "place": [
-                "trees/willow/t1",
-                "trees/willow/t2",
-                "trees/willow/t3",
-                "trees/willow/t4",
-                "trees/willow/t5",
-                "trees/willow/t6",
-                "trees/willow/t7",
-                "trees/willow/t8",
-                "trees/tree1/t1",
-                "trees/tree1/t2",
-                "trees/tree1/t3",
-                "trees/tree1/t4"
+                "bushes/17",
+                "bushes/18"
             ],
-            "chance": 0.5,
+            "translate":{
+                "y": -4
+            },
+            "chance": 0.3,
             "rotation": {
                 "enabled": true,
                 "yAxis": {
@@ -134,19 +170,18 @@
                     "min": -360,
                     "max": 360
                 }
-            },
-            "translate": {
-                "x": 0,
-                "y": -1,
-                "z": 0
             }
         },
         {
+            "mode": "PAINT",
             "place": [
-                "clutter/l1",
-                "clutter/l2",
-                "clutter/l3",
-                "clutter/l4"
+                "clutter/stump1",
+                "clutter/stump2",
+                "clutter/stump3",
+                "clutter/stump4",
+                "clutter/stump5",
+                "clutter/stump6",
+                "clutter/stump7"
             ],
             "chance": 0.2,
             "rotation": {

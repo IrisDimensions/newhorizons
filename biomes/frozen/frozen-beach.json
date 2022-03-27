@@ -1,5 +1,5 @@
 {
-    "vanillaDerivative": "PLAINS",
+    "vanillaDerivative": "FROZEN_RIVER",
     "customDerivitives": [{
         "id": "frozen_mountain",
         "grassColor": "#80ab69",
@@ -11,34 +11,65 @@
     "name": "Frozen beach",
     "layers": [
         {
-            "minHeight": 1,
-            "maxHeight": 1,
+            "minHeight": 2,
+            "maxHeight": 2,
             "slopeCondition": {
                 "minimumSlope": 0,
-                "maximumSlope": 2.6
+                "maximumSlope": 3.6
             },
-            "style": {"style": "FRACTAL_SMOKE"},
-            "zoom": 0.3,
+            "style": {
+                "style": "SIMPLEX",
+                "exponent": 1.8,
+                "zoom": 0.8
+            },
+            "zoom": 0.5,
             "palette": [
-                {"block": "minecraft:ice"},
-                {"block": "minecraft:packed_ice"}
+                {
+                    "block": "minecraft:snow_block",
+                    "weight": 5
+                },
+                {
+                    "block": "minecraft:powder_snow",
+                    "weight": 1
+                }
             ]
         },
         {
-            "minHeight": 1,
-            "maxHeight": 1,
-            "palette": [{"block": "minecraft:snow_block"}]
-        },
-        {
-            "minHeight": 1,
-            "maxHeight": 6,
-            "palette": [{"block": "minecraft:stone"}]
+            "minHeight": 2,
+            "maxHeight": 4,
+            "style": {
+                "style": "FRACTAL_WATER",
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 15
+                }
+            },
+            "zoom": 0.4,
+            "slopeCondition": {
+                "minimumSlope": 3.5
+            },
+            "palette": [
+                {
+                    "block": "minecraft:blue_ice",
+                    "weight": 4
+                },
+                {
+                    "block": "minecraft:packed_ice",
+                    "weight": 10
+                }
+            ]
         }
     ],
     "generators": [{
         "min": 0,
         "max": 2,
-        "generator": "smooth-land"
+        "generator": "plain"
     }],
-    "derivative": "PLAINS"
+    "derivative": "FROZEN_RIVER",
+    "wall": {
+        "palette": [
+            {"block": "minecraft:ice"},
+        {"block": "minecraft:packed_ice"},
+        {"block": "minecraft:blue_ice"}
+    ]}
 }

@@ -11,8 +11,8 @@
     "rarity": 1,
     "generators": [{
         "generator": "mountain",
-        "max": 310,
-        "min": 220
+        "max": 260,
+        "min": 190
     }],
     "layers": [
         {
@@ -20,9 +20,44 @@
             "maxHeight": 1,
             "slopeCondition": {
                 "minimumSlope": 0,
+                "maximumSlope": 1.6
+            },
+            "palette": [
+                {
+                    "block": "minecraft:grass_block"
+                    }]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "slopeCondition": {
+                "minimumSlope": 1.6,
+                "maximumSlope": 2.9
+            },
+            "style": {
+                "style": "IRIS",
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 15
+                }
+            },
+            "zoom": 0.4,
+            "palette": [
+                    {
+                        "block": "minecraft:grass_block"
+                        },
+                        {
+                        "block": "minecraft:snow_block"
+                        }]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "slopeCondition": {
+                "minimumSlope": 2.9,
                 "maximumSlope": 3.1
             },
-            "palette": [{"block": "minecraft:snow_block"}]
+            "palette": [{"block": "minecraft:coarse_dirt"}]
         },
         {
             "minHeight": 2,
@@ -36,7 +71,7 @@
             },
             "zoom": 0.4,
             "slopeCondition": {
-                "minimumSlope": 3.95,
+                "minimumSlope": 3.1,
                 "maximumSlope": 6
             },
             "palette": [

@@ -7,10 +7,12 @@
         "max": 6,
         "min": 3
     }],
+    "rarity": 2,
     "customDerivitives": [{
-        "id": "golden_grove",
+        "id": "west",
         "downfallType": "none",
-        "foliageColor": "#ffd54d"
+        "foliageColor": "#ffd54d",
+        "grassColor": "#c0df43"
     }],
     "lockLayers": true,
     "layers": [
@@ -337,7 +339,8 @@
             "trees/oak/denmyre12",
             "trees/oak/denmyre13"
         ],
-        "chance": 0.7,
+        "clamp": {"maximumHeight": 140},
+        "chance": 0.55,
         "rotation": {
             "enabled": true,
             "yAxis": {

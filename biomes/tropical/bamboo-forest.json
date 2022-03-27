@@ -89,10 +89,6 @@
                 "trees/bamboo/6",
                 "trees/bamboo/7"
             ],
-            "clamp": {
-                "minimumHeight": 0,
-                "maximumHeight": 120
-            },
             "chance": 1,
             "density": 8,
             "rotation": {

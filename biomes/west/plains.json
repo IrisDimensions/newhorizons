@@ -2,6 +2,7 @@
     "name": "Canyon plains",
     "derivative": "DESERT",
     "vanillaDerivative": "DESERT",
+    "rarity": 1,
     "generators": [{
         "generator": "smooth-land",
         "max": 10,
@@ -10,7 +11,7 @@
     "customDerivitives": [{
         "id": "west",
         "downfallType": "none",
-        "grassColor": "#dde048",
+        "grassColor": "#c0df43",
         "foliageColor": "#ced256"
     }],
     "lockLayers": true,
@@ -357,7 +358,7 @@
             ],
             "density": 1,
             "chance": 0.3,
-            "clamp": {"maximumHeight": 100},
+            "clamp": {"maximumHeight": 140},
             "densityStyle": {
                 "style": {
                     "style": "PERLIN",

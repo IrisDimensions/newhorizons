@@ -5,8 +5,8 @@
     "rarity": 2,
     "generators": [{
         "generator": "plain",
-        "max": -3,
-        "min": -2
+        "max": -7,
+        "min": -6
     }],
     "customDerivitives": [{
         "id": "swamp",
@@ -132,24 +132,6 @@
                 "x": 0,
                 "y": -1,
                 "z": 0
-            }
-        },
-        {
-            "place": [
-                "clutter/l1",
-                "clutter/l2",
-                "clutter/l3",
-                "clutter/l4"
-            ],
-            "chance": 0.2,
-            "rotation": {
-                "enabled": true,
-                "yAxis": {
-                    "enabled": true,
-                    "interval": 90,
-                    "min": -360,
-                    "max": 360
-                }
             }
         }
     ]

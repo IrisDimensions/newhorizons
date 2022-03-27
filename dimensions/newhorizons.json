@@ -3,13 +3,14 @@
     "version": 1,
     "environment": "NORMAL",
     "continentalStyle": {
-        "style": "NOWHERE_SUPERFRACTAL",
-        "zoom": 1.9,
-        "exponent": 14
+        "style": "NOWHERE_CELLULAR",
+        "zoom": 5
     },
     "regionStyle": {
-        "style": "CELLULAR_BILINEAR_STARCAST_6",
-        "zoom": 3.1,
+        "style": "CELLULAR_BILINEAR_STARCAST_9",
+        "axialFracturing": true,
+        "exponent": 1.125,
+        "zoom": 2,
         "fracture": {
             "style": "PERLIN",
             "zoom": 0.07,
@@ -46,14 +47,7 @@
             }
         }
     },
-    "riverBiomeStyle": {
-        "style": "CELLULAR",
-        "fracture": {
-            "axialFracturing": true,
-            "style": "STATIC",
-            "multiplier": 4
-        }
-    },
+
     "regions": [
         "desert",
         "desert",
@@ -61,6 +55,8 @@
         "west",
         "arid",
         "tropical",
+        "tropical",
+        "swamp",
         "swamp",
         "temperate",
         "temperate",
@@ -71,6 +67,7 @@
         "mountain-cold-plains",
         "boreal",
         "permafrost",
+        "frozen",
         "frozen",
         "frozen"
     ],
@@ -95,7 +92,7 @@
     "fluidHeight": 93,
     "landZoom": 3.15,
     "seaZoom": 1.25,
-    "continentZoom": 5,
+    "continentZoom": 1,
     "biomeZoom": 9,
     "lootTries": 32,
     "terrainZoom": 1,
@@ -140,6 +137,28 @@
             }
         }
     },
+    "ores": [
+        {
+            "generateSurface": true,
+            "chanceStyle":{
+                "style": "SIMPLEX",
+                "exponent": 4
+            },
+            "threshold": 1,
+            "range":{
+                "min": 0,
+                "max": 20
+            },
+            "palette":{
+                "palette": [
+                    {
+                        "block": "minecraft:deepslate"
+                    }
+                ]
+            }
+        }
+    ],
+    "lavaLayer": 10,
     "deposits": [
         {
             "minHeight": 19,

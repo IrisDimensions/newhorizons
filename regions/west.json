@@ -4,7 +4,7 @@
     "color": "#d8a56e",
     "landBiomeZoom": 1,
     "biomeImplosionRatio": 0.8,
-    "landBiomes": ["west/plains"],
+    "landBiomes": ["west/plains", "west/golden-grove"],
     "shoreHeightMax": 1,
     "shoreHeightMin": 1,
     "shoreBiomes": ["west/beach"],

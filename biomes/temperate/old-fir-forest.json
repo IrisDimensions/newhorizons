@@ -208,7 +208,7 @@
     "generators": [{
         "generator": "plain",
         "max": 13,
-        "min": 4
+        "min": 6
     }],
     "slab": {
         "palette": [

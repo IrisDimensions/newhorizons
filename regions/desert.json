@@ -2,8 +2,8 @@
     "name": "Desert",
     "rarity": 1,
     "color": "#fffa66",
-    "landBiomeZoom": 2,
-    "biomeImplosionRatio": 0.2,
+    "landBiomeZoom": 1.4,
+    "biomeImplosionRatio": 0.25,
     "landBiomes": [
         "desert/desert-plain",
         "desert/desert-dunes"

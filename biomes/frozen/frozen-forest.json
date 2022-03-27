@@ -1,7 +1,7 @@
 {
     "name": "Forest",
-    "derivative": "PLAINS",
-    "vanillaDerivative": "PLAINS",
+    "derivative": "FROZEN_PEAKS",
+    "vanillaDerivative": "FROZEN_PEAKS",
     "customDerivitives": [{
         "id": "frozen_mountain",
         "grassColor": "#80ab69",
@@ -15,7 +15,6 @@
         "max": 5,
         "min": 3
     }],
-    "children": ["frozen/frozen-forest-hills"],
     "rarity": 1,
     "decorators": [{
         "chance": 1,
@@ -40,7 +39,7 @@
             "maxHeight": 2,
             "slopeCondition": {
                 "minimumSlope": 0,
-                "maximumSlope": 2.6
+                "maximumSlope": 3.6
             },
             "style": {
                 "style": "SIMPLEX",
@@ -62,39 +61,27 @@
         {
             "minHeight": 2,
             "maxHeight": 4,
-            "slopeCondition": {"minimumSlope": 4},
-            "palette": [
-                {"block": "minecraft:gravel"},
-                {"block": "minecraft:cyan_terracotta"}
-            ]
-        },
-        {
-            "minHeight": 2,
-            "maxHeight": 4,
-            "slopeCondition": {"minimumSlope": 4},
-            "palette": [
-                {"block": "minecraft:stone"},
-                {"block": "minecraft:stone"},
-                {"block": "minecraft:cobblestone"}
-            ]
-        },
-        {
-            "minHeight": 1,
-            "maxHeight": 1,
-            "slopeCondition": {
-                "minimumSlope": 0,
-                "maximumSlope": 4
+            "style": {
+                "style": "FRACTAL_WATER",
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 15
+                }
             },
-            "palette": [{"block": "minecraft:snow_block"}]
-        },
-        {
-            "minHeight": 3,
-            "maxHeight": 3,
+            "zoom": 0.4,
             "slopeCondition": {
-                "minimumSlope": 0,
-                "maximumSlope": 3
+                "minimumSlope": 3.5
             },
-            "palette": [{"block": "minecraft:dirt"}]
+            "palette": [
+                {
+                    "block": "minecraft:blue_ice",
+                    "weight": 4
+                },
+                {
+                    "block": "minecraft:packed_ice",
+                    "weight": 10
+                }
+            ]
         }
     ],
     "objects": [
@@ -107,8 +94,17 @@
                 "trees/spruce/sup-pine-12",
                 "trees/spruce/sup-pine-13"
             ],
+            "densityStyle": {
+                "style": {
+                    "style": "CELLULAR",
+                    "exponent": 1.3,
+                    "zoom": 3
+                },
+                "max": 2,
+                "min": 0
+            },
             "snow": 0.8,
-            "chance": 0.5,
+            "chance": 0.4,
             "translate": {"y": -5},
             "rotation": {
                 "enabled": true,
@@ -126,9 +122,18 @@
                 "trees/spruce/sup-pine-4",
                 "trees/spruce/sup-pine-7"
             ],
+            "densityStyle": {
+                "style": {
+                    "style": "CELLULAR",
+                    "exponent": 1.5,
+                    "zoom": 2
+                },
+                "max": 2,
+                "min": 0
+            },
             "snow": 0.8,
-            "chance": 0.4,
-            "translate": {"y": -2},
+            "chance": 0.3,
+            "translate": {"y": -5},
             "rotation": {
                 "enabled": true,
                 "yAxis": {
@@ -140,23 +145,22 @@
             }
         },
         {
-            "trees": [{
-                "anySize": true,
-                "treeTypes": ["REDWOOD"],
-                "sizes": [{
-                    "depth": 1,
-                    "width": 1
-                }]
-            }],
             "place": [
                 "trees/spruce/sup-pine-6",
-                "trees/spruce/sup-pine-9",
-                "trees/spruce/sup-pine-8",
-                "trees/spruce/sup-pine-10"
+                "trees/spruce/sup-pine-8"
             ],
+            "densityStyle": {
+                "style": {
+                    "style": "CELLULAR",
+                    "exponent": 1.5,
+                    "zoom": 2
+                },
+                "max": 2,
+                "min": 0
+            },
             "snow": 0.8,
-            "chance": 0.2,
-            "translate": {"y": -2},
+            "chance": 0.3,
+            "translate": {"y": -5},
             "rotation": {
                 "enabled": true,
                 "yAxis": {
@@ -168,10 +172,10 @@
             }
         }
     ],
-    "wall": {"palette": [
-        {"block": "minecraft:stone"},
-        {"block": "minecraft:andesite"},
-        {"block": "minecraft:gravel"},
-        {"block": "minecraft:cyan_terracotta"}
+    "wall": {
+        "palette": [
+            {"block": "minecraft:ice"},
+        {"block": "minecraft:packed_ice"},
+        {"block": "minecraft:blue_ice"}
     ]}
 }

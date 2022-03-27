@@ -1,5 +1,5 @@
 {
-    "name": "Dead plains",
+    "name": "Dead hill",
     "derivative": "BASALT_DELTAS",
     "vanillaDerivative": "BASALT_DELTAS",
     "rarity": 1,
@@ -15,13 +15,23 @@
         "fogColor": "#ffffff",
         "waterFogColor": "#947747"
     }],
-    "childShrinkFactor": 1,
     "generators": [{
-        "generator": "plain",
-        "max": 3,
+        "generator": "plain-hills",
+        "max": 40,
         "min": 2
     }],
-    "children": ["temperate/dead-hill"],
+    "children": ["temperate/dead-cliffs"],
+    "childStyle": {
+        "style": "CELLULAR_IRIS_DOUBLE",
+        "exponent": 4.5,
+        "zoom": 0.45,
+        "fracture": {
+            "style": "SIMPLEX",
+            "exponent": 0.8,
+            "zoom": 0.4,
+            "multiplier": 8
+        }
+    },
     "entitySpawners": [
         "temperate/land-hostile",
         "temperate/land-cave"
@@ -142,26 +152,6 @@
     "decorators": [{
         "chance": 0.01,
         "palette": [{"block": "minecraft:dead_bush"}]
-    }],
-    "objects": [{
-        "place": [
-            "trees/oak/dead1",
-            "trees/oak/dead2",
-            "trees/oak/dead3",
-            "trees/oak/dead4",
-            "trees/oak/dead5",
-            "trees/oak/dead6"
-        ],
-        "chance": 0.17,
-        "rotation": {
-            "enabled": true,
-            "yAxis": {
-                "enabled": true,
-                "interval": 90,
-                "min": -360,
-                "max": 360
-            }
-        }
     }],
     "wall": {"palette": [
         {"block": "minecraft:stone"},

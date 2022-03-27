@@ -3,9 +3,8 @@
     "rarity": 1,
     "landBiomes": [
         "tropical/rainforest",
-        "tropical/volcanic-plains",
-        "tropical/bamboo-forest",
-        "tropical/tropical-selva-forest"
+        "tropical/rainforest-hills",
+        "tropical/bamboo-forest"
     ],
     "biomeImplosionRatio": 0.25,
     "seaBiomes": ["tropical/river"],

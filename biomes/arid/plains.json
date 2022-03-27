@@ -5,12 +5,12 @@
     "generators": [
         {
             "min": 2,
-            "max": 10,
+            "max": 5,
             "generator": "plain"
         },
         {
-            "min": 5,
-            "max": 10,
+            "min": 0,
+            "max": 5,
             "generator": "canyon"
         }
     ],

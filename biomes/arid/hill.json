@@ -10,7 +10,7 @@
         },
         {
             "min": 5,
-            "max": 20,
+            "max": 25,
             "generator": "canyon"
         }
     ],
@@ -22,7 +22,7 @@
         "foliageColor": "#98d256"
     }],
     "children": ["arid/plains"],
-    "childShrinkFactor": 0.3,
+    "childShrinkFactor": 0.42,
     "childStyle": {
         "style": "GLOB",
         "zoom": 1.7,

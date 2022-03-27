@@ -7,17 +7,12 @@
     "composite": [{
         "seed": 5644,
         "style": {
-            "style": "IRIS",
+            "style": "PERLIN",
             "zoom": 1.9,
             "fracture": {
-                "style": "PERLIN_IRIS",
+                "style": "IRIS",
                 "zoom": 0.5,
-                "multiplier": 30,
-                "fracture": {
-                    "style": "SIMPLEX",
-                    "zoom": 0.2,
-                    "multiplier": 10
-                }
+                "multiplier": 30
             }
         }
     }]

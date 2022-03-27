@@ -1,7 +1,7 @@
 {
     "interpolator": {
         "function": "BILINEAR_STARCAST_9",
-        "horizontalScale": 85
+        "horizontalScale": 110
     },
     "multiplicitive": true,
     "seed": 75675,
@@ -9,7 +9,7 @@
         "seed": 24564,
         "style": {
             "style": "SEXOCTAVE_FRACTAL_RM_SIMPLEX",
-            "zoom": 2.4,
+            "zoom": 2,
             "exponent": 1.8
         },
         "negative": true
@@ -17,9 +17,9 @@
     {
         "seed": 56467457,
         "style": {
-            "style": "SEPTOCTAVE_FRACTAL_FBM_SIMPLEX",
-            "zoom": 3.1,
-            "exponent": 1
+            "style": "TRIOCTAVE_FRACTAL_FBM_SIMPLEX",
+            "zoom": 0.85,
+            "exponent": 0.9
         },
         "negative": true
     }]

@@ -2,8 +2,8 @@
     "riverBiomes": ["frozen/frozen-river"],
     "landBiomes": [
         "frozen/frozen-forest",
-        "frozen/frozen-plains",
-        "frozen/frozen-lake"
+        "frozen/frozen-peak",
+        "frozen/frozen-forest-hills"
     ],
     "color": "#e5ebff",
     "biomeImplosionRatio": 0.25,

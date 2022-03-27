@@ -12,19 +12,14 @@
     }],
     "generators": [{
         "generator": "smooth-land",
-        "max": 8,
-        "min": 5
+        "max": 5,
+        "min": 3
     }],
     "childStyle": {
-        "style": "SIMPLEX",
-        "zoom": 5,
-        "exponent": 3,
-        "fracture": {
-            "style": "STATIC",
-            "multiplier": 10
-        }
+        "style": "GLOB",
+        "zoom": 1,
+        "exponent": 3
     },
-    "children": ["desert/desert-oasis"],
     "layers": [
         {
             "minHeight": 3,

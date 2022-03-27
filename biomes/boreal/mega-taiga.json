@@ -9,8 +9,8 @@
         "category": "forest"
     }],
     "generators": [{
-        "generator": "plain",
-        "max": 12,
+        "generator": "smooth-land",
+        "max": 30,
         "min": 2
     }],
     "layers": [
@@ -21,13 +21,17 @@
                 "zoom": 0.8,
                 "fracture": {
                     "style": "STATIC",
-                    "multiplier": 7
+                    "multiplier": 15
                 }
             },
             "zoom": 0.7,
             "maxHeight": 1,
             "minHeight": 1,
             "palette": [
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 3
+                },
                 {
                     "block": "minecraft:grass_block",
                     "weight": 6

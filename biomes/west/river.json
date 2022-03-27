@@ -8,7 +8,7 @@
     "customDerivitives": [{
         "id": "west",
         "downfallType": "none",
-        "grassColor": "#dde048",
+        "grassColor": "#c0df43",
         "foliageColor": "#ced256"
     }],
     "layers": [

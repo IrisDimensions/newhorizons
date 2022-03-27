@@ -22,15 +22,13 @@
             "minHeight": 1,
             "maxHeight": 1,
             "palette": [
-                {"block": "minecraft:podzol"},
-                {"block": "minecraft:terracotta"},
-                {"block": "minecraft:coarse_dirt"}
+                {"block": "minecraft:sand"}
             ]
         },
         {
             "minHeight": 1,
             "maxHeight": 6,
-            "palette": [{"block": "minecraft:terracotta"}]
+            "palette": [{"block": "minecraft:sandstone"}]
         }
     ],
     "generators": [{

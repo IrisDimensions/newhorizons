@@ -10,16 +10,6 @@
         "downfallType": "rain",
         "category": "plains"
     }],
-    "children": ["permafrost/pf-hills"],
-    "childStyle": {
-        "style": "PERLIN",
-        "zoom": 5,
-        "fracture": {
-            "style": "PERLIN",
-            "zoom": 0.3,
-            "multiplier": 15
-        }
-    },
     "generators": [{
         "generator": "plain",
         "max": 6,

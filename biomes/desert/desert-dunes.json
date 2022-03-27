@@ -13,7 +13,7 @@
     "generators": [{
         "generator": "dunes",
         "max": 3,
-        "min": 30
+        "min": 70
     }],
     "layers": [
         {

@@ -12,10 +12,27 @@
         "waterFogColor": "#3AB2A2"
     }],
     "generators": [{
-        "generator": "plain",
-        "max": 3,
-        "min": 1
+        "generator": "plain-hills",
+        "max": 40,
+        "min": -15
+    },
+    {
+        "generator": "steep-land",
+        "max": 50,
+        "min": -10
     }],
+    "children": ["tropical/rainforest-cliff"],
+    "childStyle": {
+        "style": "CELLULAR_IRIS_DOUBLE",
+        "exponent": 4.5,
+        "zoom": 0.45,
+        "fracture": {
+            "style": "SIMPLEX",
+            "exponent": 0.8,
+            "zoom": 0.4,
+            "multiplier": 8
+        }
+    },
     "layers": [
         {
             "slopeCondition": {"maximumSlope": 4},
@@ -71,7 +88,7 @@
                 "clutter/arbusto4",
                 "clutter/arbusto5"
             ],
-            "chance": 0.65,
+            "chance": 0.5,
             "translate": {"y": 1}
         },
         {
@@ -98,7 +115,7 @@
                 "trees/jungle/t20",
                 "trees/jungle/t21"
             ],
-            "chance": 0.65,
+            "chance": 0.55,
             "rotation": {
                 "enabled": true,
                 "yAxis": {
@@ -129,7 +146,7 @@
                 "trees/jungle/vgeneric17",
                 "trees/jungle/vgeneric18"
             ],
-            "chance": 0.65,
+            "chance": 0.55,
             "rotation": {
                 "enabled": true,
                 "yAxis": {

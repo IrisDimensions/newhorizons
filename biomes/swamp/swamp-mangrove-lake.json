@@ -73,7 +73,7 @@
     ],
     "objects": [
         {
-            "mode": "FAST_STILT",
+            "mode": "STILT",
             "onwater": true,
             "chance": 1,
             "density": 8,
@@ -114,24 +114,6 @@
                 "find": [{"block": "minecraft:oak_fence"}],
                 "replace": {"palette": [{"block": "minecraft:air"}]}
             }]
-        },
-        {
-            "place": [
-                "clutter/l1",
-                "clutter/l2",
-                "clutter/l3",
-                "clutter/l4"
-            ],
-            "chance": 0.2,
-            "rotation": {
-                "enabled": true,
-                "yAxis": {
-                    "enabled": true,
-                    "interval": 90,
-                    "min": -360,
-                    "max": 360
-                }
-            }
         }
     ]
 }

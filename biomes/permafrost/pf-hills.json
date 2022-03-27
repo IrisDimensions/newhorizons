@@ -11,9 +11,14 @@
         "category": "plains"
     }],
     "generators": [{
-        "generator": "smooth-land",
-        "max": 10,
-        "min": 55
+        "generator": "plain",
+        "max": 3,
+        "min": 20
+    },
+    {
+        "generator": "plain-cliffs",
+        "max": 1,
+        "min": 5
     }],
     "layers": [
         {

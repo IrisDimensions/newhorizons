@@ -8,15 +8,15 @@
         "temperature": -3,
         "category": "icy"
     }],
-    "derivative": "PLAINS",
-    "vanillaDerivative": "PLAINS",
-    "biomeScatter": ["FOREST"],
-    "rarity": 1,
+    "derivative": "FROZEN_PEAKS",
+    "vanillaDerivative": "FROZEN_PEAKS",
+    "rarity": 6,
     "generators": [{
-        "generator": "plain",
-        "max": 5,
-        "min": 2
-    }],
+        "generator": "cracked-cliffs",
+        "max": 130,
+        "min": 50
+    }
+    ],
     "decorators": [{
         "chance": 1,
         "variance": {
@@ -40,7 +40,7 @@
             "maxHeight": 2,
             "slopeCondition": {
                 "minimumSlope": 0,
-                "maximumSlope": 2.6
+                "maximumSlope": 3.6
             },
             "style": {
                 "style": "SIMPLEX",
@@ -60,15 +60,6 @@
             ]
         },
         {
-            "minHeight": 3,
-            "maxHeight": 3,
-            "slopeCondition": {
-                "minimumSlope": 0,
-                "maximumSlope": 2.6
-            },
-            "palette": [{"block": "minecraft:packed_ice"}]
-        },
-        {
             "minHeight": 2,
             "maxHeight": 4,
             "style": {
@@ -80,60 +71,24 @@
             },
             "zoom": 0.4,
             "slopeCondition": {
-                "minimumSlope": 3.95,
-                "maximumSlope": 6
+                "minimumSlope": 3.5
             },
             "palette": [
                 {
-                    "block": "minecraft:diorite",
+                    "block": "minecraft:blue_ice",
                     "weight": 4
                 },
                 {
-                    "block": "minecraft:stone",
+                    "block": "minecraft:packed_ice",
                     "weight": 10
-                }
-            ]
-        },
-        {
-            "minHeight": 2,
-            "maxHeight": 4,
-            "style": {"style": "STATIC"},
-            "slopeCondition": {"minimumSlope": 1.5},
-            "palette": [
-                {
-                    "block": "minecraft:basalt",
-                    "weight": 3
-                },
-                {
-                    "block": "minecraft:stone",
-                    "weight": 5
-                },
-                {
-                    "block": "minecraft:gray_concrete_powder",
-                    "weight": 3
-                }
-            ]
-        },
-        {
-            "minHeight": 2,
-            "maxHeight": 18,
-            "style": {"style": "STATIC"},
-            "palette": [
-                {
-                    "block": "minecraft:stone",
-                    "weight": 2
-                },
-                {
-                    "block": "minecraft:andesite",
-                    "weight": 1
                 }
             ]
         }
     ],
-    "wall": {"palette": [
-        {"block": "minecraft:stone"},
-        {"block": "minecraft:andesite"},
-        {"block": "minecraft:gravel"},
-        {"block": "minecraft:basalt"}
+    "wall": {
+        "palette": [
+            {"block": "minecraft:ice"},
+        {"block": "minecraft:packed_ice"},
+        {"block": "minecraft:blue_ice"}
     ]}
 }

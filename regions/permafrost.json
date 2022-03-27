@@ -1,7 +1,7 @@
 {
-    "landBiomes": ["permafrost/pf-plains"],
+    "landBiomes": ["permafrost/pf-plains","permafrost/pf-hills"],
     "seaBiomes": ["permafrost/pf-river-ice"],
-    "landBiomeZoom": 2.7,
+    "landBiomeZoom": 2.2,
     "shoreHeightMin": 0,
     "shoreHeightMax": 0,
     "shoreBiomes": ["permafrost/pf-beach"],

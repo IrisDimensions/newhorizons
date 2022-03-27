@@ -2,7 +2,7 @@
     "name": "Temperate zone",
     "rarity": 1,
     "color": "#72d86e",
-    "landBiomeZoom": 3,
+    "landBiomeZoom": 2.4,
     "landBiomes": [
         "temperate/autumn-forest",
         "temperate/barren-lands",
@@ -13,7 +13,6 @@
         "temperate/mixed-forest",
         "temperate/old-fir-forest",
         "temperate/mushroom-plain",
-        "temperate/rocky-plains",
         "temperate/thick-mixed-forest",
         "temperate/dark-forest",
         "temperate/sacred-forest",

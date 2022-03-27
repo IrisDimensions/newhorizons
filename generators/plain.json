@@ -3,7 +3,7 @@
         "function": "BILINEAR_STARCAST_6",
         "horizontalScale": 10
     },
-    "seed": 3456354,
+    "seed": 3784,
     "composite": [{
         "style": {
             "style": "SIMPLEX",
@@ -14,7 +14,7 @@
                 "multiplier": 25
             }
         },
-        "seed": 3456354,
+        "seed": 3784,
         "bezier": true
     }]
 }

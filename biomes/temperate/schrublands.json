@@ -107,7 +107,7 @@
                 "clutter/srock7",
                 "clutter/srock8"
             ],
-            "chance": 0.18,
+            "chance": 0.15,
             "rotation": {
                 "enabled": true,
                 "yAxis": {
@@ -117,7 +117,151 @@
                     "max": 360
                 }
             },
-            "translate": {"y": -3}
+            "translate": {"y": -3},
+            "edit": [
+                {
+                    "find": [{"block": "minecraft:stone"}],
+                    "chance": 0.01,
+                    "replace": {
+                        "style": {"style": "STATIC"},
+                        "palette": [
+                            {"block": "minecraft:coal_ore"},
+                            {"block": "minecraft:iron_ore"},
+                            {"block": "minecraft:gold_ore"},
+                            {"block": "minecraft:copper_ore"}
+                        ]
+                    }
+                },
+                {
+                    "find": [{"block": "minecraft:stone"}],
+                    "chance": 0.2,
+                    "replace": {
+                        "style": {"style": "IRIS","zoom": 0.03,"fracture":{"style": "STATIC","multiplier": 5}},
+                        "palette": [
+                            {
+                                "block": "minecraft:andesite",
+                                "weight": 2
+                            },
+                            {
+                                "block": "minecraft:cobblestone",
+                                "weight": 1
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "mode": "PAINT",
+            "place": [
+                "clutter/mrock1",
+                "clutter/mrock2",
+                "clutter/mrock3",
+                "clutter/mrock4",
+                "clutter/mrock5",
+                "clutter/mrock6",
+                "clutter/mrock7",
+                "clutter/mrock8"
+            ],
+            "chance": 0.04,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": -8},
+            "edit": [
+                {
+                    "find": [{"block": "minecraft:stone"}],
+                    "chance": 0.01,
+                    "replace": {
+                        "style": {"style": "STATIC"},
+                        "palette": [
+                            {"block": "minecraft:coal_ore"},
+                            {"block": "minecraft:iron_ore"},
+                            {"block": "minecraft:gold_ore"},
+                            {"block": "minecraft:copper_ore"}
+                        ]
+                    }
+                },
+                {
+                    "find": [{"block": "minecraft:stone"}],
+                    "chance": 0.2,
+                    "replace": {
+                        "style": {"style": "IRIS","zoom": 0.03,"fracture":{"style": "STATIC","multiplier": 5}},
+                        "palette": [
+                            {
+                                "block": "minecraft:andesite",
+                                "weight": 2
+                            },
+                            {
+                                "block": "minecraft:cobblestone",
+                                "weight": 1
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "mode": "PAINT",
+            "place": [
+                "clutter/lrock1",
+                "clutter/lrock2",
+                "clutter/lrock3",
+                "clutter/lrock4",
+                "clutter/lrock5",
+                "clutter/lrock6",
+                "clutter/lrock7",
+                "clutter/lrock8"
+            ],
+            "chance": 0.02,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": -15},
+            "edit": [
+                {
+                    "find": [{"block": "minecraft:stone"}],
+                    "chance": 0.01,
+                    "replace": {
+                        "style": {"style": "STATIC"},
+                        "palette": [
+                            {"block": "minecraft:coal_ore"},
+                            {"block": "minecraft:iron_ore"},
+                            {"block": "minecraft:gold_ore"},
+                            {"block": "minecraft:copper_ore"}
+                        ]
+                    }
+                },
+                {
+                    "find": [{"block": "minecraft:stone"}],
+                    "chance": 0.2,
+                    "replace": {
+                        "style": {"style": "IRIS","zoom": 0.03,"fracture":{"style": "STATIC","multiplier": 5}},
+                        "palette": [
+                            {
+                                "block": "minecraft:andesite",
+                                "weight": 2
+                            },
+                            {
+                                "block": "minecraft:cobblestone",
+                                "weight": 1
+                            }
+                        ]
+                    }
+                }
+            ]
         },
         {
             "mode": "PAINT",

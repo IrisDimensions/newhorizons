@@ -10,7 +10,7 @@
     }],
     "generators": [{
         "generator": "smooth-land",
-        "max": 43,
+        "max": 30,
         "min": 5
     }],
     "layers": [

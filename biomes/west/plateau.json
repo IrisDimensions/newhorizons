@@ -5,7 +5,7 @@
     "customDerivitives": [{
         "id": "west",
         "downfallType": "none",
-        "grassColor": "#dde048",
+        "grassColor": "#c0df43",
         "foliageColor": "#ced256"
     }],
     "generators": [
@@ -16,8 +16,8 @@
         },
         {
             "generator": "steep-land",
-            "max": 30,
-            "min": 25
+            "max": 40,
+            "min": 45
         }
     ],
     "lockLayers": true,

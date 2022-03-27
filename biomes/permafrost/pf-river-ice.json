@@ -93,8 +93,8 @@
     ],
     "generators": [{
         "generator": "smooth-land",
-        "max": -18,
-        "min": -25
+        "max": -8,
+        "min": -15
     }],
     "objects": [
         {

@@ -16,9 +16,14 @@
         "waterFogColor": "#947747"
     }],
     "generators": [{
+        "generator": "cracked-cliffs",
+        "max": 60,
+        "min": 10
+    },
+    {
         "generator": "plain",
-        "max": 24,
-        "min": 16
+        "max": 60,
+        "min": 10
     }],
     "entitySpawners": [
         "temperate/land-hostile",
@@ -141,30 +146,10 @@
         "chance": 0.01,
         "palette": [{"block": "minecraft:dead_bush"}]
     }],
-    "objects": [{
-        "place": [
-            "trees/oak/dead1",
-            "trees/oak/dead2",
-            "trees/oak/dead3",
-            "trees/oak/dead4",
-            "trees/oak/dead5",
-            "trees/oak/dead6"
-        ],
-        "chance": 0.17,
-        "rotation": {
-            "enabled": true,
-            "yAxis": {
-                "enabled": true,
-                "interval": 90,
-                "min": -360,
-                "max": 360
-            }
-        }
-    }],
     "wall": {"palette": [
         {"block": "minecraft:stone"},
         {"block": "minecraft:andesite"},
         {"block": "minecraft:cobblestone"},
-        {"block": "minecraft:mossy_cobblestone"}
+        {"block": "minecraft:gravel"}
     ]}
 }

@@ -8,7 +8,7 @@
         "startHour": 20,
         "endHour": 3
     },
-    "maxEntitiesPerChunk": 2,
+    "maxEntitiesPerChunk": 3,
     "energyMultiplier": 0.95,
     "weather": "ANY",
     "spawns": [
@@ -25,7 +25,7 @@
         {
             "entity": "standard/hostile/slime",
             "energyMultiplier": 1.35,
-            "rarity": 4
+            "rarity": 3
         },
         {
             "entity": "standard/hostile/spider",

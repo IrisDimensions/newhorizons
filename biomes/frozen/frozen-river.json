@@ -1,5 +1,5 @@
 {
-    "vanillaDerivative": "RIVER",
+    "vanillaDerivative": "FROZEN_RIVER",
     "customDerivitives": [{
         "id": "frozen_mountain",
         "grassColor": "#80ab69",
@@ -8,49 +8,11 @@
         "temperature": -3,
         "category": "icy"
     }],
-    "decorators": [
-        {
-            "chance": 0.07,
-            "variance": {"style": "STATIC"},
-            "zoom": 5,
-            "palette": [{"block": "minecraft:seagrass"}],
-            "style": {"style": "STATIC"}
-        },
-        {
-            "chance": 0.013,
-            "verticalZoom": 88,
-            "variance": {"style": "STATIC"},
-            "stackMax": 6,
-            "zoom": 1,
-            "palette": [{"block": "minecraft:kelp_plant"}],
-            "style": {"style": "STATIC"},
-            "heightVariance": {"style": "IRIS"},
-            "stackMin": 2
-        },
-        {
-            "chance": 0.07,
-            "variance": {"style": "STATIC"},
-            "zoom": 5,
-            "palette": [{"block": "minecraft:seagrass"}],
-            "style": {"style": "STATIC"}
-        },
-        {
-            "chance": 0.013,
-            "verticalZoom": 88,
-            "variance": {"style": "STATIC"},
-            "stackMax": 6,
-            "zoom": 1,
-            "palette": [{"block": "minecraft:kelp_plant"}],
-            "style": {"style": "STATIC"},
-            "heightVariance": {"style": "IRIS"},
-            "stackMin": 2
-        }
-    ],
     "seaLayers": [{
         "minHeight": 4,
         "maxHeight": 7,
         "style": {
-            "style": "GLOB_IRIS_THICK",
+            "style": "IRIS",
             "fracture": {
                 "style": "STATIC",
                 "multiplier": 3
@@ -74,10 +36,6 @@
             {
                 "weight": 2,
                 "block": "minecraft:ice"
-            },
-            {
-                "block": "minecraft:water",
-                "weight": 4
             }
         ]
     }],
@@ -295,5 +253,5 @@
             "waterloggable": true
         }
     ],
-    "derivative": "RIVER"
+    "derivative": "FROZEN_RIVER"
 }

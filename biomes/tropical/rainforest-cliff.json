@@ -1,0 +1,84 @@
+{
+    "name": "Rainforest",
+    "derivative": "JUNGLE",
+    "vanillaDerivative": "JUNGLE",
+    "rarity": 1,
+    "customDerivitives": [{
+        "id": "tropical",
+        "foliageColor": "#40C42B",
+        "grassColor": "#41A726",
+        "category": "jungle",
+        "waterColor": "#3AB2A2",
+        "waterFogColor": "#3AB2A2"
+    }],
+    "generators": [{
+        "generator": "cracked-cliffs",
+        "max": 60,
+        "min": 10
+    },
+    {
+        "generator": "plain",
+        "max": 60,
+        "min": 10
+    }],
+    "layers": [
+        {
+            "slopeCondition": {"maximumSlope": 4},
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [{"block": "minecraft:grass_block"}]
+        },
+        {
+            "slopeCondition": {"maximumSlope": 3.9},
+            "minHeight": 2,
+            "maxHeight": 2,
+            "palette": [{"block": "minecraft:coarse_dirt"}]
+        },
+        {
+            "minHeight": 6,
+            "maxHeight": 10,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {
+                    "block": "minecraft:stone",
+                    "weight": 4
+                },
+                {"block": "minecraft:andesite"},
+                {"block": "minecraft:mossy_cobblestone"},
+                {"block": "minecraft:cobblestone"}
+            ]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 6,
+            "palette": [{"block": "minecraft:stone"}]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.16,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        },
+        {
+            "chance": 0.52,
+            "palette": [
+                {"block": "minecraft:grass"},
+                {"block": "minecraft:fern"}
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "mode": "PAINT",
+            "place": [
+                "clutter/arbusto1",
+                "clutter/arbusto2",
+                "clutter/arbusto4",
+                "clutter/arbusto5"
+            ],
+            "chance": 1,
+            "density": 1,
+            "translate": {"y": 1}
+        }
+    ]
+}

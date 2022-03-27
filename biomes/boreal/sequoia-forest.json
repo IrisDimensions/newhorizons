@@ -249,8 +249,8 @@
     ],
     "generators": [{
         "generator": "plain",
-        "max": 13,
-        "min": 4
+        "max": 10,
+        "min": 3
     }],
     "slab": {
         "palette": [

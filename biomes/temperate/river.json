@@ -5,8 +5,8 @@
     "color": "#1bb9ee",
     "generators": [{
         "generator": "river",
-        "max": -14,
-        "min": -25
+        "max": -5,
+        "min": -60
     }],
     "layers": [{
         "minHeight": 2,

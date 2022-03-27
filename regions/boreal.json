@@ -2,15 +2,13 @@
     "name": "Boreal zone",
     "rarity": 1,
     "color": "#00b35c",
-    "landBiomeZoom": 2,
+    "landBiomeZoom": 1.5,
     "shoreBiomeZoom": 0.5,
     "landBiomes": [
         "boreal/mega-taiga",
-        "boreal/rockland",
+        "boreal/sequoia-forest",
         "boreal/shrublands",
-        "boreal/taiga",
-        "boreal/wetland",
-        "boreal/sequoia-forest"
+        "boreal/taiga"
     ],
     "shoreHeightMax": 1,
     "shoreHeightMin": 1,
